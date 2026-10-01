@@ -13,8 +13,8 @@ BEGIN:VEVENT
 SUMMARY:VTAC applications open (9am)
 DTSTART;VALUE=DATE:20260803
 DTEND;VALUE=DATE:20260804
-DTSTAMP:20261001T015951Z
-UID:d0d94337709c08fe@vtac-ical
+DTSTAMP:20261001T045521Z
+UID:94a67e8c827d1261@vtac-ical
 DESCRIPTION:9am Melbourne time\nSource: Course applications › Open › T
  imely applications for 2027 courses\nKey Dates & Fees: August 2026 - Janua
  ry 2027 for courses commencing in 2027\nhttps://vtac.edu.au/dates
@@ -25,8 +25,8 @@ BEGIN:VEVENT
 SUMMARY:VTAC equity & scholarships open (9am)
 DTSTART;VALUE=DATE:20260803
 DTEND;VALUE=DATE:20260804
-DTSTAMP:20261001T015951Z
-UID:67205cd66283110f@vtac-ical
+DTSTAMP:20261001T045521Z
+UID:9febbac864db66a1@vtac-ical
 DESCRIPTION:9am Melbourne time\nSource: Equity schemes and scholarships ap
  plications › Open › Equity schemes and scholarships applications and s
  upporting documentation deadline\nKey Dates & Fees: August 2026 - January 
@@ -38,8 +38,8 @@ BEGIN:VEVENT
 SUMMARY:VTAC applications close: Timely (5pm)
 DTSTART;VALUE=DATE:20260928
 DTEND;VALUE=DATE:20260929
-DTSTAMP:20261001T015951Z
-UID:bdf2d96ca156f8d8@vtac-ical
+DTSTAMP:20261001T045521Z
+UID:17f9c72454263464@vtac-ical
 CATEGORIES:Deadline
 DESCRIPTION:5pm Melbourne time\nSource: Course applications › Close › 
  Timely applications for 2027 courses\nKey Dates & Fees: August 2026 - Janu
@@ -61,8 +61,8 @@ BEGIN:VEVENT
 SUMMARY:VTAC documents due: Nov round (5pm)
 DTSTART;VALUE=DATE:20260928
 DTEND;VALUE=DATE:20260929
-DTSTAMP:20261001T015951Z
-UID:d427ecca62486f1a@vtac-ical
+DTSTAMP:20261001T045521Z
+UID:cc81914daadc6743@vtac-ical
 CATEGORIES:Deadline
 DESCRIPTION:5pm Melbourne time\nSource: Personal statement\, academic docu
  mentation and all other supporting documentation › Close › Final submi
@@ -86,8 +86,8 @@ BEGIN:VEVENT
 SUMMARY:VTAC equity & scholarships close (5pm)
 DTSTART;VALUE=DATE:20261009
 DTEND;VALUE=DATE:20261010
-DTSTAMP:20261001T015951Z
-UID:247fd3a765d224fe@vtac-ical
+DTSTAMP:20261001T045521Z
+UID:e9e637e108d4ed23@vtac-ical
 CATEGORIES:Deadline
 DESCRIPTION:5pm Melbourne time\nSource: Equity schemes and scholarships ap
  plications › Close › Equity schemes and scholarships applications and 
@@ -110,8 +110,8 @@ BEGIN:VEVENT
 SUMMARY:VTAC preferences close: Nov round (2pm)
 DTSTART;VALUE=DATE:20261028
 DTEND;VALUE=DATE:20261029
-DTSTAMP:20261001T015951Z
-UID:549f4bd42c2f791b@vtac-ical
+DTSTAMP:20261001T045521Z
+UID:5990a7eb7a8958b8@vtac-ical
 CATEGORIES:Deadline
 DESCRIPTION:2pm Melbourne time\nSource: Change of preference opens › Cha
  nge of preference closes › November round\nKey Dates & Fees: August 2026
@@ -133,8 +133,8 @@ BEGIN:VEVENT
 SUMMARY:VTAC applications close: Late (5pm)
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
-DTSTAMP:20261001T015951Z
-UID:35954095a203914a@vtac-ical
+DTSTAMP:20261001T045521Z
+UID:2620a39d5b54ad48@vtac-ical
 CATEGORIES:Deadline
 DESCRIPTION:5pm Melbourne time\nSource: Course applications › Close › 
  Late applications\nKey Dates & Fees: August 2026 - January 2027 for course
@@ -156,8 +156,8 @@ BEGIN:VEVENT
 SUMMARY:VTAC offers: Nov round (2pm)
 DTSTART;VALUE=DATE:20261124
 DTEND;VALUE=DATE:20261125
-DTSTAMP:20261001T015951Z
-UID:f8d907529c26690e@vtac-ical
+DTSTAMP:20261001T045521Z
+UID:97c814d1e6403604@vtac-ical
 CATEGORIES:Offers
 DESCRIPTION:2pm Melbourne time\nSource: Offer rounds › Offers released 
  › November offer round\nKey Dates & Fees: August 2026 - January 2027 for
@@ -169,8 +169,8 @@ BEGIN:VEVENT
 SUMMARY:VTAC applications open: January
 DTSTART;VALUE=DATE:20261204
 DTEND;VALUE=DATE:20261205
-DTSTAMP:20261001T015951Z
-UID:21a6d00dba6e7590@vtac-ical
+DTSTAMP:20261001T045521Z
+UID:93dd523d289d44c5@vtac-ical
 DESCRIPTION:no time given\nSource: Course applications › Open › Januar
  y round 2 offers and subsequent rounds\nKey Dates & Fees: August 2026 - Ja
  nuary 2027 for courses commencing in 2027\nhttps://vtac.edu.au/dates
@@ -181,8 +181,8 @@ BEGIN:VEVENT
 SUMMARY:VTAC applications close: Very late (5pm)
 DTSTART;VALUE=DATE:20261204
 DTEND;VALUE=DATE:20261205
-DTSTAMP:20261001T015951Z
-UID:f6d78aa2ada1e8d7@vtac-ical
+DTSTAMP:20261001T045521Z
+UID:66c9090cd82e0059@vtac-ical
 CATEGORIES:Deadline
 DESCRIPTION:5pm Melbourne time\nSource: Course applications › Close › 
  Very late applications\nKey Dates & Fees: August 2026 - January 2027 for c
@@ -204,8 +204,8 @@ BEGIN:VEVENT
 SUMMARY:VTAC documents due: Dec round & Jan round 1 (5pm)
 DTSTART;VALUE=DATE:20261204
 DTEND;VALUE=DATE:20261205
-DTSTAMP:20261001T015951Z
-UID:3b0088a1354c2782@vtac-ical
+DTSTAMP:20261001T045521Z
+UID:1a49d96c5310ad92@vtac-ical
 CATEGORIES:Deadline
 DESCRIPTION:5pm Melbourne time\nSource: Personal statement\, academic docu
  mentation and all other supporting documentation › Close › Final submi
@@ -229,8 +229,8 @@ BEGIN:VEVENT
 SUMMARY:VTAC preferences close: Jan round 1 (2pm)
 DTSTART;VALUE=DATE:20261207
 DTEND;VALUE=DATE:20261208
-DTSTAMP:20261001T015951Z
-UID:31e48c5c99e1e1e1@vtac-ical
+DTSTAMP:20261001T045521Z
+UID:e87eb2aad45b398f@vtac-ical
 CATEGORIES:Deadline
 DESCRIPTION:2pm Melbourne time\nSource: Change of preference opens › Cha
  nge of preference closes › January round 1\nKey Dates & Fees: August 202
@@ -252,8 +252,8 @@ BEGIN:VEVENT
 SUMMARY:VTAC ATARs released: VCE (7am)
 DTSTART;VALUE=DATE:20261210
 DTEND;VALUE=DATE:20261211
-DTSTAMP:20261001T015951Z
-UID:47552cd42c7d0518@vtac-ical
+DTSTAMP:20261001T045521Z
+UID:7c2ceb7daedbc434@vtac-ical
 CATEGORIES:Results
 DESCRIPTION:7am Melbourne time\nSource: Results and ATAR › Available onl
  ine › VCE results and ATARs\nKey Dates & Fees: August 2026 - January 202
@@ -265,8 +265,8 @@ BEGIN:VEVENT
 SUMMARY:VTAC preferences close: Dec round (12pm)
 DTSTART;VALUE=DATE:20261212
 DTEND;VALUE=DATE:20261213
-DTSTAMP:20261001T015951Z
-UID:4e71c81d748766ed@vtac-ical
+DTSTAMP:20261001T045521Z
+UID:391cba408ee16b71@vtac-ical
 CATEGORIES:Deadline
 DESCRIPTION:12pm Melbourne time\nSource: Change of preference opens › Ch
  ange of preference closes › December round\nKey Dates & Fees: August 202
@@ -288,8 +288,8 @@ BEGIN:VEVENT
 SUMMARY:VTAC ATAR statements: VCE (9am)
 DTSTART;VALUE=DATE:20261215
 DTEND;VALUE=DATE:20261216
-DTSTAMP:20261001T015951Z
-UID:47e4164a54013cf3@vtac-ical
+DTSTAMP:20261001T045521Z
+UID:eec311896d988ea0@vtac-ical
 CATEGORIES:Results
 DESCRIPTION:9am Melbourne time\nSource: Results and ATAR › Digital ATAR 
  statement issued › VCE results and ATARs\nKey Dates & Fees: August 2026 
@@ -301,8 +301,8 @@ BEGIN:VEVENT
 SUMMARY:VTAC ATARs released: IB (9am)
 DTSTART;VALUE=DATE:20261218
 DTEND;VALUE=DATE:20261219
-DTSTAMP:20261001T015951Z
-UID:0ad227914c58ca87@vtac-ical
+DTSTAMP:20261001T045521Z
+UID:9f6ce361a390f297@vtac-ical
 CATEGORIES:Results
 DESCRIPTION:9am Melbourne time\nSource: Results and ATAR › Available onl
  ine › IB notional ATARs\nKey Dates & Fees: August 2026 - January 2027 fo
@@ -314,8 +314,8 @@ BEGIN:VEVENT
 SUMMARY:VTAC ATAR statements: IB (9am)
 DTSTART;VALUE=DATE:20261221
 DTEND;VALUE=DATE:20261222
-DTSTAMP:20261001T015951Z
-UID:0d93f9e305dfca36@vtac-ical
+DTSTAMP:20261001T045521Z
+UID:4d66d98cd55e379c@vtac-ical
 CATEGORIES:Results
 DESCRIPTION:9am Melbourne time\nSource: Results and ATAR › Digital ATAR 
  statement issued › IB notional ATARs\nKey Dates & Fees: August 2026 - Ja
@@ -327,8 +327,8 @@ BEGIN:VEVENT
 SUMMARY:VTAC offers: Dec round (10am)
 DTSTART;VALUE=DATE:20261223
 DTEND;VALUE=DATE:20261224
-DTSTAMP:20261001T015951Z
-UID:fda64ed3968b9cbe@vtac-ical
+DTSTAMP:20261001T045521Z
+UID:9f6fd9e754df22d8@vtac-ical
 CATEGORIES:Offers
 DESCRIPTION:10am Melbourne time\nSource: Offer rounds › Offers released 
  › December offer round\nKey Dates & Fees: August 2026 - January 2027 for
@@ -340,8 +340,8 @@ BEGIN:VEVENT
 SUMMARY:VTAC preferences close: Jan round 1 (12pm)
 DTSTART;VALUE=DATE:20261224
 DTEND;VALUE=DATE:20261225
-DTSTAMP:20261001T015951Z
-UID:31e48c5c99e1e1e1-2@vtac-ical
+DTSTAMP:20261001T045521Z
+UID:e87eb2aad45b398f-2@vtac-ical
 CATEGORIES:Deadline
 DESCRIPTION:12pm Melbourne time\nSource: Change of preference opens › Ch
  ange of preference closes › January round 1\nKey Dates & Fees: August 20
@@ -364,8 +364,8 @@ BEGIN:VEVENT
 SUMMARY:VTAC documents due: Jan round 2 (5pm)
 DTSTART;VALUE=DATE:20270105
 DTEND;VALUE=DATE:20270106
-DTSTAMP:20261001T015951Z
-UID:af671b00408e18c8@vtac-ical
+DTSTAMP:20261001T045521Z
+UID:06053ff4aacb2d90@vtac-ical
 CATEGORIES:Deadline
 DESCRIPTION:5pm Melbourne time\nSource: Personal statement\, academic docu
  mentation and all other supporting documentation › Close › Final submi
@@ -389,8 +389,8 @@ BEGIN:VEVENT
 SUMMARY:VTAC offers: Jan round 1 (2pm)
 DTSTART;VALUE=DATE:20270112
 DTEND;VALUE=DATE:20270113
-DTSTAMP:20261001T015951Z
-UID:bbc26b0ab2fe202d@vtac-ical
+DTSTAMP:20261001T045521Z
+UID:e392d2022741b6f3@vtac-ical
 CATEGORIES:Offers
 DESCRIPTION:2pm Melbourne time\nSource: Offer rounds › Offers released 
  › January offer round 1\nKey Dates & Fees: August 2026 - January 2027 fo
@@ -402,8 +402,8 @@ BEGIN:VEVENT
 SUMMARY:VTAC preferences close: Jan round 2 (2pm)
 DTSTART;VALUE=DATE:20270113
 DTEND;VALUE=DATE:20270114
-DTSTAMP:20261001T015951Z
-UID:285b7584fe743225@vtac-ical
+DTSTAMP:20261001T045521Z
+UID:df3fcea23957a126@vtac-ical
 CATEGORIES:Deadline
 DESCRIPTION:2pm Melbourne time\nSource: Change of preference opens › Cha
  nge of preference closes › January round 2\nKey Dates & Fees: August 202
@@ -425,8 +425,8 @@ BEGIN:VEVENT
 SUMMARY:VTAC applications close: January (5pm)
 DTSTART;VALUE=DATE:20270113
 DTEND;VALUE=DATE:20270114
-DTSTAMP:20261001T015951Z
-UID:b04a6aa208ad03d4@vtac-ical
+DTSTAMP:20261001T045521Z
+UID:1950a2c26b57a941@vtac-ical
 CATEGORIES:Deadline
 DESCRIPTION:5pm Melbourne time\nSource: Course applications › Close › 
  January round 2 offers and subsequent rounds\nKey Dates & Fees: August 202
@@ -448,8 +448,8 @@ BEGIN:VEVENT
 SUMMARY:VTAC documents due: Feb rounds (5pm)
 DTSTART;VALUE=DATE:20270114
 DTEND;VALUE=DATE:20270115
-DTSTAMP:20261001T015951Z
-UID:46413e729026f163@vtac-ical
+DTSTAMP:20261001T045521Z
+UID:3d6d246265080fd4@vtac-ical
 CATEGORIES:Deadline
 DESCRIPTION:5pm Melbourne time\nSource: Personal statement\, academic docu
  mentation and all other supporting documentation › Close › Final submi
@@ -473,8 +473,8 @@ BEGIN:VEVENT
 SUMMARY:VTAC offers: Jan round 2 (2pm)
 DTSTART;VALUE=DATE:20270127
 DTEND;VALUE=DATE:20270128
-DTSTAMP:20261001T015951Z
-UID:6b7ad7107b8d4c5b@vtac-ical
+DTSTAMP:20261001T045521Z
+UID:b035df355135582d@vtac-ical
 CATEGORIES:Offers
 DESCRIPTION:2pm Melbourne time\nSource: Offer rounds › Offers released 
  › January offer round 2\nKey Dates & Fees: August 2026 - January 2027 fo
@@ -486,8 +486,8 @@ BEGIN:VEVENT
 SUMMARY:VTAC preferences close: Feb round 1 (2pm)
 DTSTART;VALUE=DATE:20270128
 DTEND;VALUE=DATE:20270129
-DTSTAMP:20261001T015951Z
-UID:a5f69129ac678b18@vtac-ical
+DTSTAMP:20261001T045521Z
+UID:35d2c68d4d58c43a@vtac-ical
 CATEGORIES:Deadline
 DESCRIPTION:2pm Melbourne time\nSource: Change of preference opens › Cha
  nge of preference closes › February offer round 1\nKey Dates & Fees: Aug
@@ -510,8 +510,8 @@ BEGIN:VEVENT
 SUMMARY:VTAC offers: Feb round 1 (2pm)
 DTSTART;VALUE=DATE:20270203
 DTEND;VALUE=DATE:20270204
-DTSTAMP:20261001T015951Z
-UID:01dde74408974a12@vtac-ical
+DTSTAMP:20261001T045521Z
+UID:af96b57ef1b707dc@vtac-ical
 CATEGORIES:Offers
 DESCRIPTION:2pm Melbourne time\nSource: Offer rounds › Offers released 
  › February offer round 1\nKey Dates & Fees: August 2026 - January 2027 f
@@ -523,8 +523,8 @@ BEGIN:VEVENT
 SUMMARY:VTAC preferences close: Feb round 2 (2pm)
 DTSTART;VALUE=DATE:20270204
 DTEND;VALUE=DATE:20270205
-DTSTAMP:20261001T015951Z
-UID:3914a8e8f5ec48b1@vtac-ical
+DTSTAMP:20261001T045521Z
+UID:967ced22d55e54da@vtac-ical
 CATEGORIES:Deadline
 DESCRIPTION:2pm Melbourne time\nSource: Change of preference opens › Cha
  nge of preference closes › February offer round 2\nKey Dates & Fees: Aug
@@ -547,8 +547,8 @@ BEGIN:VEVENT
 SUMMARY:VTAC offers: Feb round 2 (2pm)
 DTSTART;VALUE=DATE:20270209
 DTEND;VALUE=DATE:20270210
-DTSTAMP:20261001T015951Z
-UID:9604c5767c4d5a31@vtac-ical
+DTSTAMP:20261001T045521Z
+UID:2a06e65cf976c257@vtac-ical
 CATEGORIES:Offers
 DESCRIPTION:2pm Melbourne time\nSource: Offer rounds › Offers released 
  › February offer round 2\nKey Dates & Fees: August 2026 - January 2027 f
@@ -560,8 +560,8 @@ BEGIN:VEVENT
 SUMMARY:VTAC preferences close: Feb round 3 (2pm)
 DTSTART;VALUE=DATE:20270210
 DTEND;VALUE=DATE:20270211
-DTSTAMP:20261001T015951Z
-UID:855fbc22785dc8c6@vtac-ical
+DTSTAMP:20261001T045521Z
+UID:9f77859ebf0fc09e@vtac-ical
 CATEGORIES:Deadline
 DESCRIPTION:2pm Melbourne time\nSource: Change of preference opens › Cha
  nge of preference closes › February offer round 3\nKey Dates & Fees: Aug
@@ -584,8 +584,8 @@ BEGIN:VEVENT
 SUMMARY:VTAC offers: Feb round 3 (2pm)
 DTSTART;VALUE=DATE:20270216
 DTEND;VALUE=DATE:20270217
-DTSTAMP:20261001T015951Z
-UID:b8613b561df1951f@vtac-ical
+DTSTAMP:20261001T045521Z
+UID:64edae35e052aa34@vtac-ical
 CATEGORIES:Offers
 DESCRIPTION:2pm Melbourne time\nSource: Offer rounds › Offers released 
  › February offer round 3\nKey Dates & Fees: August 2026 - January 2027 f
