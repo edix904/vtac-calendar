@@ -3,797 +3,594 @@ VERSION:2.0
 PRODID:-//edix904//vtac-ical//EN
 METHOD:PUBLISH
 X-WR-CALDESC:Unofficial VTAC key dates scraped from https://vtac.edu.au/da
- tes (page last updated: 21 September 2026).
+ tes (page last updated: 21 September 2026). Times in titles are Melbourne 
+ time.
 X-WR-CALNAME:VTAC Key Dates
 REFRESH-INTERVAL;VALUE=DURATION:PT12H
 X-PUBLISHED-TTL:PT12H
 X-WR-TIMEZONE:Australia/Melbourne
-BEGIN:VTIMEZONE
-TZID:Australia/Melbourne
-COMMENT:This timezone only works from 1970-01-01 to 2038-01-01.
-BEGIN:STANDARD
-DTSTART:19700101T000000
-TZNAME:AEST
-TZOFFSETFROM:+1000
-TZOFFSETTO:+1000
-END:STANDARD
-BEGIN:DAYLIGHT
-DTSTART:19711031T030000
-RDATE:19721029T030000,19731028T030000,19741027T030000,19751026T030000,1976
- 1031T030000,19771030T030000,19781029T030000,19791028T030000,19801026T03000
- 0,19811025T030000,19821031T030000,19831030T030000,19841028T030000,19851027
- T030000,19861019T030000,19871018T030000,19881030T030000,19891029T030000,19
- 901028T030000,19911027T030000,19921025T030000,19931031T030000,19941030T030
- 000,19951029T030000,19961027T030000,19971026T030000,19981025T030000,199910
- 31T030000,20000827T030000,20011028T030000,20021027T030000,20031026T030000,
- 20041031T030000,20051030T030000,20061029T030000,20071028T030000,20081005T0
- 30000,20091004T030000,20101003T030000,20111002T030000,20121007T030000,2013
- 1006T030000,20141005T030000,20151004T030000,20161002T030000,20171001T03000
- 0,20181007T030000,20191006T030000,20201004T030000,20211003T030000,20221002
- T030000,20231001T030000,20241006T030000,20251005T030000,20261004T030000,20
- 271003T030000,20281001T030000,20291007T030000,20301006T030000,20311005T030
- 000,20321003T030000,20331002T030000,20341001T030000,20351007T030000,203610
- 05T030000,20371004T030000
-TZNAME:AEDT
-TZOFFSETFROM:+1000
-TZOFFSETTO:+1100
-END:DAYLIGHT
-BEGIN:STANDARD
-DTSTART:19720227T030000
-RDATE:19730304T030000,19740303T030000,19750302T030000,19760307T030000,1977
- 0306T030000,19780305T030000,19790304T030000,19800302T030000,19810301T03000
- 0,19820307T030000,19830306T030000,19840304T030000,19850303T030000,19860316
- T030000,19870315T030000,19880320T030000,19890319T030000,19900318T030000,19
- 910303T030000,19920301T030000,19930307T030000,19940306T030000,19950326T030
- 000,19960331T030000,19970330T030000,19980329T030000,19990328T030000,200003
- 26T030000,20010325T030000,20020331T030000,20030330T030000,20040328T030000,
- 20050327T030000,20060402T030000,20070325T030000,20080406T030000,20090405T0
- 30000,20100404T030000,20110403T030000,20120401T030000,20130407T030000,2014
- 0406T030000,20150405T030000,20160403T030000,20170402T030000,20180401T03000
- 0,20190407T030000,20200405T030000,20210404T030000,20220403T030000,20230402
- T030000,20240407T030000,20250406T030000,20260405T030000,20270404T030000,20
- 280402T030000,20290401T030000,20300407T030000,20310406T030000,20320404T030
- 000,20330403T030000,20340402T030000,20350401T030000,20360406T030000,203704
- 05T030000
-TZNAME:AEST
-TZOFFSETFROM:+1100
-TZOFFSETTO:+1000
-END:STANDARD
-END:VTIMEZONE
 BEGIN:VEVENT
-SUMMARY:Change of preference opens — December round · Current Year 12 s
- tudents
-DTSTART;TZID=Australia/Melbourne:20260803T090000
-DTEND;TZID=Australia/Melbourne:20260803T093000
-DTSTAMP:20261001T010456Z
-UID:48f2ad1376553536@vtac-ical
-DESCRIPTION:Change of preference opens › Change of preference opens · 0
- 9:00\nKey Dates & Fees: August 2026 - January 2027 for courses commencing 
- in 2027\nhttps://vtac.edu.au/dates
-URL:https://vtac.edu.au/dates
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Change of preference opens — January round 1 · Current Year 12 
- students not eligible for December round offers but eligible for January r
- ound 1 offers
-DTSTART;TZID=Australia/Melbourne:20260803T090000
-DTEND;TZID=Australia/Melbourne:20260803T093000
-DTSTAMP:20261001T010456Z
-UID:3c9659a0d37a526b@vtac-ical
-DESCRIPTION:Change of preference opens › Change of preference opens · 0
- 9:00\nKey Dates & Fees: August 2026 - January 2027 for courses commencing 
- in 2027\nhttps://vtac.edu.au/dates
-URL:https://vtac.edu.au/dates
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Change of preference opens — November round · Post-school appli
- cants
-DTSTART;TZID=Australia/Melbourne:20260803T090000
-DTEND;TZID=Australia/Melbourne:20260803T093000
-DTSTAMP:20261001T010456Z
-UID:e6fd6d87562eb0df@vtac-ical
-DESCRIPTION:Change of preference opens › Change of preference opens · 0
- 9:00\nKey Dates & Fees: August 2026 - January 2027 for courses commencing 
- in 2027\nhttps://vtac.edu.au/dates
-URL:https://vtac.edu.au/dates
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Equity schemes and scholarships applications and supporting docume
- ntation deadline — Open
-DTSTART;TZID=Australia/Melbourne:20260803T090000
-DTEND;TZID=Australia/Melbourne:20260803T093000
-DTSTAMP:20261001T010456Z
-UID:b400c4868d254e8d@vtac-ical
-DESCRIPTION:Equity schemes and scholarships applications › Open · 09:00
- \nKey Dates & Fees: August 2026 - January 2027 for courses commencing in 2
- 027\nhttps://vtac.edu.au/dates
-URL:https://vtac.edu.au/dates
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Timely applications for 2027 courses — Open
-DTSTART;TZID=Australia/Melbourne:20260803T090000
-DTEND;TZID=Australia/Melbourne:20260803T093000
-DTSTAMP:20261001T010456Z
-UID:52e84effbcd8c71a@vtac-ical
-DESCRIPTION:Course applications › Open · 09:00\nKey Dates & Fees: Augus
- t 2026 - January 2027 for courses commencing in 2027\nhttps://vtac.edu.au/
- dates
-URL:https://vtac.edu.au/dates
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:⏰ Final submission date to guarantee consideration for November 
- offer round — Close
-DTSTART;TZID=Australia/Melbourne:20260928T170000
-DTEND;TZID=Australia/Melbourne:20260928T173000
-DTSTAMP:20261001T010456Z
-UID:6f3062aa3031c115@vtac-ical
-CATEGORIES:Deadline
-DESCRIPTION:Personal statement\, academic documentation and all other supp
- orting documentation › Close · 17:00\nKey Dates & Fees: August 2026 - J
- anuary 2027 for courses commencing in 2027\nhttps://vtac.edu.au/dates
-URL:https://vtac.edu.au/dates
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:⏰ Final submission date to guarantee consideration for Novem
- ber offer round — Close
-TRIGGER:-P7D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:⏰ Final submission date to guarantee consideration for Novem
- ber offer round — Close
-TRIGGER:-P1D
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:⏰ Timely applications for 2027 courses — Close
-DTSTART;TZID=Australia/Melbourne:20260928T170000
-DTEND;TZID=Australia/Melbourne:20260928T173000
-DTSTAMP:20261001T010456Z
-UID:56f4c8b22be69faa@vtac-ical
-CATEGORIES:Deadline
-DESCRIPTION:Course applications › Close · 17:00\nKey Dates & Fees: Augu
- st 2026 - January 2027 for courses commencing in 2027\nhttps://vtac.edu.au
- /dates
-URL:https://vtac.edu.au/dates
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:⏰ Timely applications for 2027 courses — Close
-TRIGGER:-P7D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:⏰ Timely applications for 2027 courses — Close
-TRIGGER:-P1D
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:⏰ Equity schemes and scholarships applications and supporting do
- cumentation deadline — Close
-DTSTART;TZID=Australia/Melbourne:20261009T170000
-DTEND;TZID=Australia/Melbourne:20261009T173000
-DTSTAMP:20261001T010456Z
-UID:e212677c4bf297bc@vtac-ical
-CATEGORIES:Deadline
-DESCRIPTION:Equity schemes and scholarships applications › Close · 17:0
- 0\nKey Dates & Fees: August 2026 - January 2027 for courses commencing in 
- 2027\nhttps://vtac.edu.au/dates
-URL:https://vtac.edu.au/dates
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:⏰ Equity schemes and scholarships applications and supportin
- g documentation deadline — Close
-TRIGGER:-P7D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:⏰ Equity schemes and scholarships applications and supportin
- g documentation deadline — Close
-TRIGGER:-P1D
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:⏰ Change of preference closes — November round · Post-school 
- applicants
-DTSTART;TZID=Australia/Melbourne:20261028T140000
-DTEND;TZID=Australia/Melbourne:20261028T143000
-DTSTAMP:20261001T010456Z
-UID:e53eb49c9bcd3eb6@vtac-ical
-CATEGORIES:Deadline
-DESCRIPTION:Change of preference opens › Change of preference closes · 
- 14:00\nKey Dates & Fees: August 2026 - January 2027 for courses commencing
-  in 2027\nhttps://vtac.edu.au/dates
-URL:https://vtac.edu.au/dates
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:⏰ Change of preference closes — November round · Post-sch
- ool applicants
-TRIGGER:-P7D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:⏰ Change of preference closes — November round · Post-sch
- ool applicants
-TRIGGER:-P1D
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:⏰ Late applications — Close
-DTSTART;TZID=Australia/Melbourne:20261030T170000
-DTEND;TZID=Australia/Melbourne:20261030T173000
-DTSTAMP:20261001T010456Z
-UID:5ed2a100565b5267@vtac-ical
-CATEGORIES:Deadline
-DESCRIPTION:Course applications › Close · 17:00\nKey Dates & Fees: Augu
- st 2026 - January 2027 for courses commencing in 2027\nhttps://vtac.edu.au
- /dates
-URL:https://vtac.edu.au/dates
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:⏰ Late applications — Close
-TRIGGER:-P7D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:⏰ Late applications — Close
-TRIGGER:-P1D
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Change of preference opens — January round 1 · Post-school appl
- icants
-DTSTART;TZID=Australia/Melbourne:20261124T140000
-DTEND;TZID=Australia/Melbourne:20261124T143000
-DTSTAMP:20261001T010456Z
-UID:39a2e52956876aed@vtac-ical
-DESCRIPTION:Change of preference opens › Change of preference opens · 1
- 4:00\nKey Dates & Fees: August 2026 - January 2027 for courses commencing 
- in 2027\nhttps://vtac.edu.au/dates
-URL:https://vtac.edu.au/dates
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:🎓 November offer round — Offers released
-DTSTART;TZID=Australia/Melbourne:20261124T140000
-DTEND;TZID=Australia/Melbourne:20261124T143000
-DTSTAMP:20261001T010456Z
-UID:aab874435585e38f@vtac-ical
-CATEGORIES:Offers
-DESCRIPTION:Offer rounds › Offers released · 14:00\nKey Dates & Fees: A
- ugust 2026 - January 2027 for courses commencing in 2027\nhttps://vtac.edu
- .au/dates
-URL:https://vtac.edu.au/dates
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:January round 2 offers and subsequent rounds — Open
-DTSTART;VALUE=DATE:20261204
-DTEND;VALUE=DATE:20261205
-DTSTAMP:20261001T010456Z
-UID:8cc24d1ad0869222@vtac-ical
-DESCRIPTION:Course applications › Open · all day\nKey Dates & Fees: Aug
- ust 2026 - January 2027 for courses commencing in 2027\nhttps://vtac.edu.a
- u/dates
+SUMMARY:VTAC applications open (9am)
+DTSTART;VALUE=DATE:20260803
+DTEND;VALUE=DATE:20260804
+DTSTAMP:20261001T015951Z
+UID:d0d94337709c08fe@vtac-ical
+DESCRIPTION:9am Melbourne time\nSource: Course applications › Open › T
+ imely applications for 2027 courses\nKey Dates & Fees: August 2026 - Janua
+ ry 2027 for courses commencing in 2027\nhttps://vtac.edu.au/dates
 TRANSP:TRANSPARENT
 URL:https://vtac.edu.au/dates
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:⏰ Final submission date to guarantee consideration for December 
- offer round and January offer round 1 — Close
-DTSTART;TZID=Australia/Melbourne:20261204T170000
-DTEND;TZID=Australia/Melbourne:20261204T173000
-DTSTAMP:20261001T010456Z
-UID:3341521c4f665665@vtac-ical
+SUMMARY:VTAC equity & scholarships open (9am)
+DTSTART;VALUE=DATE:20260803
+DTEND;VALUE=DATE:20260804
+DTSTAMP:20261001T015951Z
+UID:67205cd66283110f@vtac-ical
+DESCRIPTION:9am Melbourne time\nSource: Equity schemes and scholarships ap
+ plications › Open › Equity schemes and scholarships applications and s
+ upporting documentation deadline\nKey Dates & Fees: August 2026 - January 
+ 2027 for courses commencing in 2027\nhttps://vtac.edu.au/dates
+TRANSP:TRANSPARENT
+URL:https://vtac.edu.au/dates
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:VTAC applications close: Timely (5pm)
+DTSTART;VALUE=DATE:20260928
+DTEND;VALUE=DATE:20260929
+DTSTAMP:20261001T015951Z
+UID:bdf2d96ca156f8d8@vtac-ical
 CATEGORIES:Deadline
-DESCRIPTION:Personal statement\, academic documentation and all other supp
- orting documentation › Close · 17:00\nKey Dates & Fees: August 2026 - J
- anuary 2027 for courses commencing in 2027\nhttps://vtac.edu.au/dates
+DESCRIPTION:5pm Melbourne time\nSource: Course applications › Close › 
+ Timely applications for 2027 courses\nKey Dates & Fees: August 2026 - Janu
+ ary 2027 for courses commencing in 2027\nhttps://vtac.edu.au/dates
+TRANSP:TRANSPARENT
 URL:https://vtac.edu.au/dates
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⏰ Final submission date to guarantee consideration for Decem
- ber offer round and January offer round 1 — Close
+DESCRIPTION:VTAC applications close: Timely (5pm)
 TRIGGER:-P7D
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⏰ Final submission date to guarantee consideration for Decem
- ber offer round and January offer round 1 — Close
+DESCRIPTION:VTAC applications close: Timely (5pm)
 TRIGGER:-P1D
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:⏰ Very late applications — Close
-DTSTART;TZID=Australia/Melbourne:20261204T170000
-DTEND;TZID=Australia/Melbourne:20261204T173000
-DTSTAMP:20261001T010456Z
-UID:c058b02f66225567@vtac-ical
+SUMMARY:VTAC documents due: Nov round (5pm)
+DTSTART;VALUE=DATE:20260928
+DTEND;VALUE=DATE:20260929
+DTSTAMP:20261001T015951Z
+UID:d427ecca62486f1a@vtac-ical
 CATEGORIES:Deadline
-DESCRIPTION:Course applications › Close · 17:00\nKey Dates & Fees: Augu
- st 2026 - January 2027 for courses commencing in 2027\nhttps://vtac.edu.au
- /dates
+DESCRIPTION:5pm Melbourne time\nSource: Personal statement\, academic docu
+ mentation and all other supporting documentation › Close › Final submi
+ ssion date to guarantee consideration for November offer round\nKey Dates 
+ & Fees: August 2026 - January 2027 for courses commencing in 2027\nhttps:/
+ /vtac.edu.au/dates
+TRANSP:TRANSPARENT
 URL:https://vtac.edu.au/dates
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⏰ Very late applications — Close
+DESCRIPTION:VTAC documents due: Nov round (5pm)
 TRIGGER:-P7D
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⏰ Very late applications — Close
+DESCRIPTION:VTAC documents due: Nov round (5pm)
 TRIGGER:-P1D
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:⏰ Change of preference closes — January round 1 · Post-school
-  applicants
-DTSTART;TZID=Australia/Melbourne:20261207T140000
-DTEND;TZID=Australia/Melbourne:20261207T143000
-DTSTAMP:20261001T010456Z
-UID:f5cc561fa5b3484a@vtac-ical
+SUMMARY:VTAC equity & scholarships close (5pm)
+DTSTART;VALUE=DATE:20261009
+DTEND;VALUE=DATE:20261010
+DTSTAMP:20261001T015951Z
+UID:247fd3a765d224fe@vtac-ical
 CATEGORIES:Deadline
-DESCRIPTION:Change of preference opens › Change of preference closes · 
- 14:00\nKey Dates & Fees: August 2026 - January 2027 for courses commencing
-  in 2027\nhttps://vtac.edu.au/dates
+DESCRIPTION:5pm Melbourne time\nSource: Equity schemes and scholarships ap
+ plications › Close › Equity schemes and scholarships applications and 
+ supporting documentation deadline\nKey Dates & Fees: August 2026 - January
+  2027 for courses commencing in 2027\nhttps://vtac.edu.au/dates
+TRANSP:TRANSPARENT
 URL:https://vtac.edu.au/dates
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⏰ Change of preference closes — January round 1 · Post-sc
- hool applicants
+DESCRIPTION:VTAC equity & scholarships close (5pm)
 TRIGGER:-P7D
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⏰ Change of preference closes — January round 1 · Post-sc
- hool applicants
+DESCRIPTION:VTAC equity & scholarships close (5pm)
 TRIGGER:-P1D
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:📊 VCE results and ATARs — Available online
-DTSTART;TZID=Australia/Melbourne:20261210T070000
-DTEND;TZID=Australia/Melbourne:20261210T073000
-DTSTAMP:20261001T010456Z
-UID:ec83574519c747d5@vtac-ical
+SUMMARY:VTAC preferences close: Nov round (2pm)
+DTSTART;VALUE=DATE:20261028
+DTEND;VALUE=DATE:20261029
+DTSTAMP:20261001T015951Z
+UID:549f4bd42c2f791b@vtac-ical
+CATEGORIES:Deadline
+DESCRIPTION:2pm Melbourne time\nSource: Change of preference opens › Cha
+ nge of preference closes › November round\nKey Dates & Fees: August 2026
+  - January 2027 for courses commencing in 2027\nhttps://vtac.edu.au/dates
+TRANSP:TRANSPARENT
+URL:https://vtac.edu.au/dates
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:VTAC preferences close: Nov round (2pm)
+TRIGGER:-P7D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:VTAC preferences close: Nov round (2pm)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:VTAC applications close: Late (5pm)
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261031
+DTSTAMP:20261001T015951Z
+UID:35954095a203914a@vtac-ical
+CATEGORIES:Deadline
+DESCRIPTION:5pm Melbourne time\nSource: Course applications › Close › 
+ Late applications\nKey Dates & Fees: August 2026 - January 2027 for course
+ s commencing in 2027\nhttps://vtac.edu.au/dates
+TRANSP:TRANSPARENT
+URL:https://vtac.edu.au/dates
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:VTAC applications close: Late (5pm)
+TRIGGER:-P7D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:VTAC applications close: Late (5pm)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:VTAC offers: Nov round (2pm)
+DTSTART;VALUE=DATE:20261124
+DTEND;VALUE=DATE:20261125
+DTSTAMP:20261001T015951Z
+UID:f8d907529c26690e@vtac-ical
+CATEGORIES:Offers
+DESCRIPTION:2pm Melbourne time\nSource: Offer rounds › Offers released 
+ › November offer round\nKey Dates & Fees: August 2026 - January 2027 for
+  courses commencing in 2027\nhttps://vtac.edu.au/dates
+TRANSP:TRANSPARENT
+URL:https://vtac.edu.au/dates
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:VTAC applications open: January
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261205
+DTSTAMP:20261001T015951Z
+UID:21a6d00dba6e7590@vtac-ical
+DESCRIPTION:no time given\nSource: Course applications › Open › Januar
+ y round 2 offers and subsequent rounds\nKey Dates & Fees: August 2026 - Ja
+ nuary 2027 for courses commencing in 2027\nhttps://vtac.edu.au/dates
+TRANSP:TRANSPARENT
+URL:https://vtac.edu.au/dates
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:VTAC applications close: Very late (5pm)
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261205
+DTSTAMP:20261001T015951Z
+UID:f6d78aa2ada1e8d7@vtac-ical
+CATEGORIES:Deadline
+DESCRIPTION:5pm Melbourne time\nSource: Course applications › Close › 
+ Very late applications\nKey Dates & Fees: August 2026 - January 2027 for c
+ ourses commencing in 2027\nhttps://vtac.edu.au/dates
+TRANSP:TRANSPARENT
+URL:https://vtac.edu.au/dates
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:VTAC applications close: Very late (5pm)
+TRIGGER:-P7D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:VTAC applications close: Very late (5pm)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:VTAC documents due: Dec round & Jan round 1 (5pm)
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261205
+DTSTAMP:20261001T015951Z
+UID:3b0088a1354c2782@vtac-ical
+CATEGORIES:Deadline
+DESCRIPTION:5pm Melbourne time\nSource: Personal statement\, academic docu
+ mentation and all other supporting documentation › Close › Final submi
+ ssion date to guarantee consideration for December offer round and January
+  offer round 1\nKey Dates & Fees: August 2026 - January 2027 for courses c
+ ommencing in 2027\nhttps://vtac.edu.au/dates
+TRANSP:TRANSPARENT
+URL:https://vtac.edu.au/dates
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:VTAC documents due: Dec round & Jan round 1 (5pm)
+TRIGGER:-P7D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:VTAC documents due: Dec round & Jan round 1 (5pm)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:VTAC preferences close: Jan round 1 (2pm)
+DTSTART;VALUE=DATE:20261207
+DTEND;VALUE=DATE:20261208
+DTSTAMP:20261001T015951Z
+UID:31e48c5c99e1e1e1@vtac-ical
+CATEGORIES:Deadline
+DESCRIPTION:2pm Melbourne time\nSource: Change of preference opens › Cha
+ nge of preference closes › January round 1\nKey Dates & Fees: August 202
+ 6 - January 2027 for courses commencing in 2027\nhttps://vtac.edu.au/dates
+TRANSP:TRANSPARENT
+URL:https://vtac.edu.au/dates
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:VTAC preferences close: Jan round 1 (2pm)
+TRIGGER:-P7D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:VTAC preferences close: Jan round 1 (2pm)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:VTAC ATARs released: VCE (7am)
+DTSTART;VALUE=DATE:20261210
+DTEND;VALUE=DATE:20261211
+DTSTAMP:20261001T015951Z
+UID:47552cd42c7d0518@vtac-ical
 CATEGORIES:Results
-DESCRIPTION:Results and ATAR › Available online · 07:00\nKey Dates & Fe
- es: August 2026 - January 2027 for courses commencing in 2027\nhttps://vta
- c.edu.au/dates
+DESCRIPTION:7am Melbourne time\nSource: Results and ATAR › Available onl
+ ine › VCE results and ATARs\nKey Dates & Fees: August 2026 - January 202
+ 7 for courses commencing in 2027\nhttps://vtac.edu.au/dates
+TRANSP:TRANSPARENT
 URL:https://vtac.edu.au/dates
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:📊 VCE results and ATARs — Available online
-TRIGGER:-PT12H
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:⏰ Change of preference closes — December round · Current Year
-  12 students (Current VCE and IB (May sitting) students)
-DTSTART;TZID=Australia/Melbourne:20261212T120000
-DTEND;TZID=Australia/Melbourne:20261212T123000
-DTSTAMP:20261001T010456Z
-UID:b519507654dd3291@vtac-ical
+SUMMARY:VTAC preferences close: Dec round (12pm)
+DTSTART;VALUE=DATE:20261212
+DTEND;VALUE=DATE:20261213
+DTSTAMP:20261001T015951Z
+UID:4e71c81d748766ed@vtac-ical
 CATEGORIES:Deadline
-DESCRIPTION:Change of preference opens › Change of preference closes · 
- 12:00\nKey Dates & Fees: August 2026 - January 2027 for courses commencing
-  in 2027\nhttps://vtac.edu.au/dates
+DESCRIPTION:12pm Melbourne time\nSource: Change of preference opens › Ch
+ ange of preference closes › December round\nKey Dates & Fees: August 202
+ 6 - January 2027 for courses commencing in 2027\nhttps://vtac.edu.au/dates
+TRANSP:TRANSPARENT
 URL:https://vtac.edu.au/dates
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⏰ Change of preference closes — December round · Current 
- Year 12 students (Current VCE and IB (May sitting) students)
+DESCRIPTION:VTAC preferences close: Dec round (12pm)
 TRIGGER:-P7D
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⏰ Change of preference closes — December round · Current 
- Year 12 students (Current VCE and IB (May sitting) students)
+DESCRIPTION:VTAC preferences close: Dec round (12pm)
 TRIGGER:-P1D
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:📊 VCE results and ATARs — Digital ATAR statement issued
-DTSTART;TZID=Australia/Melbourne:20261215T090000
-DTEND;TZID=Australia/Melbourne:20261215T093000
-DTSTAMP:20261001T010456Z
-UID:4b59455213b2498b@vtac-ical
+SUMMARY:VTAC ATAR statements: VCE (9am)
+DTSTART;VALUE=DATE:20261215
+DTEND;VALUE=DATE:20261216
+DTSTAMP:20261001T015951Z
+UID:47e4164a54013cf3@vtac-ical
 CATEGORIES:Results
-DESCRIPTION:Results and ATAR › Digital ATAR statement issued · 09:00\nK
- ey Dates & Fees: August 2026 - January 2027 for courses commencing in 2027
- \nhttps://vtac.edu.au/dates
+DESCRIPTION:9am Melbourne time\nSource: Results and ATAR › Digital ATAR 
+ statement issued › VCE results and ATARs\nKey Dates & Fees: August 2026 
+ - January 2027 for courses commencing in 2027\nhttps://vtac.edu.au/dates
+TRANSP:TRANSPARENT
 URL:https://vtac.edu.au/dates
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:📊 VCE results and ATARs — Digital ATAR statement issued
-TRIGGER:-PT12H
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:📊 IB notional ATARs — Available online
-DTSTART;TZID=Australia/Melbourne:20261218T090000
-DTEND;TZID=Australia/Melbourne:20261218T093000
-DTSTAMP:20261001T010456Z
-UID:6b0e4939ace37575@vtac-ical
+SUMMARY:VTAC ATARs released: IB (9am)
+DTSTART;VALUE=DATE:20261218
+DTEND;VALUE=DATE:20261219
+DTSTAMP:20261001T015951Z
+UID:0ad227914c58ca87@vtac-ical
 CATEGORIES:Results
-DESCRIPTION:Results and ATAR › Available online · 09:00\nKey Dates & Fe
- es: August 2026 - January 2027 for courses commencing in 2027\nhttps://vta
- c.edu.au/dates
+DESCRIPTION:9am Melbourne time\nSource: Results and ATAR › Available onl
+ ine › IB notional ATARs\nKey Dates & Fees: August 2026 - January 2027 fo
+ r courses commencing in 2027\nhttps://vtac.edu.au/dates
+TRANSP:TRANSPARENT
 URL:https://vtac.edu.au/dates
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:📊 IB notional ATARs — Available online
-TRIGGER:-PT12H
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:📊 IB notional ATARs — Digital ATAR statement issued
-DTSTART;TZID=Australia/Melbourne:20261221T090000
-DTEND;TZID=Australia/Melbourne:20261221T093000
-DTSTAMP:20261001T010456Z
-UID:a78df645c65ac40a@vtac-ical
+SUMMARY:VTAC ATAR statements: IB (9am)
+DTSTART;VALUE=DATE:20261221
+DTEND;VALUE=DATE:20261222
+DTSTAMP:20261001T015951Z
+UID:0d93f9e305dfca36@vtac-ical
 CATEGORIES:Results
-DESCRIPTION:Results and ATAR › Digital ATAR statement issued · 09:00\nK
- ey Dates & Fees: August 2026 - January 2027 for courses commencing in 2027
- \nhttps://vtac.edu.au/dates
-URL:https://vtac.edu.au/dates
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:📊 IB notional ATARs — Digital ATAR statement issued
-TRIGGER:-PT12H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Change of preference opens — January round 1 · Current Year 12 
- students eligible for December round offers
-DTSTART;TZID=Australia/Melbourne:20261223T100000
-DTEND;TZID=Australia/Melbourne:20261223T103000
-DTSTAMP:20261001T010456Z
-UID:eb4b2ca8dd43a9f3@vtac-ical
-DESCRIPTION:Change of preference opens › Change of preference opens · 1
- 0:00\nKey Dates & Fees: August 2026 - January 2027 for courses commencing 
- in 2027\nhttps://vtac.edu.au/dates
+DESCRIPTION:9am Melbourne time\nSource: Results and ATAR › Digital ATAR 
+ statement issued › IB notional ATARs\nKey Dates & Fees: August 2026 - Ja
+ nuary 2027 for courses commencing in 2027\nhttps://vtac.edu.au/dates
+TRANSP:TRANSPARENT
 URL:https://vtac.edu.au/dates
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:🎓 December offer round — Offers released
-DTSTART;TZID=Australia/Melbourne:20261223T100000
-DTEND;TZID=Australia/Melbourne:20261223T103000
-DTSTAMP:20261001T010456Z
-UID:67096e2f1245eda5@vtac-ical
+SUMMARY:VTAC offers: Dec round (10am)
+DTSTART;VALUE=DATE:20261223
+DTEND;VALUE=DATE:20261224
+DTSTAMP:20261001T015951Z
+UID:fda64ed3968b9cbe@vtac-ical
 CATEGORIES:Offers
-DESCRIPTION:Offer rounds › Offers released · 10:00\nKey Dates & Fees: A
- ugust 2026 - January 2027 for courses commencing in 2027\nhttps://vtac.edu
- .au/dates
+DESCRIPTION:10am Melbourne time\nSource: Offer rounds › Offers released 
+ › December offer round\nKey Dates & Fees: August 2026 - January 2027 for
+  courses commencing in 2027\nhttps://vtac.edu.au/dates
+TRANSP:TRANSPARENT
 URL:https://vtac.edu.au/dates
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:⏰ Change of preference closes — January round 1 · Current Yea
- r 12 students eligible for December round offers
-DTSTART;TZID=Australia/Melbourne:20261224T120000
-DTEND;TZID=Australia/Melbourne:20261224T123000
-DTSTAMP:20261001T010456Z
-UID:96535867791abf31@vtac-ical
+SUMMARY:VTAC preferences close: Jan round 1 (12pm)
+DTSTART;VALUE=DATE:20261224
+DTEND;VALUE=DATE:20261225
+DTSTAMP:20261001T015951Z
+UID:31e48c5c99e1e1e1-2@vtac-ical
 CATEGORIES:Deadline
-DESCRIPTION:Change of preference opens › Change of preference closes · 
- 12:00\nKey Dates & Fees: August 2026 - January 2027 for courses commencing
-  in 2027\nhttps://vtac.edu.au/dates
+DESCRIPTION:12pm Melbourne time\nSource: Change of preference opens › Ch
+ ange of preference closes › January round 1\nKey Dates & Fees: August 20
+ 26 - January 2027 for courses commencing in 2027\nhttps://vtac.edu.au/date
+ s
+TRANSP:TRANSPARENT
 URL:https://vtac.edu.au/dates
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⏰ Change of preference closes — January round 1 · Current
-  Year 12 students eligible for December round offers
+DESCRIPTION:VTAC preferences close: Jan round 1 (12pm)
 TRIGGER:-P7D
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⏰ Change of preference closes — January round 1 · Current
-  Year 12 students eligible for December round offers
+DESCRIPTION:VTAC preferences close: Jan round 1 (12pm)
 TRIGGER:-P1D
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:⏰ Change of preference closes — January round 1 · Current Yea
- r 12 students not eligible for December round offers but eligible for Janu
- ary round 1 offers
-DTSTART;TZID=Australia/Melbourne:20261224T120000
-DTEND;TZID=Australia/Melbourne:20261224T123000
-DTSTAMP:20261001T010456Z
-UID:dcb2abe2114adb3c@vtac-ical
+SUMMARY:VTAC documents due: Jan round 2 (5pm)
+DTSTART;VALUE=DATE:20270105
+DTEND;VALUE=DATE:20270106
+DTSTAMP:20261001T015951Z
+UID:af671b00408e18c8@vtac-ical
 CATEGORIES:Deadline
-DESCRIPTION:Change of preference opens › Change of preference closes · 
- 12:00\nKey Dates & Fees: August 2026 - January 2027 for courses commencing
-  in 2027\nhttps://vtac.edu.au/dates
+DESCRIPTION:5pm Melbourne time\nSource: Personal statement\, academic docu
+ mentation and all other supporting documentation › Close › Final submi
+ ssion date to guarantee consideration for January offer round 2\nKey Dates
+  & Fees: August 2026 - January 2027 for courses commencing in 2027\nhttps:
+ //vtac.edu.au/dates
+TRANSP:TRANSPARENT
 URL:https://vtac.edu.au/dates
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⏰ Change of preference closes — January round 1 · Current
-  Year 12 students not eligible for December round offers but eligible for 
- January round 1 offers
+DESCRIPTION:VTAC documents due: Jan round 2 (5pm)
 TRIGGER:-P7D
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⏰ Change of preference closes — January round 1 · Current
-  Year 12 students not eligible for December round offers but eligible for 
- January round 1 offers
+DESCRIPTION:VTAC documents due: Jan round 2 (5pm)
 TRIGGER:-P1D
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:⏰ Final submission date to guarantee consideration for January o
- ffer round 2 — Close
-DTSTART;TZID=Australia/Melbourne:20270105T170000
-DTEND;TZID=Australia/Melbourne:20270105T173000
-DTSTAMP:20261001T010456Z
-UID:3c039fa2f3a8f4f2@vtac-ical
-CATEGORIES:Deadline
-DESCRIPTION:Personal statement\, academic documentation and all other supp
- orting documentation › Close · 17:00\nKey Dates & Fees: August 2026 - J
- anuary 2027 for courses commencing in 2027\nhttps://vtac.edu.au/dates
-URL:https://vtac.edu.au/dates
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:⏰ Final submission date to guarantee consideration for Janua
- ry offer round 2 — Close
-TRIGGER:-P7D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:⏰ Final submission date to guarantee consideration for Janua
- ry offer round 2 — Close
-TRIGGER:-P1D
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Change of preference opens — January round 2 · All applicants
-DTSTART;TZID=Australia/Melbourne:20270112T140000
-DTEND;TZID=Australia/Melbourne:20270112T143000
-DTSTAMP:20261001T010456Z
-UID:e983ddabea153d10@vtac-ical
-DESCRIPTION:Change of preference opens › Change of preference opens · 1
- 4:00\nKey Dates & Fees: August 2026 - January 2027 for courses commencing 
- in 2027\nhttps://vtac.edu.au/dates
-URL:https://vtac.edu.au/dates
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:🎓 January offer round 1 — Offers released
-DTSTART;TZID=Australia/Melbourne:20270112T140000
-DTEND;TZID=Australia/Melbourne:20270112T143000
-DTSTAMP:20261001T010456Z
-UID:8cb56d0ba944e2e9@vtac-ical
+SUMMARY:VTAC offers: Jan round 1 (2pm)
+DTSTART;VALUE=DATE:20270112
+DTEND;VALUE=DATE:20270113
+DTSTAMP:20261001T015951Z
+UID:bbc26b0ab2fe202d@vtac-ical
 CATEGORIES:Offers
-DESCRIPTION:Offer rounds › Offers released · 14:00\nKey Dates & Fees: A
- ugust 2026 - January 2027 for courses commencing in 2027\nhttps://vtac.edu
- .au/dates
+DESCRIPTION:2pm Melbourne time\nSource: Offer rounds › Offers released 
+ › January offer round 1\nKey Dates & Fees: August 2026 - January 2027 fo
+ r courses commencing in 2027\nhttps://vtac.edu.au/dates
+TRANSP:TRANSPARENT
 URL:https://vtac.edu.au/dates
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:⏰ Change of preference closes — January round 2 · All applica
- nts
-DTSTART;TZID=Australia/Melbourne:20270113T140000
-DTEND;TZID=Australia/Melbourne:20270113T143000
-DTSTAMP:20261001T010456Z
-UID:15ce8b9cf524fbda@vtac-ical
+SUMMARY:VTAC preferences close: Jan round 2 (2pm)
+DTSTART;VALUE=DATE:20270113
+DTEND;VALUE=DATE:20270114
+DTSTAMP:20261001T015951Z
+UID:285b7584fe743225@vtac-ical
 CATEGORIES:Deadline
-DESCRIPTION:Change of preference opens › Change of preference closes · 
- 14:00\nKey Dates & Fees: August 2026 - January 2027 for courses commencing
-  in 2027\nhttps://vtac.edu.au/dates
+DESCRIPTION:2pm Melbourne time\nSource: Change of preference opens › Cha
+ nge of preference closes › January round 2\nKey Dates & Fees: August 202
+ 6 - January 2027 for courses commencing in 2027\nhttps://vtac.edu.au/dates
+TRANSP:TRANSPARENT
 URL:https://vtac.edu.au/dates
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⏰ Change of preference closes — January round 2 · All app
- licants
+DESCRIPTION:VTAC preferences close: Jan round 2 (2pm)
 TRIGGER:-P7D
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⏰ Change of preference closes — January round 2 · All app
- licants
+DESCRIPTION:VTAC preferences close: Jan round 2 (2pm)
 TRIGGER:-P1D
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:⏰ January round 2 offers and subsequent rounds — Close
-DTSTART;TZID=Australia/Melbourne:20270113T170000
-DTEND;TZID=Australia/Melbourne:20270113T173000
-DTSTAMP:20261001T010456Z
-UID:ae9495ee3b8fa9c7@vtac-ical
+SUMMARY:VTAC applications close: January (5pm)
+DTSTART;VALUE=DATE:20270113
+DTEND;VALUE=DATE:20270114
+DTSTAMP:20261001T015951Z
+UID:b04a6aa208ad03d4@vtac-ical
 CATEGORIES:Deadline
-DESCRIPTION:Course applications › Close · 17:00\nKey Dates & Fees: Augu
- st 2026 - January 2027 for courses commencing in 2027\nhttps://vtac.edu.au
- /dates
+DESCRIPTION:5pm Melbourne time\nSource: Course applications › Close › 
+ January round 2 offers and subsequent rounds\nKey Dates & Fees: August 202
+ 6 - January 2027 for courses commencing in 2027\nhttps://vtac.edu.au/dates
+TRANSP:TRANSPARENT
 URL:https://vtac.edu.au/dates
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⏰ January round 2 offers and subsequent rounds — Close
+DESCRIPTION:VTAC applications close: January (5pm)
 TRIGGER:-P7D
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⏰ January round 2 offers and subsequent rounds — Close
+DESCRIPTION:VTAC applications close: January (5pm)
 TRIGGER:-P1D
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:⏰ Final submission date to guarantee consideration for all Febru
- ary offer rounds — Close
-DTSTART;TZID=Australia/Melbourne:20270114T170000
-DTEND;TZID=Australia/Melbourne:20270114T173000
-DTSTAMP:20261001T010456Z
-UID:6c1f654d05a27828@vtac-ical
+SUMMARY:VTAC documents due: Feb rounds (5pm)
+DTSTART;VALUE=DATE:20270114
+DTEND;VALUE=DATE:20270115
+DTSTAMP:20261001T015951Z
+UID:46413e729026f163@vtac-ical
 CATEGORIES:Deadline
-DESCRIPTION:Personal statement\, academic documentation and all other supp
- orting documentation › Close · 17:00\nKey Dates & Fees: August 2026 - J
- anuary 2027 for courses commencing in 2027\nhttps://vtac.edu.au/dates
+DESCRIPTION:5pm Melbourne time\nSource: Personal statement\, academic docu
+ mentation and all other supporting documentation › Close › Final submi
+ ssion date to guarantee consideration for all February offer rounds\nKey D
+ ates & Fees: August 2026 - January 2027 for courses commencing in 2027\nht
+ tps://vtac.edu.au/dates
+TRANSP:TRANSPARENT
 URL:https://vtac.edu.au/dates
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⏰ Final submission date to guarantee consideration for all F
- ebruary offer rounds — Close
+DESCRIPTION:VTAC documents due: Feb rounds (5pm)
 TRIGGER:-P7D
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⏰ Final submission date to guarantee consideration for all F
- ebruary offer rounds — Close
+DESCRIPTION:VTAC documents due: Feb rounds (5pm)
 TRIGGER:-P1D
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Change of preference opens — February offer round 1 · All appli
- cants
-DTSTART;TZID=Australia/Melbourne:20270127T140000
-DTEND;TZID=Australia/Melbourne:20270127T143000
-DTSTAMP:20261001T010456Z
-UID:59615352bc82cd37@vtac-ical
-DESCRIPTION:Change of preference opens › Change of preference opens · 1
- 4:00\nKey Dates & Fees: August 2026 - January 2027 for courses commencing 
- in 2027\nhttps://vtac.edu.au/dates
-URL:https://vtac.edu.au/dates
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:🎓 January offer round 2 — Offers released
-DTSTART;TZID=Australia/Melbourne:20270127T140000
-DTEND;TZID=Australia/Melbourne:20270127T143000
-DTSTAMP:20261001T010456Z
-UID:d593ff27224cc0cb@vtac-ical
+SUMMARY:VTAC offers: Jan round 2 (2pm)
+DTSTART;VALUE=DATE:20270127
+DTEND;VALUE=DATE:20270128
+DTSTAMP:20261001T015951Z
+UID:6b7ad7107b8d4c5b@vtac-ical
 CATEGORIES:Offers
-DESCRIPTION:Offer rounds › Offers released · 14:00\nKey Dates & Fees: A
- ugust 2026 - January 2027 for courses commencing in 2027\nhttps://vtac.edu
- .au/dates
+DESCRIPTION:2pm Melbourne time\nSource: Offer rounds › Offers released 
+ › January offer round 2\nKey Dates & Fees: August 2026 - January 2027 fo
+ r courses commencing in 2027\nhttps://vtac.edu.au/dates
+TRANSP:TRANSPARENT
 URL:https://vtac.edu.au/dates
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:⏰ Change of preference closes — February offer round 1 · All 
- applicants
-DTSTART;TZID=Australia/Melbourne:20270128T140000
-DTEND;TZID=Australia/Melbourne:20270128T143000
-DTSTAMP:20261001T010456Z
-UID:53ce4369a20f7c3e@vtac-ical
+SUMMARY:VTAC preferences close: Feb round 1 (2pm)
+DTSTART;VALUE=DATE:20270128
+DTEND;VALUE=DATE:20270129
+DTSTAMP:20261001T015951Z
+UID:a5f69129ac678b18@vtac-ical
 CATEGORIES:Deadline
-DESCRIPTION:Change of preference opens › Change of preference closes · 
- 14:00\nKey Dates & Fees: August 2026 - January 2027 for courses commencing
-  in 2027\nhttps://vtac.edu.au/dates
+DESCRIPTION:2pm Melbourne time\nSource: Change of preference opens › Cha
+ nge of preference closes › February offer round 1\nKey Dates & Fees: Aug
+ ust 2026 - January 2027 for courses commencing in 2027\nhttps://vtac.edu.a
+ u/dates
+TRANSP:TRANSPARENT
 URL:https://vtac.edu.au/dates
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⏰ Change of preference closes — February offer round 1 · 
- All applicants
+DESCRIPTION:VTAC preferences close: Feb round 1 (2pm)
 TRIGGER:-P7D
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⏰ Change of preference closes — February offer round 1 · 
- All applicants
+DESCRIPTION:VTAC preferences close: Feb round 1 (2pm)
 TRIGGER:-P1D
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Change of preference opens — February offer round 2 · All appli
- cants
-DTSTART;TZID=Australia/Melbourne:20270203T140000
-DTEND;TZID=Australia/Melbourne:20270203T143000
-DTSTAMP:20261001T010456Z
-UID:314ae1509fcf498c@vtac-ical
-DESCRIPTION:Change of preference opens › Change of preference opens · 1
- 4:00\nKey Dates & Fees: August 2026 - January 2027 for courses commencing 
- in 2027\nhttps://vtac.edu.au/dates
-URL:https://vtac.edu.au/dates
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:🎓 February offer round 1 — Offers released
-DTSTART;TZID=Australia/Melbourne:20270203T140000
-DTEND;TZID=Australia/Melbourne:20270203T143000
-DTSTAMP:20261001T010456Z
-UID:c202c170cdd4c11a@vtac-ical
+SUMMARY:VTAC offers: Feb round 1 (2pm)
+DTSTART;VALUE=DATE:20270203
+DTEND;VALUE=DATE:20270204
+DTSTAMP:20261001T015951Z
+UID:01dde74408974a12@vtac-ical
 CATEGORIES:Offers
-DESCRIPTION:Offer rounds › Offers released · 14:00\nKey Dates & Fees: A
- ugust 2026 - January 2027 for courses commencing in 2027\nhttps://vtac.edu
- .au/dates
+DESCRIPTION:2pm Melbourne time\nSource: Offer rounds › Offers released 
+ › February offer round 1\nKey Dates & Fees: August 2026 - January 2027 f
+ or courses commencing in 2027\nhttps://vtac.edu.au/dates
+TRANSP:TRANSPARENT
 URL:https://vtac.edu.au/dates
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:⏰ Change of preference closes — February offer round 2 · All 
- applicants
-DTSTART;TZID=Australia/Melbourne:20270204T140000
-DTEND;TZID=Australia/Melbourne:20270204T143000
-DTSTAMP:20261001T010456Z
-UID:02483c199b80a670@vtac-ical
+SUMMARY:VTAC preferences close: Feb round 2 (2pm)
+DTSTART;VALUE=DATE:20270204
+DTEND;VALUE=DATE:20270205
+DTSTAMP:20261001T015951Z
+UID:3914a8e8f5ec48b1@vtac-ical
 CATEGORIES:Deadline
-DESCRIPTION:Change of preference opens › Change of preference closes · 
- 14:00\nKey Dates & Fees: August 2026 - January 2027 for courses commencing
-  in 2027\nhttps://vtac.edu.au/dates
+DESCRIPTION:2pm Melbourne time\nSource: Change of preference opens › Cha
+ nge of preference closes › February offer round 2\nKey Dates & Fees: Aug
+ ust 2026 - January 2027 for courses commencing in 2027\nhttps://vtac.edu.a
+ u/dates
+TRANSP:TRANSPARENT
 URL:https://vtac.edu.au/dates
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⏰ Change of preference closes — February offer round 2 · 
- All applicants
+DESCRIPTION:VTAC preferences close: Feb round 2 (2pm)
 TRIGGER:-P7D
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⏰ Change of preference closes — February offer round 2 · 
- All applicants
+DESCRIPTION:VTAC preferences close: Feb round 2 (2pm)
 TRIGGER:-P1D
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Change of preference opens — February offer round 3 · All appli
- cants
-DTSTART;TZID=Australia/Melbourne:20270209T140000
-DTEND;TZID=Australia/Melbourne:20270209T143000
-DTSTAMP:20261001T010456Z
-UID:8e7aec1ba65fc424@vtac-ical
-DESCRIPTION:Change of preference opens › Change of preference opens · 1
- 4:00\nKey Dates & Fees: August 2026 - January 2027 for courses commencing 
- in 2027\nhttps://vtac.edu.au/dates
-URL:https://vtac.edu.au/dates
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:🎓 February offer round 2 — Offers released
-DTSTART;TZID=Australia/Melbourne:20270209T140000
-DTEND;TZID=Australia/Melbourne:20270209T143000
-DTSTAMP:20261001T010456Z
-UID:8b368e24ecaa0302@vtac-ical
+SUMMARY:VTAC offers: Feb round 2 (2pm)
+DTSTART;VALUE=DATE:20270209
+DTEND;VALUE=DATE:20270210
+DTSTAMP:20261001T015951Z
+UID:9604c5767c4d5a31@vtac-ical
 CATEGORIES:Offers
-DESCRIPTION:Offer rounds › Offers released · 14:00\nKey Dates & Fees: A
- ugust 2026 - January 2027 for courses commencing in 2027\nhttps://vtac.edu
- .au/dates
+DESCRIPTION:2pm Melbourne time\nSource: Offer rounds › Offers released 
+ › February offer round 2\nKey Dates & Fees: August 2026 - January 2027 f
+ or courses commencing in 2027\nhttps://vtac.edu.au/dates
+TRANSP:TRANSPARENT
 URL:https://vtac.edu.au/dates
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:⏰ Change of preference closes — February offer round 3 · All 
- applicants
-DTSTART;TZID=Australia/Melbourne:20270210T140000
-DTEND;TZID=Australia/Melbourne:20270210T143000
-DTSTAMP:20261001T010456Z
-UID:098cdc95a58191b9@vtac-ical
+SUMMARY:VTAC preferences close: Feb round 3 (2pm)
+DTSTART;VALUE=DATE:20270210
+DTEND;VALUE=DATE:20270211
+DTSTAMP:20261001T015951Z
+UID:855fbc22785dc8c6@vtac-ical
 CATEGORIES:Deadline
-DESCRIPTION:Change of preference opens › Change of preference closes · 
- 14:00\nKey Dates & Fees: August 2026 - January 2027 for courses commencing
-  in 2027\nhttps://vtac.edu.au/dates
+DESCRIPTION:2pm Melbourne time\nSource: Change of preference opens › Cha
+ nge of preference closes › February offer round 3\nKey Dates & Fees: Aug
+ ust 2026 - January 2027 for courses commencing in 2027\nhttps://vtac.edu.a
+ u/dates
+TRANSP:TRANSPARENT
 URL:https://vtac.edu.au/dates
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⏰ Change of preference closes — February offer round 3 · 
- All applicants
+DESCRIPTION:VTAC preferences close: Feb round 3 (2pm)
 TRIGGER:-P7D
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⏰ Change of preference closes — February offer round 3 · 
- All applicants
+DESCRIPTION:VTAC preferences close: Feb round 3 (2pm)
 TRIGGER:-P1D
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:🎓 February offer round 3 — Offers released
-DTSTART;TZID=Australia/Melbourne:20270216T140000
-DTEND;TZID=Australia/Melbourne:20270216T143000
-DTSTAMP:20261001T010456Z
-UID:909b6c15119e0e53@vtac-ical
+SUMMARY:VTAC offers: Feb round 3 (2pm)
+DTSTART;VALUE=DATE:20270216
+DTEND;VALUE=DATE:20270217
+DTSTAMP:20261001T015951Z
+UID:b8613b561df1951f@vtac-ical
 CATEGORIES:Offers
-DESCRIPTION:Offer rounds › Offers released · 14:00\nKey Dates & Fees: A
- ugust 2026 - January 2027 for courses commencing in 2027\nhttps://vtac.edu
- .au/dates
+DESCRIPTION:2pm Melbourne time\nSource: Offer rounds › Offers released 
+ › February offer round 3\nKey Dates & Fees: August 2026 - January 2027 f
+ or courses commencing in 2027\nhttps://vtac.edu.au/dates
+TRANSP:TRANSPARENT
 URL:https://vtac.edu.au/dates
 END:VEVENT
 END:VCALENDAR
