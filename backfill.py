@@ -44,16 +44,29 @@ def get(url: str, params: dict | None = None, tries: int = 8) -> requests.Respon
         except requests.RequestException:
             pass
         _time.sleep(min(15 * 2 ** i, 300))
-    raise RuntimeError(f"giving up on {url}")
+    raise RuntimeError(f"giving up on {url}")  # also raised immediately when tries == 0
 
 
-def snapshots(since_year: int) -> list[tuple[str, str]]:
-    out = []
-    for u in ARCHIVED_URLS:
-        r = get(CDX, {"url": u, "from": str(since_year - 1), "filter": "statuscode:200",
-                      "collapse": "digest", "fl": "timestamp,original"})
-        out += [tuple(line.split()) for line in r.text.splitlines() if line.strip()]
-    return sorted(set(out))
+def snapshots(since_year: int, cache: str, tries: int) -> list[tuple[str, str]]:
+    """Snapshot list from the Wayback CDX API, saved to <cache>/index.txt. If the archive is
+    unavailable (it often is, briefly), the saved index is used instead."""
+    index = os.path.join(cache, "index.txt")
+    try:
+        out = []
+        for u in ARCHIVED_URLS:
+            r = get(CDX, {"url": u, "from": str(since_year - 1), "filter": "statuscode:200",
+                          "collapse": "digest", "fl": "timestamp,original"}, tries=tries)
+            out += [tuple(line.split()) for line in r.text.splitlines() if line.strip()]
+        out = sorted(set(out))
+        with open(index, "w") as f:
+            f.writelines(f"{ts} {orig}\n" for ts, orig in out)
+        return out
+    except RuntimeError:
+        if not os.path.exists(index):
+            raise
+        print(f"Wayback CDX unavailable; using saved index {index}", file=sys.stderr)
+        with open(index) as f:
+            return [tuple(line.split()) for line in f if line.strip()]
 
 
 def fetch(ts: str, original: str, cache: str) -> str:
@@ -74,10 +87,7 @@ def snap_date(ts: str) -> date:
     return date(int(ts[:4]), int(ts[4:6]), int(ts[6:8]))
 
 
-def cycle(ev: dict) -> str:
-    """Admissions cycle: 'mid-year 2025' (Apr-Jul) or '2026' (Aug 2025 - Feb 2026)."""
-    d = ev["date"]
-    return f"mid-year {d.year}" if ev["mid_year"] else str(d.year + (d.month >= 7))
+cycle = v.cycle_of
 
 
 def first_live_date(ics_path: str) -> date | None:
@@ -98,12 +108,13 @@ def main(argv: list[str] | None = None) -> int:
                     help="must match the Calendar Name in the dashboard's Config tab")
     ap.add_argument("--cache", default=".wayback-cache")
     ap.add_argument("--out", default="backfill/vtac_backfill.csv")
+    ap.add_argument("--offline", action="store_true", help="use the saved snapshot index without querying CDX")
     args = ap.parse_args(argv)
     until = args.until or first_live_date("vtac.ics") or date.max
     os.makedirs(args.cache, exist_ok=True)
     os.makedirs(os.path.dirname(args.out) or ".", exist_ok=True)
 
-    snaps = snapshots(args.since.year)
+    snaps = snapshots(args.since.year, args.cache, tries=0 if args.offline else 8)
     print(f"{len(snaps)} distinct snapshots", file=sys.stderr)
 
     # Per cycle, the newest snapshot is authoritative (VTAC revises and drops planned dates).

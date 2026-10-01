@@ -124,10 +124,16 @@ RULES: list[dict] = [
 
 MONTHS = ["January", "February", "March", "April", "May", "June", "July",
           "August", "September", "October", "November", "December"]
-MONTH_RE = "|".join(MONTHS)
-TIME_TOKEN = r"\d{1,2}(?:[:.]\d{2})?\s*[ap]\.?m\.?|\d{1,2}\s*noon|noon|midday|midnight"
+# Full or abbreviated month names ("Sept", "Aug.").
+MONTH_RE = (r"(?:Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|June?|July?|Aug(?:ust)?"
+            r"|Sep(?:t(?:ember)?)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)(?![a-z])\.?")
+TIME_TOKEN = (r"\d{1,2}(?:[:.]\d{2})?\s*[ap]\.?m\.?|\d{1,2}\s*noon|noon|midday|midnight"
+              r"|(?:[01]?\d|2[0-3]):[0-5]\d")
+# "3 August", "3rd Aug", "August 3", "Aug 3, 2027", each with an optional year and "(time)".
 DATE_RE = re.compile(
-    rf"\b(?P<day>\d{{1,2}})\s+(?P<month>{MONTH_RE})\b(?:\s+(?P<year>\d{{4}}))?"
+    rf"\b(?:(?P<day>\d{{1,2}})(?:st|nd|rd|th)?\s+(?P<month>{MONTH_RE})"
+    rf"|(?P<month2>{MONTH_RE})\s+(?P<day2>\d{{1,2}})(?:st|nd|rd|th)?(?!\d))"
+    rf"(?:,?\s+(?P<year>\d{{4}}))?"
     rf"(?:\s*\((?:[^()]*?\s)?(?P<time>{TIME_TOKEN})(?:\s[^()]*)?\))?",
     re.IGNORECASE,
 )
@@ -136,6 +142,17 @@ ROUND_RE = re.compile(
     rf"(?:offers?\s+)?(?P<word>rounds?)(?:\s+(?P<n>\d+|one|two|three|four|five))?",
     re.IGNORECASE,
 )
+
+
+def month_num(name: str) -> int:
+    return [m[:3].lower() for m in MONTHS].index(name[:3].lower()) + 1
+
+
+def date_parts(dm) -> tuple[int, int, int | None]:
+    """(day, month, explicit year or None) from a DATE_RE match, either word order."""
+    day = int(dm.group("day") or dm.group("day2"))
+    month = month_num(dm.group("month") or dm.group("month2"))
+    return day, month, int(dm.group("year")) if dm.group("year") else None
 GROUP_IDS = {"CY12": "Year 12", "IY12": "IY12", "NY12": "Post-school", "GET": "GET"}
 GROUP_HEADING_RE = re.compile(r"year 12|non year 12|post-school|graduate entry", re.IGNORECASE)
 FILTER_KEYS = ("match", "column", "table", "section", "qualifier")
@@ -182,12 +199,26 @@ def expand_rows(rows) -> tuple[list[list[str]], list[list[bool]]]:
 
 
 def section_anchor(heading: str, today: date) -> tuple[int, int]:
-    """(start month, year) from e.g. 'August 2026 - January 2027' -> (8, 2026)."""
-    m = re.search(rf"\b({MONTH_RE})\b", heading, re.IGNORECASE)
-    y = re.search(r"\b(\d{4})\b", heading)
-    month = MONTHS.index(m.group(1).capitalize()) + 1 if m else today.month
-    year = int(y.group(1)) if y else today.year
-    return month, year
+    """(start month, year) of a section, used to infer missing years.
+
+    'August 2026 - January 2027' -> (8, 2026). With only a year it's read as the intake:
+    'courses commencing in 2028' -> (7, 2027), 'mid-year 2028' -> (4, 2028). With only a
+    month, the year putting that month nearest the present is used. With neither, the
+    admissions cycle in progress (starting July) is assumed."""
+    m = re.search(rf"\b({MONTH_RE})", heading, re.IGNORECASE)
+    y = re.search(r"\b(20\d{2})\b", heading)
+    if m and y:
+        return month_num(m.group(1)), int(y.group(1))
+    if y:
+        year = int(y.group(1))
+        return (4, year) if re.search(r"mid-?year", heading, re.IGNORECASE) else (7, year - 1)
+    if m:
+        month = month_num(m.group(1))
+        pivot = today - timedelta(days=60)
+        year = min((today.year - 1, today.year, today.year + 1),
+                   key=lambda yy: abs((date(yy, month, 1) - pivot).days))
+        return month, year
+    return 7, today.year if today.month >= 7 else today.year - 1
 
 
 def parse_time(s: str | None) -> time | None:
@@ -198,6 +229,9 @@ def parse_time(s: str | None) -> time | None:
         return time(12, 0)
     if s == "midnight":
         return time(23, 59)  # deadline semantics: end of that day
+    m = re.fullmatch(r"(\d{1,2}):(\d{2})", s)  # 24-hour
+    if m:
+        return time(int(m.group(1)), int(m.group(2)))
     m = re.fullmatch(r"(\d{1,2})(?:[:.](\d{2}))?\.?([ap])\.?m\.?", s)
     if not m:
         return None
@@ -216,11 +250,11 @@ def resolve_date(dm, anchor_month: int, anchor_year: int) -> date | None:
     """Date for a DATE_RE match. A missing year is inferred from the section's start
     (month, year). An explicit year wins unless it puts the date outside the section's
     13-month window while the inferred year doesn't (VTAC has published such typos)."""
-    month = MONTHS.index(dm.group("month").capitalize()) + 1
+    day, month, explicit = date_parts(dm)
     inferred = anchor_year if month >= anchor_month else anchor_year + 1
-    year = int(dm.group("year")) if dm.group("year") else inferred
+    year = explicit or inferred
     try:
-        d = date(year, month, int(dm.group("day")))
+        d = date(year, month, day)
         if year != inferred:
             start = date(anchor_year, anchor_month, 1)
             if not (start <= d < start + timedelta(days=396)):
@@ -242,7 +276,7 @@ def norm_rounds(text: str) -> str:
     out: list[str] = []
     for m in ROUND_RE.finditer(text):
         months = [x for x in (m.group("m1"), m.group("m2")) if x]
-        abbrev = [("Mid-year" if x.lower().startswith("mid") else x.capitalize()[:3]) for x in months]
+        abbrev = [("Mid-year" if x.lower().startswith("mid") else MONTHS[month_num(x) - 1][:3]) for x in months]
         plural = m.group("word").lower() == "rounds" or len(months) > 1
         if plural:
             s = " & ".join(abbrev) + " rounds"
@@ -431,18 +465,23 @@ def _matches(rule: dict, keys, hay: dict) -> bool:
 
 
 def canonical_name(ev: dict) -> tuple[str | None, bool]:
-    """(name, matched). name None means drop."""
+    """(name, matched). name None means drop. matched is False when no NAMES entry fits, or
+    the entry needs {rounds} and no round could be recognised in the row (the row text is
+    used instead), so the title won't line up with other years."""
     hay = {k: ev[k] for k in NAME_FILTER_KEYS}
     for rule in NAMES:
         if _matches(rule, NAME_FILTER_KEYS, hay):
             if rule["name"] is None:
                 return None, True
-            rounds = norm_rounds(f"{ev['row']} {ev['qualifier']}") or ev["row"]
-            name = rule["name"].format(rounds=rounds)
+            rounds = norm_rounds(f"{ev['row']} {ev['qualifier']}")
+            matched = bool(rounds) or "{rounds}" not in rule["name"]
+            name = rule["name"].format(rounds=rounds or ev["row"])
+            ev["issue"] = "" if matched else "round not recognised"
             if ev["mid_year"] and "mid-year" not in name.lower() and not re.search(
                     r"\b(Apr|May|Jun|Jul|Mid-year) round", name):
                 name = name.replace("VTAC ", "VTAC mid-year ", 1)
-            return name, True
+            return name, matched
+    ev["issue"] = "no NAMES entry"
     return f"VTAC {ev['title']}", False
 
 
@@ -506,13 +545,20 @@ def apply_rules(events: list[dict], rules: list[dict], unmapped: list | None = N
 
 
 # ---------------------------------------------------------------- output
+def cycle_of(ev: dict) -> str:
+    """Admissions cycle: 'mid-year 2026' (Apr-Jul) or the intake year, e.g. '2027' for
+    Aug 2026 - Feb 2027. Derived from the date, so it survives VTAC re-wording headings."""
+    d = ev["date"]
+    return f"mid-year {d.year}" if ev["mid_year"] else str(d.year + (d.month >= 7))
+
+
 def event_uids(events: list[dict]) -> list[str]:
-    """Stable UIDs keyed on section + canonical name (not date or time), so a date change
-    moves the event rather than duplicating it. Repeats get -2, -3 in date order."""
+    """Stable UIDs keyed on cycle + canonical name (not the date, time or heading text), so
+    a date change moves the event rather than duplicating it. Repeats get -2, -3 in date order."""
     seen: Counter = Counter()
     uids = []
     for ev in events:
-        key = f"{ev['section']}|{ev['name']}"
+        key = f"{cycle_of(ev)}|{ev['name']}"
         seen[key] += 1
         uid = hashlib.sha1(key.encode("utf-8")).hexdigest()[:16]
         uids.append(f"{uid}{'' if seen[key] == 1 else f'-{seen[key]}'}@vtac-ical")
@@ -570,12 +616,51 @@ def write_atomic(path: str, data: bytes) -> None:
         raise
 
 
+def drift_issues(events: list[dict], unmapped: list[dict], today: date) -> list[str]:
+    """Signs the page changed in a way the parser only half understands."""
+    issues = []
+    for ev in unmapped:
+        issues.append(f"{ev['issue']}: {ev['table']!r} › {ev['column']!r} › {ev['row']!r} on {ev['date']} "
+                      f"-> titled {ev['title']!r}")
+    lo, hi = today - timedelta(days=400), today + timedelta(days=550)
+    for ev in events:
+        if not lo <= ev["date"] <= hi:
+            issues.append(f"date out of range: {ev['title']!r} on {ev['date']} (check year inference)")
+    return issues
+
+
+def count_events(path: str) -> int | None:
+    if not os.path.exists(path):
+        return None
+    with open(path, encoding="utf-8", errors="replace") as f:
+        return f.read().count("BEGIN:VEVENT")
+
+
+def report(issues: list[str]) -> None:
+    gha = os.environ.get("GITHUB_ACTIONS") == "true"
+    for msg in issues:
+        print(f"::warning title=VTAC parser::{msg}" if gha else f"WARNING: {msg}", file=sys.stderr)
+    summary = os.environ.get("GITHUB_STEP_SUMMARY")
+    if gha and summary and issues:
+        with open(summary, "a", encoding="utf-8") as f:
+            f.write("### VTAC parser needs attention\n\n" + "\n".join(f"- {m}" for m in issues) +
+                    "\n\nThe calendar was still published. Update `NAMES` / `RULES` in vtac_ical.py.\n")
+
+
 def main(argv: list[str] | None = None) -> int:
+    """Exit 0 = OK; 1 = nothing written (fetch failed, too few events, or a sharp drop);
+    2 (--strict only) = written, but some events need attention (see warnings)."""
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument("--out", default="vtac.ics", help="output .ics path (default: vtac.ics)")
     ap.add_argument("--dry-run", action="store_true", help="print kept events, write nothing")
     ap.add_argument("--min-events", type=int, default=5,
                     help="fail without writing if fewer events survive (default: 5)")
+    ap.add_argument("--max-drop", type=float, default=0.5,
+                    help="fail without writing if events fall by more than this fraction vs "
+                         "the existing --out file (default: 0.5)")
+    ap.add_argument("--allow-drop", action="store_true", help="skip the --max-drop check once")
+    ap.add_argument("--strict", action="store_true",
+                    help="exit 2 after writing if any event needs attention (used by the workflow)")
     ap.add_argument("--html", metavar="FILE", help="parse a saved copy of the page instead of fetching")
     args = ap.parse_args(argv)
 
@@ -587,14 +672,14 @@ def main(argv: list[str] | None = None) -> int:
         resp.raise_for_status()
         html = resp.text
 
-    parsed, last_updated = parse(html)
+    today = date.today()
+    parsed, last_updated = parse(html, today=today)
     unmapped: list[dict] = []
     events = apply_rules(parsed, RULES, unmapped)
     print(f"Parsed {len(parsed)} dates, {len(events)} kept after rules "
           f"(page last updated: {last_updated or 'unknown'})", file=sys.stderr)
-    for ev in unmapped:
-        print(f"WARNING: no NAMES entry for {ev['table']!r} › {ev['column']!r} › {ev['row']!r} "
-              f"({ev['date']}); using generic title", file=sys.stderr)
+    issues = drift_issues(events, unmapped, today)
+    report(issues)
 
     if args.dry_run:
         for ev in events:
@@ -605,9 +690,15 @@ def main(argv: list[str] | None = None) -> int:
         print(f"ERROR: only {len(events)} events (< --min-events {args.min_events}); "
               f"page layout may have changed. Not overwriting {args.out}.", file=sys.stderr)
         return 1
+    prev = count_events(args.out)
+    if prev and not args.allow_drop and len(events) < prev * (1 - args.max_drop):
+        print(f"ERROR: {len(events)} events vs {prev} in {args.out} (a drop of more than "
+              f"{args.max_drop:.0%}); part of the page may no longer parse. Not overwriting. "
+              f"If the drop is genuine, re-run with --allow-drop.", file=sys.stderr)
+        return 1
 
     write_atomic(args.out, build_calendar(events, last_updated).to_ical())
-    return 0
+    return 2 if issues and args.strict else 0
 
 
 if __name__ == "__main__":

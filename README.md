@@ -66,14 +66,36 @@ The rules that produce these names are the `NAMES` table in `vtac_ical.py`. If V
 python backfill.py        # writes backfill/vtac_backfill.csv
 ```
 
-The CSV uses the layout of the Calendar Dashboard Data **Backfill** tab (`Calendar Name, Title, Start Date, End Date (incl.), Source, Source URL`). Each row links to the snapshot it came from. By default the backfill runs from 2023-01-01 up to (not including) the first date in `vtac.ics`. The committed CSV was built with `--until 2026-10-01`, the day the feed was added to the Calendar Dashboard sync, because that sync only stores feed events from its first run onwards. The dashboard script embeds these rows (`VtacBackfill.js`) and writes them to its Backfill tab. Within each cycle, the newest snapshot that lists a milestone wins. Snapshots are cached in `.wayback-cache/`.
+The CSV uses the layout of the Calendar Dashboard Data **Backfill** tab (`Calendar Name, Title, Start Date, End Date (incl.), Source, Source URL`). Each row links to the snapshot it came from. The snapshot list is saved to `.wayback-cache/index.txt`. If the Wayback Machine is down, which happens often, the backfill uses the saved list; `--offline` skips the archive entirely. By default the backfill runs from 2023-01-01 up to (not including) the first date in `vtac.ics`. The committed CSV was built with `--until 2026-10-01`, the day the feed was added to the Calendar Dashboard sync, because that sync only stores feed events from its first run onwards. The dashboard script embeds these rows (`VtacBackfill.js`) and writes them to its Backfill tab. Within each cycle, the newest snapshot that lists a milestone wins. Snapshots are cached in `.wayback-cache/`.
 
 ## How it works
 
 - `vtac_ical.py` fetches the page and expands each table, honouring rowspans and stacked headers. It infers missing years from the section heading, names events with `NAMES`, filters them with `RULES`, removes duplicates and writes `vtac.ics`.
 - `.github/workflows/vtac-calendar.yml` runs every day at 20:17 UTC (about 6–7am Melbourne). It commits `vtac.ics` only when something other than the `DTSTAMP` timestamps changed.
-- Event UIDs come from the section and canonical name, not the date or time. When VTAC moves a date, the event moves instead of being duplicated.
-- If the page can't be fetched, or fewer than 5 events survive, the script exits with an error and **doesn't overwrite** `vtac.ics`. The workflow fails and GitHub sends you a failure email.
+- Event UIDs come from the admissions cycle (e.g. `2027`, `mid-year 2026`) and the canonical name, not the date, the time or VTAC's heading text. When VTAC moves a date or rewords a heading, the event updates instead of being duplicated.
+
+## When VTAC changes the page
+
+The workflow runs `test_vtac_ical.py` and then `vtac_ical.py --strict`. What happens depends on how much of the page still parses:
+
+| Situation | Calendar | Workflow |
+|---|---|---|
+| Everything recognised | Published | Passes |
+| Some events need attention: no `NAMES` entry (generic title such as `VTAC Standard applications — Closes`), an offer round that can't be named, or a date more than ~13 months behind or ~18 months ahead | **Published**, so new dates aren't lost | **Fails**, so GitHub emails you. The run summary lists each problem |
+| Fewer than 5 events, or less than half as many as the current `vtac.ics` | **Not overwritten**; subscribers keep the last good copy | **Fails** |
+| The page can't be fetched | Not overwritten | Fails |
+
+To fix a "needs attention" run, add or adjust a `NAMES` entry, check it with `python vtac_ical.py --dry-run`, then push. If a big drop is genuine (VTAC removed a whole table on purpose), use **Actions → Update VTAC calendar → Run workflow** and tick *allow_drop*.
+
+Formats already handled:
+- **Dates:** `3 August`, `3rd Aug`, `August 3`, `Aug 3, 2027`, `Sept`, with or without a year.
+- **Times:** `5pm`, `5:15pm`, `5.15pm`, `5 pm`, `12 noon`, `midday`, `midnight`, `17:00`, plus extra text like `(VTAC account 2pm)` or `(9am AEST)`.
+- **Offer rounds:** `February offer round 1`, `Feb round 1`, `January offer round one`, and unnamed mid-year `Round 1/2/3` (named by release month).
+- **Wrong explicit years:** a year that falls outside its section is corrected. VTAC has published such typos.
+- **Headings:** with only an intake year (`for courses commencing in 2028`), or no heading at all.
+- **Page layouts:** split by applicant type (2022), tabs (2023–24) and single tables (2025+). `test_vtac_ical.py` covers these cases.
+
+GitHub disables scheduled workflows after 60 days without repository activity, and VTAC can go months without changing a date. The workflow therefore commits `.github/heartbeat` after 45 quiet days.
 
 ## Customising: `RULES`
 
