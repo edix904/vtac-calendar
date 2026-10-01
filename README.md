@@ -66,7 +66,7 @@ The rules that produce these names are the `NAMES` table in `vtac_ical.py`. If V
 python backfill.py        # writes backfill/vtac_backfill.csv
 ```
 
-The CSV uses the layout of the Calendar Dashboard Data **Backfill** tab (`Calendar Name, Title, Start Date, End Date (incl.), Source, Source URL`). Each row links to the snapshot it came from. The backfill runs from 2023-01-01 up to (not including) the first date in `vtac.ics`, so it never overlaps the live feed. Within each cycle, the newest snapshot that lists a milestone wins. Snapshots are cached in `.wayback-cache/`.
+The CSV uses the layout of the Calendar Dashboard Data **Backfill** tab (`Calendar Name, Title, Start Date, End Date (incl.), Source, Source URL`). Each row links to the snapshot it came from. By default the backfill runs from 2023-01-01 up to (not including) the first date in `vtac.ics`. The committed CSV was built with `--until 2026-10-01`, the day the feed was added to the Calendar Dashboard sync, because that sync only stores feed events from its first run onwards. The dashboard script embeds these rows (`VtacBackfill.js`) and writes them to its Backfill tab. Within each cycle, the newest snapshot that lists a milestone wins. Snapshots are cached in `.wayback-cache/`.
 
 ## How it works
 
