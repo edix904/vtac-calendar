@@ -1,0 +1,45 @@
+name: Update VTAC calendar
+
+on:
+  schedule:
+    - cron: "17 20 * * *"   # 20:17 UTC = ~6-7am Melbourne
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: vtac-calendar
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      # Exits non-zero (failing the job) if the page can't be fetched or too few
+      # events survive; vtac.ics is left untouched in that case.
+      - name: Generate vtac.ics
+        run: python vtac_ical.py --out vtac.ics
+
+      - name: Commit if dates changed
+        run: |
+          git add vtac.ics
+          if git diff --cached -I '^DTSTAMP' --quiet; then
+            echo "No changes other than DTSTAMP; skipping commit."
+            git reset -q vtac.ics
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "VTAC dates updated $(TZ=Australia/Melbourne date +%F)"
+          git push
