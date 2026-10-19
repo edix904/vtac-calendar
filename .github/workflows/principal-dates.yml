@@ -12,12 +12,16 @@ on:
   push:
     branches: [main]
     paths: [principal_dates.py, principal_dates_rules.json, monash_fetch.py, dashboard/Normalise.js]
+  # On pull requests: tests + a live scrape, nothing committed.
+  pull_request:
+    paths: [principal_dates.py, principal_dates_rules.json, monash_fetch.py, dashboard/**, test_principal_dates.py,
+            normalise_cases.json, .github/workflows/principal-dates.yml]
 
 permissions:
   contents: write
 
 concurrency:
-  group: principal-dates
+  group: principal-dates-${{ github.event_name == 'pull_request' && github.ref || 'main' }}
   cancel-in-progress: false
 
 jobs:
@@ -53,6 +57,7 @@ jobs:
           echo "code=$?" >> "$GITHUB_OUTPUT"
 
       - name: Commit if dates changed
+        if: github.event_name != 'pull_request'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
