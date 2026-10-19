@@ -1,0 +1,806 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//edix904//monash-principal-dates//EN
+METHOD:PUBLISH
+X-WR-CALDESC:Unofficial copy of https://www.monash.edu/indonesia/important
+ -dates/principal-dates with consistent titles. Source: saved page.
+X-WR-CALNAME:Monash Indonesia Principal Dates
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+X-WR-TIMEZONE:Asia/Jakarta
+BEGIN:VEVENT
+SUMMARY:University closed: New Year's Day
+DTSTART;VALUE=DATE:20260101
+DTEND;VALUE=DATE:20260102
+DTSTAMP:20261019T025827Z
+UID:00f20f26ac6bb2a6@monash-principal-dates
+CATEGORIES:University closed
+DESCRIPTION:Official wording: University closed: New Year's Day\nSection: 
+ Full year – 2026\nhttps://www.monash.edu/indonesia/important-dates/princ
+ ipal-dates
+TRANSP:TRANSPARENT
+URL:https://www.monash.edu/indonesia/important-dates/principal-dates
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Teaching starts: Term 1 (MI-T1-6)
+DTSTART;VALUE=DATE:20260112
+DTEND;VALUE=DATE:20260113
+DTSTAMP:20261019T025827Z
+UID:0a605cebd0212441@monash-principal-dates
+CATEGORIES:Teaching starts
+DESCRIPTION:Official wording: Teaching starts: Monash Indonesia term 1 (MI
+ -T1-6)\nSection: Full year – 2026\nhttps://www.monash.edu/indonesia/impo
+ rtant-dates/principal-dates
+TRANSP:TRANSPARENT
+URL:https://www.monash.edu/indonesia/important-dates/principal-dates
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Graduation applications open: November round (Indonesia)
+DTSTART;VALUE=DATE:20260116
+DTEND;VALUE=DATE:20260117
+DTSTAMP:20261019T025827Z
+UID:7024bec00f5b51b9@monash-principal-dates
+CATEGORIES:Graduation applications open
+DESCRIPTION:Official wording: Graduation applications open: November round
+  (Indonesia)\nSection: Full year – 2026\nhttps://www.monash.edu/indonesi
+ a/important-dates/principal-dates
+TRANSP:TRANSPARENT
+URL:https://www.monash.edu/indonesia/important-dates/principal-dates
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:University closed: Ascension of the Prophet Muhammad
+DTSTART;VALUE=DATE:20260116
+DTEND;VALUE=DATE:20260117
+DTSTAMP:20261019T025827Z
+UID:8bb4951c87f0de33@monash-principal-dates
+CATEGORIES:University closed
+DESCRIPTION:Official wording: University closed: Ascension of the Prophet 
+ Muhammad\nSection: Full year – 2026\nhttps://www.monash.edu/indonesia/im
+ portant-dates/principal-dates
+TRANSP:TRANSPARENT
+URL:https://www.monash.edu/indonesia/important-dates/principal-dates
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Census date: Term 1 (MI-T1-6)
+DTSTART;VALUE=DATE:20260126
+DTEND;VALUE=DATE:20260127
+DTSTAMP:20261019T025827Z
+UID:729c36a0a503cb69@monash-principal-dates
+CATEGORIES:Census date
+DESCRIPTION:Official wording: Census date: Monash Indonesia term 1 (MI-T1-
+ 6). Last day to withdraw from units without incurring fees and Withdrawn s
+ howing on your academic record\nSection: Full year – 2026\nhttps://www.m
+ onash.edu/indonesia/important-dates/principal-dates
+TRANSP:TRANSPARENT
+URL:https://www.monash.edu/indonesia/important-dates/principal-dates
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:University closed: Chinese New Year Mass Leave
+DTSTART;VALUE=DATE:20260216
+DTEND;VALUE=DATE:20260217
+DTSTAMP:20261019T025827Z
+UID:146db285f9532c55@monash-principal-dates
+CATEGORIES:University closed
+DESCRIPTION:Official wording: University closed: Chinese New Year Mass Lea
+ ve\nSection: Full year – 2026\nhttps://www.monash.edu/indonesia/importan
+ t-dates/principal-dates
+TRANSP:TRANSPARENT
+URL:https://www.monash.edu/indonesia/important-dates/principal-dates
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:University closed: Chinese New Year
+DTSTART;VALUE=DATE:20260217
+DTEND;VALUE=DATE:20260218
+DTSTAMP:20261019T025827Z
+UID:1a3a644dfc63e2d5@monash-principal-dates
+CATEGORIES:University closed
+DESCRIPTION:Official wording: University closed: Chinese New Year\nSection
+ : Full year – 2026\nhttps://www.monash.edu/indonesia/important-dates/pri
+ ncipal-dates
+TRANSP:TRANSPARENT
+URL:https://www.monash.edu/indonesia/important-dates/principal-dates
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Teaching ends: Term 1 (MI-T1-6)
+DTSTART;VALUE=DATE:20260228
+DTEND;VALUE=DATE:20260301
+DTSTAMP:20261019T025827Z
+UID:1f690c4c83119c56@monash-principal-dates
+CATEGORIES:Teaching ends
+DESCRIPTION:Official wording: Teaching ends: Monash Indonesia term 1 (MI-T
+ 1-6). Last day to withdraw from units with Withdrawn Fail showing on your 
+ academic record (units cannot be withdrawn after this date)\nSection: Full
+  year – 2026\nhttps://www.monash.edu/indonesia/important-dates/principal
+ -dates
+TRANSP:TRANSPARENT
+URL:https://www.monash.edu/indonesia/important-dates/principal-dates
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Final assessments start: Term 1 (MI-T1-6)
+DTSTART;VALUE=DATE:20260302
+DTEND;VALUE=DATE:20260303
+DTSTAMP:20261019T025827Z
+UID:da29bed151fd5a4f@monash-principal-dates
+CATEGORIES:Final assessments start
+DESCRIPTION:Official wording: Final assessments start: Monash Indonesia te
+ rm 1 (MI-T1-6)\nSection: Full year – 2026\nhttps://www.monash.edu/indone
+ sia/important-dates/principal-dates
+TRANSP:TRANSPARENT
+URL:https://www.monash.edu/indonesia/important-dates/principal-dates
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Final assessments end: Term 1 (MI-T1-6)
+DTSTART;VALUE=DATE:20260307
+DTEND;VALUE=DATE:20260308
+DTSTAMP:20261019T025827Z
+UID:8100522e3a0152cd@monash-principal-dates
+CATEGORIES:Final assessments end
+DESCRIPTION:Official wording: Final assessments end: Monash Indonesia term
+  1 (MI-T1-6)\nSection: Full year – 2026\nhttps://www.monash.edu/indonesi
+ a/important-dates/principal-dates
+TRANSP:TRANSPARENT
+URL:https://www.monash.edu/indonesia/important-dates/principal-dates
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Results released: Term 1 (MI-T1-6)
+DTSTART;VALUE=DATE:20260316
+DTEND;VALUE=DATE:20260317
+DTSTAMP:20261019T025827Z
+UID:4365c9d5908bc247@monash-principal-dates
+CATEGORIES:Results released
+DESCRIPTION:Official wording: Results released: Monash Indonesia term 1 (M
+ I-T1-6)\nSection: Full year – 2026\nhttps://www.monash.edu/indonesia/imp
+ ortant-dates/principal-dates
+TRANSP:TRANSPARENT
+URL:https://www.monash.edu/indonesia/important-dates/principal-dates
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:University closed: Hindu New Year Mass Leave
+DTSTART;VALUE=DATE:20260318
+DTEND;VALUE=DATE:20260319
+DTSTAMP:20261019T025827Z
+UID:6d9da8375090f0ba@monash-principal-dates
+CATEGORIES:University closed
+DESCRIPTION:Official wording: University closed: Hindu New Year Mass Leave
+ \nSection: Full year – 2026\nhttps://www.monash.edu/indonesia/important-
+ dates/principal-dates
+TRANSP:TRANSPARENT
+URL:https://www.monash.edu/indonesia/important-dates/principal-dates
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:University closed: Hindu New Year
+DTSTART;VALUE=DATE:20260319
+DTEND;VALUE=DATE:20260320
+DTSTAMP:20261019T025827Z
+UID:a472809792ba2408@monash-principal-dates
+CATEGORIES:University closed
+DESCRIPTION:Official wording: University closed: Hindu New Year\nSection: 
+ Full year – 2026\nhttps://www.monash.edu/indonesia/important-dates/princ
+ ipal-dates
+TRANSP:TRANSPARENT
+URL:https://www.monash.edu/indonesia/important-dates/principal-dates
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:University closed: Idul Fitri Mass Leave
+DTSTART;VALUE=DATE:20260320
+DTEND;VALUE=DATE:20260321
+DTSTAMP:20261019T025827Z
+UID:34ab76bff5239dd2@monash-principal-dates
+CATEGORIES:University closed
+DESCRIPTION:Official wording: University closed: Idul Fitri Mass Leave\nSe
+ ction: Full year – 2026\nhttps://www.monash.edu/indonesia/important-date
+ s/principal-dates
+TRANSP:TRANSPARENT
+URL:https://www.monash.edu/indonesia/important-dates/principal-dates
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:University closed: Idul Fitri
+DTSTART;VALUE=DATE:20260321
+DTEND;VALUE=DATE:20260322
+DTSTAMP:20261019T025827Z
+UID:45bb7002577295dc@monash-principal-dates
+CATEGORIES:University closed
+DESCRIPTION:Official wording: University closed: Idul Fitri\nSection: Full
+  year – 2026\nhttps://www.monash.edu/indonesia/important-dates/principal
+ -dates
+TRANSP:TRANSPARENT
+URL:https://www.monash.edu/indonesia/important-dates/principal-dates
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:University closed: Idul Fitri
+DTSTART;VALUE=DATE:20260322
+DTEND;VALUE=DATE:20260323
+DTSTAMP:20261019T025827Z
+UID:45bb7002577295dc-2@monash-principal-dates
+CATEGORIES:University closed
+DESCRIPTION:Official wording: University closed: Idul Fitri\nSection: Full
+  year – 2026\nhttps://www.monash.edu/indonesia/important-dates/principal
+ -dates
+TRANSP:TRANSPARENT
+URL:https://www.monash.edu/indonesia/important-dates/principal-dates
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:University closed: Idul Fitri Mass Leave
+DTSTART;VALUE=DATE:20260323
+DTEND;VALUE=DATE:20260324
+DTSTAMP:20261019T025827Z
+UID:34ab76bff5239dd2-2@monash-principal-dates
+CATEGORIES:University closed
+DESCRIPTION:Official wording: University closed: Idul Fitri Mass Leave\nSe
+ ction: Full year – 2026\nhttps://www.monash.edu/indonesia/important-date
+ s/principal-dates
+TRANSP:TRANSPARENT
+URL:https://www.monash.edu/indonesia/important-dates/principal-dates
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:University closed: Idul Fitri Mass Leave
+DTSTART;VALUE=DATE:20260324
+DTEND;VALUE=DATE:20260325
+DTSTAMP:20261019T025827Z
+UID:34ab76bff5239dd2-3@monash-principal-dates
+CATEGORIES:University closed
+DESCRIPTION:Official wording: University closed: Idul Fitri Mass Leave\nSe
+ ction: Full year – 2026\nhttps://www.monash.edu/indonesia/important-date
+ s/principal-dates
+TRANSP:TRANSPARENT
+URL:https://www.monash.edu/indonesia/important-dates/principal-dates
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:University closed: Good Friday
+DTSTART;VALUE=DATE:20260403
+DTEND;VALUE=DATE:20260404
+DTSTAMP:20261019T025827Z
+UID:81e1685c66a63830@monash-principal-dates
+CATEGORIES:University closed
+DESCRIPTION:Official wording: University closed: Good Friday\nSection: Ful
+ l year – 2026\nhttps://www.monash.edu/indonesia/important-dates/principa
+ l-dates
+TRANSP:TRANSPARENT
+URL:https://www.monash.edu/indonesia/important-dates/principal-dates
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:University closed: Easter Sunday
+DTSTART;VALUE=DATE:20260405
+DTEND;VALUE=DATE:20260406
+DTSTAMP:20261019T025827Z
+UID:788d27d6ad1d2282@monash-principal-dates
+CATEGORIES:University closed
+DESCRIPTION:Official wording: University closed: Easter Sunday\nSection: F
+ ull year – 2026\nhttps://www.monash.edu/indonesia/important-dates/princi
+ pal-dates
+TRANSP:TRANSPARENT
+URL:https://www.monash.edu/indonesia/important-dates/principal-dates
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Teaching starts: Term 2 (MI-T2-6)
+DTSTART;VALUE=DATE:20260427
+DTEND;VALUE=DATE:20260428
+DTSTAMP:20261019T025827Z
+UID:d0295227d7a71016@monash-principal-dates
+CATEGORIES:Teaching starts
+DESCRIPTION:Official wording: Teaching starts: Monash Indonesia term 2 (MI
+ -T2-6)\nSection: Full year – 2026\nhttps://www.monash.edu/indonesia/impo
+ rtant-dates/principal-dates
+TRANSP:TRANSPARENT
+URL:https://www.monash.edu/indonesia/important-dates/principal-dates
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:University closed: International Labour Day
+DTSTART;VALUE=DATE:20260501
+DTEND;VALUE=DATE:20260502
+DTSTAMP:20261019T025827Z
+UID:25e896405f3bc82a@monash-principal-dates
+CATEGORIES:University closed
+DESCRIPTION:Official wording: University closed: International Labour Day
+ \nSection: Full year – 2026\nhttps://www.monash.edu/indonesia/important-
+ dates/principal-dates
+TRANSP:TRANSPARENT
+URL:https://www.monash.edu/indonesia/important-dates/principal-dates
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Census date: Term 2 (MI-T2-6)
+DTSTART;VALUE=DATE:20260511
+DTEND;VALUE=DATE:20260512
+DTSTAMP:20261019T025827Z
+UID:e41cc159f9e80561@monash-principal-dates
+CATEGORIES:Census date
+DESCRIPTION:Official wording: Census date: Monash Indonesia term 2 (MI-T2-
+ 6). Last day to withdraw from units without incurring fees and Withdrawn s
+ howing on your academic record\nSection: Full year – 2026\nhttps://www.m
+ onash.edu/indonesia/important-dates/principal-dates
+TRANSP:TRANSPARENT
+URL:https://www.monash.edu/indonesia/important-dates/principal-dates
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:University closed: Ascension Day of Jesus Christ
+DTSTART;VALUE=DATE:20260514
+DTEND;VALUE=DATE:20260515
+DTSTAMP:20261019T025827Z
+UID:a45edc17f29cc8fa@monash-principal-dates
+CATEGORIES:University closed
+DESCRIPTION:Official wording: University closed: Ascension Day of Jesus Ch
+ rist\nSection: Full year – 2026\nhttps://www.monash.edu/indonesia/import
+ ant-dates/principal-dates
+TRANSP:TRANSPARENT
+URL:https://www.monash.edu/indonesia/important-dates/principal-dates
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:University closed: Ascension Day of Jesus Christ Mass Leave
+DTSTART;VALUE=DATE:20260515
+DTEND;VALUE=DATE:20260516
+DTSTAMP:20261019T025827Z
+UID:a664c4931492cd82@monash-principal-dates
+CATEGORIES:University closed
+DESCRIPTION:Official wording: University closed: Ascension Day of Jesus Ch
+ rist Mass Leave\nSection: Full year – 2026\nhttps://www.monash.edu/indon
+ esia/important-dates/principal-dates
+TRANSP:TRANSPARENT
+URL:https://www.monash.edu/indonesia/important-dates/principal-dates
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:University closed: Idul Adha Public Holiday
+DTSTART;VALUE=DATE:20260527
+DTEND;VALUE=DATE:20260528
+DTSTAMP:20261019T025827Z
+UID:5117552a3b55ca99@monash-principal-dates
+CATEGORIES:University closed
+DESCRIPTION:Official wording: University closed: Idul Adha Public Holiday
+ \nSection: Full year – 2026\nhttps://www.monash.edu/indonesia/important-
+ dates/principal-dates
+TRANSP:TRANSPARENT
+URL:https://www.monash.edu/indonesia/important-dates/principal-dates
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:University closed: Idul Adha Mass Leave
+DTSTART;VALUE=DATE:20260528
+DTEND;VALUE=DATE:20260529
+DTSTAMP:20261019T025827Z
+UID:ea7ea051392f5dd8@monash-principal-dates
+CATEGORIES:University closed
+DESCRIPTION:Official wording: University closed: Idul Adha Mass Leave\nSec
+ tion: Full year – 2026\nhttps://www.monash.edu/indonesia/important-dates
+ /principal-dates
+TRANSP:TRANSPARENT
+URL:https://www.monash.edu/indonesia/important-dates/principal-dates
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:University closed: Waisak Day
+DTSTART;VALUE=DATE:20260531
+DTEND;VALUE=DATE:20260601
+DTSTAMP:20261019T025827Z
+UID:366797c7d73294e6@monash-principal-dates
+CATEGORIES:University closed
+DESCRIPTION:Official wording: University closed: Waisak Day\nSection: Full
+  year – 2026\nhttps://www.monash.edu/indonesia/important-dates/principal
+ -dates
+TRANSP:TRANSPARENT
+URL:https://www.monash.edu/indonesia/important-dates/principal-dates
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:University closed: Pancasila Day
+DTSTART;VALUE=DATE:20260601
+DTEND;VALUE=DATE:20260602
+DTSTAMP:20261019T025827Z
+UID:cd352c8b1893a1df@monash-principal-dates
+CATEGORIES:University closed
+DESCRIPTION:Official wording: University closed: Pancasila Day\nSection: F
+ ull year – 2026\nhttps://www.monash.edu/indonesia/important-dates/princi
+ pal-dates
+TRANSP:TRANSPARENT
+URL:https://www.monash.edu/indonesia/important-dates/principal-dates
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Teaching ends: Term 2 (MI-T2-6)
+DTSTART;VALUE=DATE:20260613
+DTEND;VALUE=DATE:20260614
+DTSTAMP:20261019T025827Z
+UID:06ca0fdd2b4b3917@monash-principal-dates
+CATEGORIES:Teaching ends
+DESCRIPTION:Official wording: Teaching ends: Monash Indonesia term 2 (MI-T
+ 2-6). Last day to withdraw from units with Withdrawn Fail showing on your 
+ academic record (units cannot be withdrawn after this date)\nSection: Full
+  year – 2026\nhttps://www.monash.edu/indonesia/important-dates/principal
+ -dates
+TRANSP:TRANSPARENT
+URL:https://www.monash.edu/indonesia/important-dates/principal-dates
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Final assessments start: Term 2 (MI-T2-6)
+DTSTART;VALUE=DATE:20260615
+DTEND;VALUE=DATE:20260616
+DTSTAMP:20261019T025827Z
+UID:29d05f0017c15b2d@monash-principal-dates
+CATEGORIES:Final assessments start
+DESCRIPTION:Official wording: Final assessments start: Monash Indonesia te
+ rm 2 (MI-T2-6)\nSection: Full year – 2026\nhttps://www.monash.edu/indone
+ sia/important-dates/principal-dates
+TRANSP:TRANSPARENT
+URL:https://www.monash.edu/indonesia/important-dates/principal-dates
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:University closed: Muharram / Islamic New Year
+DTSTART;VALUE=DATE:20260616
+DTEND;VALUE=DATE:20260617
+DTSTAMP:20261019T025827Z
+UID:c2480739f19c70f7@monash-principal-dates
+CATEGORIES:University closed
+DESCRIPTION:Official wording: University closed: Muharram / Islamic New Ye
+ ar\nSection: Full year – 2026\nhttps://www.monash.edu/indonesia/importan
+ t-dates/principal-dates
+TRANSP:TRANSPARENT
+URL:https://www.monash.edu/indonesia/important-dates/principal-dates
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Final assessments end: Term 2 (MI-T2-6)
+DTSTART;VALUE=DATE:20260620
+DTEND;VALUE=DATE:20260621
+DTSTAMP:20261019T025827Z
+UID:3e5032480860f8cb@monash-principal-dates
+CATEGORIES:Final assessments end
+DESCRIPTION:Official wording: Final assessments end: Monash Indonesia term
+  2 (MI-T2-6)\nSection: Full year – 2026\nhttps://www.monash.edu/indonesi
+ a/important-dates/principal-dates
+TRANSP:TRANSPARENT
+URL:https://www.monash.edu/indonesia/important-dates/principal-dates
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Results released: Term 2 (MI-T2-6)
+DTSTART;VALUE=DATE:20260706
+DTEND;VALUE=DATE:20260707
+DTSTAMP:20261019T025827Z
+UID:df563f725bc8b56b@monash-principal-dates
+CATEGORIES:Results released
+DESCRIPTION:Official wording: Results released: Monash Indonesia term 2 (M
+ I-T2-6)\nSection: Full year – 2026\nhttps://www.monash.edu/indonesia/imp
+ ortant-dates/principal-dates
+TRANSP:TRANSPARENT
+URL:https://www.monash.edu/indonesia/important-dates/principal-dates
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Teaching starts: Term 3 (MI-T3-6)
+DTSTART;VALUE=DATE:20260720
+DTEND;VALUE=DATE:20260721
+DTSTAMP:20261019T025827Z
+UID:e35c7e4c5dabfdee@monash-principal-dates
+CATEGORIES:Teaching starts
+DESCRIPTION:Official wording: Teaching starts: Monash Indonesia term 3 (MI
+ -T3-6)\nSection: Full year – 2026\nhttps://www.monash.edu/indonesia/impo
+ rtant-dates/principal-dates
+TRANSP:TRANSPARENT
+URL:https://www.monash.edu/indonesia/important-dates/principal-dates
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Teaching starts: Semester 2 (MI-S2)
+DTSTART;VALUE=DATE:20260727
+DTEND;VALUE=DATE:20260728
+DTSTAMP:20261019T025827Z
+UID:1718a7f4b4b0ca9d@monash-principal-dates
+CATEGORIES:Teaching starts
+DESCRIPTION:Official wording: Teaching starts: Monash Indonesia Semester 2
+  (MI-S2)\nSection: Full year – 2026\nhttps://www.monash.edu/indonesia/im
+ portant-dates/principal-dates
+TRANSP:TRANSPARENT
+URL:https://www.monash.edu/indonesia/important-dates/principal-dates
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Graduation applications close: November round (Indonesia)
+DTSTART;VALUE=DATE:20260731
+DTEND;VALUE=DATE:20260801
+DTSTAMP:20261019T025827Z
+UID:e8e4d2e5a0bbdf70@monash-principal-dates
+CATEGORIES:Graduation applications close
+DESCRIPTION:Official wording: Graduation applications close: November roun
+ d (Indonesia)\nSection: Full year – 2026\nhttps://www.monash.edu/indones
+ ia/important-dates/principal-dates
+TRANSP:TRANSPARENT
+URL:https://www.monash.edu/indonesia/important-dates/principal-dates
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Census date: Term 3 (MI-T3-6)
+DTSTART;VALUE=DATE:20260803
+DTEND;VALUE=DATE:20260804
+DTSTAMP:20261019T025827Z
+UID:158fa8b71952559c@monash-principal-dates
+CATEGORIES:Census date
+DESCRIPTION:Official wording: Census date: Monash Indonesia term 3 (MI-T3-
+ 6). Last day to withdraw from units without incurring fees and Withdrawn s
+ howing on your academic record\nSection: Full year – 2026\nhttps://www.m
+ onash.edu/indonesia/important-dates/principal-dates
+TRANSP:TRANSPARENT
+URL:https://www.monash.edu/indonesia/important-dates/principal-dates
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:University closed: Indonesian Independence Day
+DTSTART;VALUE=DATE:20260817
+DTEND;VALUE=DATE:20260818
+DTSTAMP:20261019T025827Z
+UID:31889786191f718c@monash-principal-dates
+CATEGORIES:University closed
+DESCRIPTION:Official wording: University closed: Indonesian Independence D
+ ay\nSection: Full year – 2026\nhttps://www.monash.edu/indonesia/importan
+ t-dates/principal-dates
+TRANSP:TRANSPARENT
+URL:https://www.monash.edu/indonesia/important-dates/principal-dates
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:University closed: Prophet Muhammad's Birthday
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+DTSTAMP:20261019T025827Z
+UID:ff2f49afb3a1d05c@monash-principal-dates
+CATEGORIES:University closed
+DESCRIPTION:Official wording: University closed: The Prophet Muhammad's Bi
+ rthday\nSection: Full year – 2026\nhttps://www.monash.edu/indonesia/impo
+ rtant-dates/principal-dates
+TRANSP:TRANSPARENT
+URL:https://www.monash.edu/indonesia/important-dates/principal-dates
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Census date: Semester 2 (MI-S2)
+DTSTART;VALUE=DATE:20260831
+DTEND;VALUE=DATE:20260901
+DTSTAMP:20261019T025827Z
+UID:d94eb7f74db97aae@monash-principal-dates
+CATEGORIES:Census date
+DESCRIPTION:Official wording: Census date: Monash Indonesia Semester 2 (MI
+ -S2). Last day to withdraw from units without incurring fees and Withdrawn
+  showing on your academic record\nSection: Full year – 2026\nhttps://www
+ .monash.edu/indonesia/important-dates/principal-dates
+TRANSP:TRANSPARENT
+URL:https://www.monash.edu/indonesia/important-dates/principal-dates
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Teaching ends: Term 3 (MI-T3-6)
+DTSTART;VALUE=DATE:20260905
+DTEND;VALUE=DATE:20260906
+DTSTAMP:20261019T025827Z
+UID:5adc9aa061e620b2@monash-principal-dates
+CATEGORIES:Teaching ends
+DESCRIPTION:Official wording: Teaching ends: Monash Indonesia term 3 (MI-T
+ 3-6). Last day to withdraw from units with Withdrawn Fail showing on your 
+ academic record (units cannot be withdrawn after this date)\nSection: Full
+  year – 2026\nhttps://www.monash.edu/indonesia/important-dates/principal
+ -dates
+TRANSP:TRANSPARENT
+URL:https://www.monash.edu/indonesia/important-dates/principal-dates
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Final assessments start: Term 3 (MI-T3-6)
+DTSTART;VALUE=DATE:20260907
+DTEND;VALUE=DATE:20260908
+DTSTAMP:20261019T025827Z
+UID:6db5d5564bc70410@monash-principal-dates
+CATEGORIES:Final assessments start
+DESCRIPTION:Official wording: Final assessments start: Monash Indonesia te
+ rm 3 (MI-T3-6)\nSection: Full year – 2026\nhttps://www.monash.edu/indone
+ sia/important-dates/principal-dates
+TRANSP:TRANSPARENT
+URL:https://www.monash.edu/indonesia/important-dates/principal-dates
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Final assessments end: Term 3 (MI-T3-6)
+DTSTART;VALUE=DATE:20260912
+DTEND;VALUE=DATE:20260913
+DTSTAMP:20261019T025827Z
+UID:7dabf3cc88ebb488@monash-principal-dates
+CATEGORIES:Final assessments end
+DESCRIPTION:Official wording: Final assessments end: Monash Indonesia term
+  3 (MI-T3-6)\nSection: Full year – 2026\nhttps://www.monash.edu/indonesi
+ a/important-dates/principal-dates
+TRANSP:TRANSPARENT
+URL:https://www.monash.edu/indonesia/important-dates/principal-dates
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Results released: Term 3 (MI-T3-6)
+DTSTART;VALUE=DATE:20260923
+DTEND;VALUE=DATE:20260924
+DTSTAMP:20261019T025827Z
+UID:e112d3950262c5e5@monash-principal-dates
+CATEGORIES:Results released
+DESCRIPTION:Official wording: Results released: Monash Indonesia term 3 (M
+ I-T3-6)\nSection: Full year – 2026\nhttps://www.monash.edu/indonesia/imp
+ ortant-dates/principal-dates
+TRANSP:TRANSPARENT
+URL:https://www.monash.edu/indonesia/important-dates/principal-dates
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Teaching starts: Term 4 (MI-T4-6)
+DTSTART;VALUE=DATE:20260928
+DTEND;VALUE=DATE:20260929
+DTSTAMP:20261019T025827Z
+UID:37f14db7896261db@monash-principal-dates
+CATEGORIES:Teaching starts
+DESCRIPTION:Official wording: Teaching starts: Monash Indonesia term 4 (MI
+ -T4-6)\nSection: Full year – 2026\nhttps://www.monash.edu/indonesia/impo
+ rtant-dates/principal-dates
+TRANSP:TRANSPARENT
+URL:https://www.monash.edu/indonesia/important-dates/principal-dates
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Census date: Term 4 (MI-T4-6)
+DTSTART;VALUE=DATE:20261012
+DTEND;VALUE=DATE:20261013
+DTSTAMP:20261019T025827Z
+UID:13519bdf8bd7352a@monash-principal-dates
+CATEGORIES:Census date
+DESCRIPTION:Official wording: Census date: Monash Indonesia term 4 (MI-T4-
+ 6). Last day to withdraw from units without incurring fees and Withdrawn s
+ howing on your academic record\nSection: Full year – 2026\nhttps://www.m
+ onash.edu/indonesia/important-dates/principal-dates
+TRANSP:TRANSPARENT
+URL:https://www.monash.edu/indonesia/important-dates/principal-dates
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Teaching ends: Semester 2 (MI-S2)
+DTSTART;VALUE=DATE:20261024
+DTEND;VALUE=DATE:20261025
+DTSTAMP:20261019T025827Z
+UID:152af7ca34594b78@monash-principal-dates
+CATEGORIES:Teaching ends
+DESCRIPTION:Official wording: Teaching ends: Monash Indonesia Semester 2 (
+ MI-S2). Last day to withdraw from units with Withdrawn Fail showing on you
+ r academic record (units cannot be withdrawn after this date)\nSection: Fu
+ ll year – 2026\nhttps://www.monash.edu/indonesia/important-dates/princip
+ al-dates
+TRANSP:TRANSPARENT
+URL:https://www.monash.edu/indonesia/important-dates/principal-dates
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Swot vac starts: Semester 2 (MI-S2)
+DTSTART;VALUE=DATE:20261026
+DTEND;VALUE=DATE:20261027
+DTSTAMP:20261019T025827Z
+UID:75ccd514bf90453e@monash-principal-dates
+CATEGORIES:Swot vac starts
+DESCRIPTION:Official wording: Swot vac starts: Monash Indonesia Semester 2
+  (MI-S2)\nSection: Full year – 2026\nhttps://www.monash.edu/indonesia/im
+ portant-dates/principal-dates
+TRANSP:TRANSPARENT
+URL:https://www.monash.edu/indonesia/important-dates/principal-dates
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Swot vac ends: Semester 2 (MI-S2)
+DTSTART;VALUE=DATE:20261031
+DTEND;VALUE=DATE:20261101
+DTSTAMP:20261019T025827Z
+UID:c07d9bd4f361449a@monash-principal-dates
+CATEGORIES:Swot vac ends
+DESCRIPTION:Official wording: Swot vac ends: Monash Indonesia Semester 2 (
+ MI-S2)\nSection: Full year – 2026\nhttps://www.monash.edu/indonesia/impo
+ rtant-dates/principal-dates
+TRANSP:TRANSPARENT
+URL:https://www.monash.edu/indonesia/important-dates/principal-dates
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Final assessments start: Semester 2 (MI-S2)
+DTSTART;VALUE=DATE:20261102
+DTEND;VALUE=DATE:20261103
+DTSTAMP:20261019T025827Z
+UID:0bc7c39445d93601@monash-principal-dates
+CATEGORIES:Final assessments start
+DESCRIPTION:Official wording: Final assessments start: Monash Indonesia Se
+ mester 2 (MI-S2)\nSection: Full year – 2026\nhttps://www.monash.edu/indo
+ nesia/important-dates/principal-dates
+TRANSP:TRANSPARENT
+URL:https://www.monash.edu/indonesia/important-dates/principal-dates
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Teaching ends: Term 4 (MI-T4-6)
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+DTSTAMP:20261019T025827Z
+UID:7e827853dbd2d7f4@monash-principal-dates
+CATEGORIES:Teaching ends
+DESCRIPTION:Official wording: Teaching ends: Monash Indonesia term 4 (MI-T
+ 4-6). Last day to withdraw from units with Withdrawn Fail showing on your 
+ academic record (units cannot be withdrawn after this date)\nSection: Full
+  year – 2026\nhttps://www.monash.edu/indonesia/important-dates/principal
+ -dates
+TRANSP:TRANSPARENT
+URL:https://www.monash.edu/indonesia/important-dates/principal-dates
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Final assessments start: Term 4 (MI-T4-6)
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261117
+DTSTAMP:20261019T025827Z
+UID:aa0cc42f7294e9f3@monash-principal-dates
+CATEGORIES:Final assessments start
+DESCRIPTION:Official wording: Final assessments start: Monash Indonesia te
+ rm 4 (MI-T4-6)\nSection: Full year – 2026\nhttps://www.monash.edu/indone
+ sia/important-dates/principal-dates
+TRANSP:TRANSPARENT
+URL:https://www.monash.edu/indonesia/important-dates/principal-dates
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Final assessments end: Semester 2 (MI-S2)
+DTSTART;VALUE=DATE:20261118
+DTEND;VALUE=DATE:20261119
+DTSTAMP:20261019T025827Z
+UID:b088df9c4f9258f2@monash-principal-dates
+CATEGORIES:Final assessments end
+DESCRIPTION:Official wording: Final assessments end: Monash Indonesia Seme
+ ster 2 (MI-S2)\nSection: Full year – 2026\nhttps://www.monash.edu/indone
+ sia/important-dates/principal-dates
+TRANSP:TRANSPARENT
+URL:https://www.monash.edu/indonesia/important-dates/principal-dates
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Final assessments end: Term 4 (MI-T4-6)
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
+DTSTAMP:20261019T025827Z
+UID:ad0b65ac476c9d53@monash-principal-dates
+CATEGORIES:Final assessments end
+DESCRIPTION:Official wording: Final assessments end: Monash Indonesia term
+  4 (MI-T4-6)\nSection: Full year – 2026\nhttps://www.monash.edu/indonesi
+ a/important-dates/principal-dates
+TRANSP:TRANSPARENT
+URL:https://www.monash.edu/indonesia/important-dates/principal-dates
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Graduation ceremonies start: November round (Indonesia)
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
+DTSTAMP:20261019T025827Z
+UID:4878a064066f1c37@monash-principal-dates
+CATEGORIES:Graduation ceremonies start
+DESCRIPTION:Official wording: Graduation ceremonies: November round (Indon
+ esia)\nSection: Full year – 2026\nhttps://www.monash.edu/indonesia/impor
+ tant-dates/principal-dates
+TRANSP:TRANSPARENT
+URL:https://www.monash.edu/indonesia/important-dates/principal-dates
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Results released: Semester 2 (MI-S2)
+DTSTART;VALUE=DATE:20261203
+DTEND;VALUE=DATE:20261204
+DTSTAMP:20261019T025827Z
+UID:7d33300fde662844@monash-principal-dates
+CATEGORIES:Results released
+DESCRIPTION:Official wording: Results released: Monash Indonesia Semester 
+ 2 (MI-S2)\nSection: Full year – 2026\nhttps://www.monash.edu/indonesia/i
+ mportant-dates/principal-dates
+TRANSP:TRANSPARENT
+URL:https://www.monash.edu/indonesia/important-dates/principal-dates
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Results released: Term 4 (MI-T4-6)
+DTSTART;VALUE=DATE:20261207
+DTEND;VALUE=DATE:20261208
+DTSTAMP:20261019T025827Z
+UID:71ef0f442a0cef6d@monash-principal-dates
+CATEGORIES:Results released
+DESCRIPTION:Official wording: Results released: Monash Indonesia term 4 (M
+ I-T4-6)\nSection: Full year – 2026\nhttps://www.monash.edu/indonesia/imp
+ ortant-dates/principal-dates
+TRANSP:TRANSPARENT
+URL:https://www.monash.edu/indonesia/important-dates/principal-dates
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:University closed: Christmas Mass Leave
+DTSTART;VALUE=DATE:20261224
+DTEND;VALUE=DATE:20261225
+DTSTAMP:20261019T025827Z
+UID:e1b1eb79314ab6fb@monash-principal-dates
+CATEGORIES:University closed
+DESCRIPTION:Official wording: University closed: Christmas Mass Leave\nSec
+ tion: Full year – 2026\nhttps://www.monash.edu/indonesia/important-dates
+ /principal-dates
+TRANSP:TRANSPARENT
+URL:https://www.monash.edu/indonesia/important-dates/principal-dates
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:University closed: Christmas Day
+DTSTART;VALUE=DATE:20261225
+DTEND;VALUE=DATE:20261226
+DTSTAMP:20261019T025827Z
+UID:28616fed9b012683@monash-principal-dates
+CATEGORIES:University closed
+DESCRIPTION:Official wording: University closed: Christmas Day\nSection: F
+ ull year – 2026\nhttps://www.monash.edu/indonesia/important-dates/princi
+ pal-dates
+TRANSP:TRANSPARENT
+URL:https://www.monash.edu/indonesia/important-dates/principal-dates
+END:VEVENT
+END:VCALENDAR

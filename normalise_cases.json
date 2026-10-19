@@ -1,0 +1,1211 @@
+{
+ "_about": "Expected normalisation results, checked by test_principal_dates.py and the dashboard script tests.",
+ "cases": [
+  {
+   "campus": "AUS",
+   "raw": "Course transfer applications close at 11.59pm: Semester two (S2-01)",
+   "milestone": "Course transfer applications close",
+   "title": "Course transfer applications close: Semester 2 (S2-01)",
+   "period_codes": "S2-01",
+   "teaching_period": "Semester 2",
+   "time": "11:59pm"
+  },
+  {
+   "campus": "AUS",
+   "raw": "Fees due: Winter teaching period (WS-01)",
+   "milestone": "Fees due",
+   "title": "Fees due: Winter (WS-01)",
+   "period_codes": "WS-01",
+   "teaching_period": "Winter",
+   "time": ""
+  },
+  {
+   "campus": "MY",
+   "raw": "Public holiday: Hari Raya Aidilfitri Day 2 (University closed)",
+   "milestone": "University closed",
+   "title": "University closed: Hari Raya Aidilfitri Day 2",
+   "period_codes": "",
+   "teaching_period": "",
+   "time": ""
+  },
+  {
+   "campus": "AUS",
+   "raw": "Census date: MBA 1 (MBA-TP1-01). Last day to withdraw from units in this teaching period without incurring fees",
+   "milestone": "Census date",
+   "title": "Census date: MBA 1 (MBA-TP1-01)",
+   "period_codes": "MBA-TP1-01",
+   "teaching_period": "MBA 1",
+   "time": ""
+  },
+  {
+   "campus": "MY",
+   "raw": "Graduation: November ceremonies begin at Kuala Lumpur, Malaysia",
+   "milestone": "Graduation ceremonies start",
+   "title": "Graduation ceremonies start: November ceremonies begin at Kuala Lumpur, Malaysia",
+   "period_codes": "",
+   "teaching_period": "",
+   "time": ""
+  },
+  {
+   "campus": "MY",
+   "raw": "Graduation: applications open for November in Malaysia",
+   "milestone": "Graduation applications open",
+   "title": "Graduation applications open: November in Malaysia",
+   "period_codes": "",
+   "teaching_period": "",
+   "time": ""
+  },
+  {
+   "campus": "MY",
+   "raw": "Final assessment begin for summer semester A (SSA-02) 2022",
+   "milestone": "Final assessments start",
+   "title": "Final assessments start: Summer A (SSA-02)",
+   "period_codes": "SSA-02",
+   "teaching_period": "Summer A",
+   "time": ""
+  },
+  {
+   "campus": "MY",
+   "raw": "Rescheduled deferred assessments begin",
+   "milestone": "Rescheduled deferred assessments start",
+   "title": "Rescheduled deferred assessments start",
+   "period_codes": "",
+   "teaching_period": "",
+   "time": ""
+  },
+  {
+   "campus": "AUS",
+   "raw": "Swot vac ends: Semester one (S1-01), semester 2 (northern) (S2-60), and summer A - semester 1 (SS-S1-01)",
+   "milestone": "Swot vac ends",
+   "title": "Swot vac ends: Semester 1 (S1-01), Semester 2 (northern) (S2-60), Summer A - Semester 1 (SS-S1-01)",
+   "period_codes": "S1-01; S2-60; SS-S1-01",
+   "teaching_period": "Semester 1; Semester 2 (northern); Summer A - Semester 1",
+   "time": ""
+  },
+  {
+   "campus": "MY",
+   "raw": "Allocate+ adjustment: opens 2pm for October intake (OCT-MY-01)",
+   "milestone": "Allocate+ adjustment opens",
+   "title": "Allocate+ adjustment opens: October intake (OCT-MY-01)",
+   "period_codes": "OCT-MY-01",
+   "teaching_period": "October intake",
+   "time": "2pm"
+  },
+  {
+   "campus": "MY",
+   "raw": "Census date for teaching period: Semester one (S1-01). Last day to withdraw from units in this teaching period without incurring fees",
+   "milestone": "Census date",
+   "title": "Census date: Semester 1 (S1-01)",
+   "period_codes": "S1-01",
+   "teaching_period": "Semester 1",
+   "time": ""
+  },
+  {
+   "campus": "ID",
+   "raw": "Final assessments end: Monash Indonesia Semester 2 (MI-S2)",
+   "milestone": "Final assessments end",
+   "title": "Final assessments end: Semester 2 (MI-S2)",
+   "period_codes": "MI-S2",
+   "teaching_period": "Semester 2",
+   "time": ""
+  },
+  {
+   "campus": "AUS",
+   "raw": "Teaching period ends: Semester one (S1-01). Last day to withdraw from units with Withdrawn Fail showing on your academic record. Units cannot be withdrawn after this date",
+   "milestone": "Teaching ends",
+   "title": "Teaching ends: Semester 1 (S1-01)",
+   "period_codes": "S1-01",
+   "teaching_period": "Semester 1",
+   "time": ""
+  },
+  {
+   "campus": "MY",
+   "raw": "Deferred and supplementary final assessment period: begin for semester two (S2-01) 2024",
+   "milestone": "Deferred and supplementary assessments start",
+   "title": "Deferred and supplementary assessments start: Semester 2 (S2-01)",
+   "period_codes": "S2-01",
+   "teaching_period": "Semester 2",
+   "time": ""
+  },
+  {
+   "campus": "MY",
+   "raw": "Semester one (S1-01) teaching begins",
+   "milestone": "Teaching starts",
+   "title": "Teaching starts: Semester 1 (S1-01)",
+   "period_codes": "S1-01",
+   "teaching_period": "Semester 1",
+   "time": ""
+  },
+  {
+   "campus": "MY",
+   "raw": "Teaching ends: Summer semester A (SSA-02) 2025. Last day to withdraw from units (units cannot be withdrawn after this date)",
+   "milestone": "Teaching ends",
+   "title": "Teaching ends: Summer A (SSA-02)",
+   "period_codes": "SSA-02",
+   "teaching_period": "Summer A",
+   "time": ""
+  },
+  {
+   "campus": "AUS",
+   "raw": "Graduation applications open: April round (Malaysia) and May round (Australia)",
+   "milestone": "Graduation applications open",
+   "title": "Graduation applications open: April round (Malaysia) and May round (Australia)",
+   "period_codes": "",
+   "teaching_period": "",
+   "time": ""
+  },
+  {
+   "campus": "MY",
+   "raw": "Final assessment timetable published: for summer semester A (SSA-02) 2023",
+   "milestone": "Final assessment timetable published",
+   "title": "Final assessment timetable published: Summer A (SSA-02)",
+   "period_codes": "SSA-02",
+   "teaching_period": "Summer A",
+   "time": ""
+  },
+  {
+   "campus": "AUS",
+   "raw": "Coursework scholarship applications close at 12pm: 2023",
+   "milestone": "Coursework scholarship applications close",
+   "title": "Coursework scholarship applications close",
+   "period_codes": "",
+   "teaching_period": "",
+   "time": "12pm"
+  },
+  {
+   "campus": "AUS",
+   "raw": "Deferred and supplementary assessment timetable published: November intake (NOV12) 2024, summer semester A (SSA-02) 2024, and summer semester B (SSB-01)",
+   "milestone": "Deferred and supplementary assessment timetable published",
+   "title": "Deferred and supplementary assessment timetable published: November intake (NOV12), Summer A (SSA-02), Summer B (SSB-01)",
+   "period_codes": "NOV12; SSA-02; SSB-01",
+   "teaching_period": "November intake; Summer A; Summer B",
+   "time": ""
+  },
+  {
+   "campus": "AUS",
+   "raw": "Course transfers: Change of preference closes at 11.59pm (Melbourne time) for semester two 2025",
+   "milestone": "Course transfer preferences close",
+   "title": "Course transfer preferences close: Semester 2",
+   "period_codes": "",
+   "teaching_period": "Semester 2",
+   "time": "11:59pm"
+  },
+  {
+   "campus": "AUS",
+   "raw": "Course transfers: Applications open at 9am (Melbourne time) for semester one 2026",
+   "milestone": "Course transfer applications open",
+   "title": "Course transfer applications open: Semester 1",
+   "period_codes": "",
+   "teaching_period": "Semester 1",
+   "time": "9am"
+  },
+  {
+   "campus": "MY",
+   "raw": "Rescheduled deferred assessments end: Semester one (S1-01) and associated teaching periods",
+   "milestone": "Rescheduled deferred assessments end",
+   "title": "Rescheduled deferred assessments end: Semester 1 (S1-01)",
+   "period_codes": "S1-01",
+   "teaching_period": "Semester 1",
+   "time": ""
+  },
+  {
+   "campus": "AUS",
+   "raw": "Deferred and supplementary assessments end: Semester two (S2-01) 2022",
+   "milestone": "Deferred and supplementary assessments end",
+   "title": "Deferred and supplementary assessments end: Semester 2 (S2-01)",
+   "period_codes": "S2-01",
+   "teaching_period": "Semester 2",
+   "time": ""
+  },
+  {
+   "campus": "AUS",
+   "raw": "Deferred and supplementary assessments start: Semester one (S1-01)",
+   "milestone": "Deferred and supplementary assessments start",
+   "title": "Deferred and supplementary assessments start: Semester 1 (S1-01)",
+   "period_codes": "S1-01",
+   "teaching_period": "Semester 1",
+   "time": ""
+  },
+  {
+   "campus": "ID",
+   "raw": "Results released: Monash Indonesia term 3 (MI-T3-6)",
+   "milestone": "Results released",
+   "title": "Results released: Term 3 (MI-T3-6)",
+   "period_codes": "MI-T3-6",
+   "teaching_period": "Term 3",
+   "time": ""
+  },
+  {
+   "campus": "MY",
+   "raw": "Results released: Rescheduled deferred assessments for Semester one (S1-01)",
+   "milestone": "Rescheduled deferred results released",
+   "title": "Rescheduled deferred results released: Semester 1 (S1-01)",
+   "period_codes": "S1-01",
+   "teaching_period": "Semester 1",
+   "time": ""
+  },
+  {
+   "campus": "MY",
+   "raw": "Course transfers to Monash Australia: semester two 2024 offer notification sent to students at 9am (Melbourne time)",
+   "milestone": "Course transfer offers sent",
+   "title": "Course transfer offers sent: Semester 2",
+   "period_codes": "",
+   "teaching_period": "Semester 2",
+   "time": "9am"
+  },
+  {
+   "campus": "AUS",
+   "raw": "Rescheduled deferred assessments start: Summer semester A (SSA-02) 2024, November intake (NOV12) 2024, and summer semester B (SSB-01)",
+   "milestone": "Rescheduled deferred assessments start",
+   "title": "Rescheduled deferred assessments start: Summer A (SSA-02), November intake (NOV12), Summer B (SSB-01)",
+   "period_codes": "SSA-02; NOV12; SSB-01",
+   "teaching_period": "Summer A; November intake; Summer B",
+   "time": ""
+  },
+  {
+   "campus": "AUS",
+   "raw": "Results released: Semester one (S1-01), semester 1 (extended) (S1-32), semester 2 (northern) (S2-60), and summer A - semester 1 (SS-S1-01)",
+   "milestone": "Results released",
+   "title": "Results released: Semester 1 (S1-01), Semester 1 (extended) (S1-32), Semester 2 (northern) (S2-60), Summer A - Semester 1 (SS-S1-01)",
+   "period_codes": "S1-01; S1-32; S2-60; SS-S1-01",
+   "teaching_period": "Semester 1; Semester 1 (extended); Semester 2 (northern); Summer A - Semester 1",
+   "time": ""
+  },
+  {
+   "campus": "AUS",
+   "raw": "Teaching starts: Summer semester A (SSA-02)",
+   "milestone": "Teaching starts",
+   "title": "Teaching starts: Summer A (SSA-02)",
+   "period_codes": "SSA-02",
+   "teaching_period": "Summer A",
+   "time": ""
+  },
+  {
+   "campus": "AUS",
+   "raw": "Final assessments start: Semester one (S1-01)",
+   "milestone": "Final assessments start",
+   "title": "Final assessments start: Semester 1 (S1-01)",
+   "period_codes": "S1-01",
+   "teaching_period": "Semester 1",
+   "time": ""
+  },
+  {
+   "campus": "AUS",
+   "raw": "Course transfers: Semester one 2025 offer notification sent to students at 5pm (Melbourne time)",
+   "milestone": "Course transfer offers sent",
+   "title": "Course transfer offers sent: Semester 1",
+   "period_codes": "",
+   "teaching_period": "Semester 1",
+   "time": "5pm"
+  },
+  {
+   "campus": "ID",
+   "raw": "University closed: Ascension Day of Jesus Christ",
+   "milestone": "University closed",
+   "title": "University closed: Ascension Day of Jesus Christ",
+   "period_codes": "",
+   "teaching_period": "",
+   "time": ""
+  },
+  {
+   "campus": "MY",
+   "raw": "Mid-year Orientation Week ends: Semester Two (S2-01)",
+   "milestone": "Orientation ends",
+   "title": "Orientation ends: Semester 2 (S2-01)",
+   "period_codes": "S2-01",
+   "teaching_period": "Semester 2",
+   "time": ""
+  },
+  {
+   "campus": "AUS",
+   "raw": "Final assessments end: Trimester 1 (T1-58)",
+   "milestone": "Final assessments end",
+   "title": "Final assessments end: Trimester 1 (T1-58)",
+   "period_codes": "T1-58",
+   "teaching_period": "Trimester 1",
+   "time": ""
+  },
+  {
+   "campus": "AUS",
+   "raw": "Daylight saving ends: Turn clocks back one hour",
+   "milestone": "Daylight saving ends",
+   "title": "Daylight saving ends: Turn clocks back one hour",
+   "period_codes": "",
+   "teaching_period": "",
+   "time": ""
+  },
+  {
+   "campus": "MY",
+   "raw": "Rescheduled deferred assessment timetable published: for October intake (OCT-MY-01)",
+   "milestone": "Rescheduled deferred assessment timetable published",
+   "title": "Rescheduled deferred assessment timetable published: October intake (OCT-MY-01)",
+   "period_codes": "OCT-MY-01",
+   "teaching_period": "October intake",
+   "time": ""
+  },
+  {
+   "campus": "AUS",
+   "raw": "Graduate research scholarships close: Round 2/2026 (domestic students)",
+   "milestone": "Graduate research scholarships close",
+   "title": "Graduate research scholarships close: Round 2/2026 (domestic students)",
+   "period_codes": "",
+   "teaching_period": "",
+   "time": ""
+  },
+  {
+   "campus": "AUS",
+   "raw": "Allocate+ allocation adjustment closes at 5pm: November intake (NOV12)",
+   "milestone": "Allocate+ adjustment closes",
+   "title": "Allocate+ adjustment closes: November intake (NOV12)",
+   "period_codes": "NOV12",
+   "teaching_period": "November intake",
+   "time": "5pm"
+  },
+  {
+   "campus": "MY",
+   "raw": "Semester one (S1-01) SWOTVac Starts",
+   "milestone": "Swot vac starts",
+   "title": "Swot vac starts: Semester 1 (S1-01)",
+   "period_codes": "S1-01",
+   "teaching_period": "Semester 1",
+   "time": ""
+  },
+  {
+   "campus": "MY",
+   "raw": "Mid-semester break: begins",
+   "milestone": "Mid-semester break starts",
+   "title": "Mid-semester break starts",
+   "period_codes": "",
+   "teaching_period": "",
+   "time": ""
+  },
+  {
+   "campus": "AUS",
+   "raw": "Graduate research scholarships open: Round 2/2026 (domestic students)",
+   "milestone": "Graduate research scholarships open",
+   "title": "Graduate research scholarships open: Round 2/2026 (domestic students)",
+   "period_codes": "",
+   "teaching_period": "",
+   "time": ""
+  },
+  {
+   "campus": "MY",
+   "raw": "Deferred and supplementary final assessments timetable published: October intake (OCT-MY-01)",
+   "milestone": "Deferred and supplementary assessment timetable published",
+   "title": "Deferred and supplementary assessment timetable published: October intake (OCT-MY-01)",
+   "period_codes": "OCT-MY-01",
+   "teaching_period": "October intake",
+   "time": ""
+  },
+  {
+   "campus": "AUS",
+   "raw": "Last day to withdraw from Monash Online 6 (MO-TP6-01) units with Withdrawn showing on your academic record. Units withdrawn after this date will show as Withdrawn Fail",
+   "milestone": "Last day to withdraw (WN)",
+   "title": "Last day to withdraw (WN): Monash Online 6 (MO-TP6-01)",
+   "period_codes": "MO-TP6-01",
+   "teaching_period": "Monash Online 6",
+   "time": ""
+  },
+  {
+   "campus": "MY",
+   "raw": "Last day to add off-campus semester one (S1-01) or full-year (FY-01) units",
+   "milestone": "Last day to add off-campus units",
+   "title": "Last day to add off-campus units: Semester 1 (S1-01), Full year (FY-01)",
+   "period_codes": "S1-01; FY-01",
+   "teaching_period": "Semester 1; Full year",
+   "time": ""
+  },
+  {
+   "campus": "MY",
+   "raw": "Course transfers to Monash Australia: Applications open at 9am (Melbourne time) for semester one 2026",
+   "milestone": "Course transfer applications open",
+   "title": "Course transfer applications open: Semester 1",
+   "period_codes": "",
+   "teaching_period": "Semester 1",
+   "time": "9am"
+  },
+  {
+   "campus": "AUS",
+   "raw": "University closed: Boxing Day",
+   "milestone": "University closed",
+   "title": "University closed: Boxing Day",
+   "period_codes": "",
+   "teaching_period": "",
+   "time": ""
+  },
+  {
+   "campus": "AUS",
+   "raw": "Allocate+ adjustment opens at 10am: Semester one (S1-01)",
+   "milestone": "Allocate+ adjustment opens",
+   "title": "Allocate+ adjustment opens: Semester 1 (S1-01)",
+   "period_codes": "S1-01",
+   "teaching_period": "Semester 1",
+   "time": "10am"
+  },
+  {
+   "campus": "MY",
+   "raw": "Deferred and supplementary final assessments: end for semester two (S2-01) 2023",
+   "milestone": "Deferred and supplementary assessments end",
+   "title": "Deferred and supplementary assessments end: Semester 2 (S2-01)",
+   "period_codes": "S2-01",
+   "teaching_period": "Semester 2",
+   "time": ""
+  },
+  {
+   "campus": "MY",
+   "raw": "Allocate+ preference entry: closes 10am for semester one (S1-01)",
+   "milestone": "Allocate+ preference entry closes",
+   "title": "Allocate+ preference entry closes: Semester 1 (S1-01)",
+   "period_codes": "S1-01",
+   "teaching_period": "Semester 1",
+   "time": "10am"
+  },
+  {
+   "campus": "AUS",
+   "raw": "Coursework scholarship applications open: Mid-year 2023",
+   "milestone": "Coursework scholarship applications open",
+   "title": "Coursework scholarship applications open: Mid-year",
+   "period_codes": "",
+   "teaching_period": "",
+   "time": ""
+  },
+  {
+   "campus": "AUS",
+   "raw": "Graduation ceremonies start: December round (Australia)",
+   "milestone": "Graduation ceremonies start",
+   "title": "Graduation ceremonies start: December round (Australia)",
+   "period_codes": "",
+   "teaching_period": "",
+   "time": ""
+  },
+  {
+   "campus": "AUS",
+   "raw": "Rescheduled deferred assessments end: Semester two (S2-01) 2022",
+   "milestone": "Rescheduled deferred assessments end",
+   "title": "Rescheduled deferred assessments end: Semester 2 (S2-01)",
+   "period_codes": "S2-01",
+   "teaching_period": "Semester 2",
+   "time": ""
+  },
+  {
+   "campus": "ID",
+   "raw": "Teaching ends: Monash Indonesia term 2 (MI-T2-6). Last day to withdraw from units with Withdrawn Fail showing on your academic record (units cannot be withdrawn after this date)",
+   "milestone": "Teaching ends",
+   "title": "Teaching ends: Term 2 (MI-T2-6)",
+   "period_codes": "MI-T2-6",
+   "teaching_period": "Term 2",
+   "time": ""
+  },
+  {
+   "campus": "AUS",
+   "raw": "Re-enrolment (late) starts: 2025. A late fee applies",
+   "milestone": "Re-enrolment (late) starts",
+   "title": "Re-enrolment (late) starts",
+   "period_codes": "",
+   "teaching_period": "",
+   "time": ""
+  },
+  {
+   "campus": "AUS",
+   "raw": "Course transfers: Eligible international students will receive an International Student Course Agreement (ISCA) for semester one 2026. To accept an offer, students must return their completed ISCA by Saturday 31 January 2026.",
+   "milestone": "Course transfer ISCA sent",
+   "title": "Course transfer ISCA sent: Semester 1",
+   "period_codes": "",
+   "teaching_period": "Semester 1",
+   "time": ""
+  },
+  {
+   "campus": "AUS",
+   "raw": "Mid-year Orientation Week ends: Semester two (S2-01)",
+   "milestone": "Orientation ends",
+   "title": "Orientation ends: Semester 2 (S2-01)",
+   "period_codes": "S2-01",
+   "teaching_period": "Semester 2",
+   "time": ""
+  },
+  {
+   "campus": "ID",
+   "raw": "Final assessments start: Monash Indonesia term 2 (MI-T2-6)",
+   "milestone": "Final assessments start",
+   "title": "Final assessments start: Term 2 (MI-T2-6)",
+   "period_codes": "MI-T2-6",
+   "teaching_period": "Term 2",
+   "time": ""
+  },
+  {
+   "campus": "AUS",
+   "raw": "Mid-semester break starts: Semester one (S1-01)",
+   "milestone": "Mid-semester break starts",
+   "title": "Mid-semester break starts: Semester 1 (S1-01)",
+   "period_codes": "S1-01",
+   "teaching_period": "Semester 1",
+   "time": ""
+  },
+  {
+   "campus": "MY",
+   "raw": "Results (deferred and supplementary): released for October intake (OCT-MY-01)",
+   "milestone": "Deferred and supplementary results released",
+   "title": "Deferred and supplementary results released: October intake (OCT-MY-01)",
+   "period_codes": "OCT-MY-01",
+   "teaching_period": "October intake",
+   "time": ""
+  },
+  {
+   "campus": "MY",
+   "raw": "Mid-semester break: ends for semester two (S2-01)",
+   "milestone": "Mid-semester break ends",
+   "title": "Mid-semester break ends: Semester 2 (S2-01)",
+   "period_codes": "S2-01",
+   "teaching_period": "Semester 2",
+   "time": ""
+  },
+  {
+   "campus": "MY",
+   "raw": "Allocate+ adjustment: closes 5pm for October intake (OCT-MY-01)",
+   "milestone": "Allocate+ adjustment closes",
+   "title": "Allocate+ adjustment closes: October intake (OCT-MY-01)",
+   "period_codes": "OCT-MY-01",
+   "teaching_period": "October intake",
+   "time": "5pm"
+  },
+  {
+   "campus": "AUS",
+   "raw": "Final assessments timetable published: Summer semester A (SSA-02) 2025, November intake (NOV12) 2025, semester 2 - summer A (S2-SS-02), and summer semester B (SSB-01) 2026",
+   "milestone": "Final assessment timetable published",
+   "title": "Final assessment timetable published: Summer A (SSA-02), November intake (NOV12), Semester 2 - Summer A (S2-SS-02), Summer B (SSB-01)",
+   "period_codes": "SSA-02; NOV12; S2-SS-02; SSB-01",
+   "teaching_period": "Summer A; November intake; Semester 2 - Summer A; Summer B",
+   "time": ""
+  },
+  {
+   "campus": "AUS",
+   "raw": "Graduation applications close: May round (Australia)",
+   "milestone": "Graduation applications close",
+   "title": "Graduation applications close: May round (Australia)",
+   "period_codes": "",
+   "teaching_period": "",
+   "time": ""
+  },
+  {
+   "campus": "MY",
+   "raw": "Final assessment end for October intake October intake (OCT-MY-01)",
+   "milestone": "Final assessments end",
+   "title": "Final assessments end: October intake (OCT-MY-01)",
+   "period_codes": "OCT-MY-01",
+   "teaching_period": "October intake",
+   "time": ""
+  },
+  {
+   "campus": "MY",
+   "raw": "Course transfers to Monash Australia: eligible students will receive an International Student Course Agreement (ISCA). To accept an offer, students must return their completed ISCA by 14 April 2025.",
+   "milestone": "Course transfer ISCA sent",
+   "title": "Course transfer ISCA sent",
+   "period_codes": "",
+   "teaching_period": "",
+   "time": ""
+  },
+  {
+   "campus": "AUS",
+   "raw": "Deferred and supplementary assessment results released: Semester two (S2-01) 2022",
+   "milestone": "Deferred and supplementary results released",
+   "title": "Deferred and supplementary results released: Semester 2 (S2-01)",
+   "period_codes": "S2-01",
+   "teaching_period": "Semester 2",
+   "time": ""
+  },
+  {
+   "campus": "MY",
+   "raw": "Graduation applications close: November round (Malaysia)",
+   "milestone": "Graduation applications close",
+   "title": "Graduation applications close: November round (Malaysia)",
+   "period_codes": "",
+   "teaching_period": "",
+   "time": ""
+  },
+  {
+   "campus": "MY",
+   "raw": "Course transfers to Monash Australia: applications close at 11.59pm (Melbourne time) for semester two 2024",
+   "milestone": "Course transfer applications close",
+   "title": "Course transfer applications close: Semester 2",
+   "period_codes": "",
+   "teaching_period": "Semester 2",
+   "time": "11:59pm"
+  },
+  {
+   "campus": "AUS",
+   "raw": "Rescheduled deferred and supplementary final assessments timetable published: Summer semester A (SSA-02), November intake (NOV12) 2025, and summer semester B (SSB-01)",
+   "milestone": "Rescheduled deferred assessment timetable published",
+   "title": "Rescheduled deferred assessment timetable published: Summer A (SSA-02), November intake (NOV12), Summer B (SSB-01)",
+   "period_codes": "SSA-02; NOV12; SSB-01",
+   "teaching_period": "Summer A; November intake; Summer B",
+   "time": ""
+  },
+  {
+   "campus": "MY",
+   "raw": "Re-enrolment (timely): begins for 2026",
+   "milestone": "Re-enrolment (timely) starts",
+   "title": "Re-enrolment (timely) starts",
+   "period_codes": "",
+   "teaching_period": "",
+   "time": ""
+  },
+  {
+   "campus": "ID",
+   "raw": "Swot vac ends: Monash Indonesia Semester 2 (MI-S2)",
+   "milestone": "Swot vac ends",
+   "title": "Swot vac ends: Semester 2 (MI-S2)",
+   "period_codes": "MI-S2",
+   "teaching_period": "Semester 2",
+   "time": ""
+  },
+  {
+   "campus": "MY",
+   "raw": "Re-enrolment (late) starts: 2027. A late fee applies",
+   "milestone": "Re-enrolment (late) starts",
+   "title": "Re-enrolment (late) starts",
+   "period_codes": "",
+   "teaching_period": "",
+   "time": ""
+  },
+  {
+   "campus": "MY",
+   "raw": "University reopens",
+   "milestone": "University reopens",
+   "title": "University reopens",
+   "period_codes": "",
+   "teaching_period": "",
+   "time": ""
+  },
+  {
+   "campus": "MY",
+   "raw": "Course transfers to Monash Australia: Change of preference deadline at 11.59pm (Melbourne time) for semester one (S1-01) 2027",
+   "milestone": "Course transfer preferences close",
+   "title": "Course transfer preferences close: Semester 1 (S1-01)",
+   "period_codes": "S1-01",
+   "teaching_period": "Semester 1",
+   "time": "11:59pm"
+  },
+  {
+   "campus": "ID",
+   "raw": "Graduation ceremonies: November round (Indonesia)",
+   "milestone": "Graduation ceremonies start",
+   "title": "Graduation ceremonies start: November round (Indonesia)",
+   "period_codes": "",
+   "teaching_period": "",
+   "time": ""
+  },
+  {
+   "campus": "MY",
+   "raw": "Allocate+ preference entry: opens 10am for semester two (S2-01)",
+   "milestone": "Allocate+ preference entry opens",
+   "title": "Allocate+ preference entry opens: Semester 2 (S2-01)",
+   "period_codes": "S2-01",
+   "teaching_period": "Semester 2",
+   "time": "10am"
+  },
+  {
+   "campus": "MY",
+   "raw": "Orientation starts: October intake (OCT-MY-01)",
+   "milestone": "Orientation starts",
+   "title": "Orientation starts: October intake (OCT-MY-01)",
+   "period_codes": "OCT-MY-01",
+   "teaching_period": "October intake",
+   "time": ""
+  },
+  {
+   "campus": "AUS",
+   "raw": "Last day to add off-campus units: Semester two (S2-01)",
+   "milestone": "Last day to add off-campus units",
+   "title": "Last day to add off-campus units: Semester 2 (S2-01)",
+   "period_codes": "S2-01",
+   "teaching_period": "Semester 2",
+   "time": ""
+  },
+  {
+   "campus": "AUS",
+   "raw": "Last day to withdraw from units without the unit showing on your academic record: Semester two (S2-01). Units withdrawn after this date will show as Withdrawn",
+   "milestone": "Last day to withdraw (no record)",
+   "title": "Last day to withdraw (no record): Semester 2 (S2-01)",
+   "period_codes": "S2-01",
+   "teaching_period": "Semester 2",
+   "time": ""
+  },
+  {
+   "campus": "MY",
+   "raw": "Results released: October intake (OCT-MY-01) 2026",
+   "milestone": "Results released",
+   "title": "Results released: October intake (OCT-MY-01)",
+   "period_codes": "OCT-MY-01",
+   "teaching_period": "October intake",
+   "time": ""
+  },
+  {
+   "campus": "AUS",
+   "raw": "Course transfers: Last day for domestic students to accept an offer for semester one (S1-01) 2027",
+   "milestone": "Course transfer offer acceptance closes",
+   "title": "Course transfer offer acceptance closes: Semester 1 (S1-01)",
+   "period_codes": "S1-01",
+   "teaching_period": "Semester 1",
+   "time": ""
+  },
+  {
+   "campus": "MY",
+   "raw": "Last day to withdraw from October intake (OCT-MY-01) units with Withdrawn showing on your academic record. Units withdrawn after this date will show as Withdrawn Fail",
+   "milestone": "Last day to withdraw (WN)",
+   "title": "Last day to withdraw (WN): October intake (OCT-MY-01)",
+   "period_codes": "OCT-MY-01",
+   "teaching_period": "October intake",
+   "time": ""
+  },
+  {
+   "campus": "AUS",
+   "raw": "Allocate+ preference entry closes at 12pm: Semester two (S2-01)",
+   "milestone": "Allocate+ preference entry closes",
+   "title": "Allocate+ preference entry closes: Semester 2 (S2-01)",
+   "period_codes": "S2-01",
+   "teaching_period": "Semester 2",
+   "time": "12pm"
+  },
+  {
+   "campus": "ID",
+   "raw": "Teaching starts: Monash Indonesia term 4 (MI-T4-6)",
+   "milestone": "Teaching starts",
+   "title": "Teaching starts: Term 4 (MI-T4-6)",
+   "period_codes": "MI-T4-6",
+   "teaching_period": "Term 4",
+   "time": ""
+  },
+  {
+   "campus": "AUS",
+   "raw": "Re-enrolment (timely) ends: 2024",
+   "milestone": "Re-enrolment (timely) ends",
+   "title": "Re-enrolment (timely) ends",
+   "period_codes": "",
+   "teaching_period": "",
+   "time": ""
+  },
+  {
+   "campus": "MY",
+   "raw": "Last day to withdraw from full-year (FY-01) units without Withdrawn showing on your academic record",
+   "milestone": "Last day to withdraw (no record)",
+   "title": "Last day to withdraw (no record): Full year (FY-01)",
+   "period_codes": "FY-01",
+   "teaching_period": "Full year",
+   "time": ""
+  },
+  {
+   "campus": "MY",
+   "raw": "Final assessments and teaching periods end: Semester Two (S2-01), Full-year (FY-01), Full-year (extended) (FY-32) and Trimester 3 (T3-58) (except Faculty of Law units)",
+   "milestone": "Final assessments and teaching end",
+   "title": "Final assessments and teaching end: Semester 2 (S2-01), Full year (FY-01), Full year (extended) (FY-32), Trimester 3 (T3-58)",
+   "period_codes": "S2-01; FY-01; FY-32; T3-58",
+   "teaching_period": "Semester 2; Full year; Full year (extended); Trimester 3",
+   "time": ""
+  },
+  {
+   "campus": "MY",
+   "raw": "Re-enrolment (late): ends for 2025",
+   "milestone": "Re-enrolment (late) ends",
+   "title": "Re-enrolment (late) ends",
+   "period_codes": "",
+   "teaching_period": "",
+   "time": ""
+  },
+  {
+   "campus": "AUS",
+   "raw": "Graduation garden party at Clayton campus",
+   "milestone": "Graduation event",
+   "title": "Graduation event",
+   "period_codes": "",
+   "teaching_period": "",
+   "time": ""
+  },
+  {
+   "campus": "AUS",
+   "raw": "Swot vac starts: Semester one (S1-01)",
+   "milestone": "Swot vac starts",
+   "title": "Swot vac starts: Semester 1 (S1-01)",
+   "period_codes": "S1-01",
+   "teaching_period": "Semester 1",
+   "time": ""
+  },
+  {
+   "campus": "AUS",
+   "raw": "Re-enrolment (late) ends: 2026",
+   "milestone": "Re-enrolment (late) ends",
+   "title": "Re-enrolment (late) ends",
+   "period_codes": "",
+   "teaching_period": "",
+   "time": ""
+  },
+  {
+   "campus": "MY",
+   "raw": "Enrolment: begins for the October intake (OCT-MY-01)",
+   "milestone": "Enrolment starts",
+   "title": "Enrolment starts: October intake (OCT-MY-01)",
+   "period_codes": "OCT-MY-01",
+   "teaching_period": "October intake",
+   "time": ""
+  },
+  {
+   "campus": "MY",
+   "raw": "Swot vac ends: Semester one (S1-01)",
+   "milestone": "Swot vac ends",
+   "title": "Swot vac ends: Semester 1 (S1-01)",
+   "period_codes": "S1-01",
+   "teaching_period": "Semester 1",
+   "time": ""
+  },
+  {
+   "campus": "MY",
+   "raw": "Last day to add on-campus units: Semester one (S1-01) and Full-year (FY-01)",
+   "milestone": "Last day to add on-campus units",
+   "title": "Last day to add on-campus units: Semester 1 (S1-01), Full year (FY-01)",
+   "period_codes": "S1-01; FY-01",
+   "teaching_period": "Semester 1; Full year",
+   "time": ""
+  },
+  {
+   "campus": "AUS",
+   "raw": "Orientation starts: Semester one (S1-01)",
+   "milestone": "Orientation starts",
+   "title": "Orientation starts: Semester 1 (S1-01)",
+   "period_codes": "S1-01",
+   "teaching_period": "Semester 1",
+   "time": ""
+  },
+  {
+   "campus": "MY",
+   "raw": "Re-enrolment (timely): ends for 2025",
+   "milestone": "Re-enrolment (timely) ends",
+   "title": "Re-enrolment (timely) ends",
+   "period_codes": "",
+   "teaching_period": "",
+   "time": ""
+  },
+  {
+   "campus": "AUS",
+   "raw": "SA-HELP incurral date",
+   "milestone": "SA-HELP incurral date",
+   "title": "SA-HELP incurral date",
+   "period_codes": "",
+   "teaching_period": "",
+   "time": ""
+  },
+  {
+   "campus": "MY",
+   "raw": "Graduation ceremonies end: April round (Malaysia)",
+   "milestone": "Graduation ceremonies end",
+   "title": "Graduation ceremonies end: April round (Malaysia)",
+   "period_codes": "",
+   "teaching_period": "",
+   "time": ""
+  },
+  {
+   "campus": "MY",
+   "raw": "Fees: last day for students commencing in October intake (OCT-MY-01) to discontinue from course and receive full refund of tuition fees paid for October (OCT-MY-01) , less a fee of RM2,000 per course",
+   "milestone": "Last day for full fee refund",
+   "title": "Last day for full fee refund: October intake (OCT-MY-01)",
+   "period_codes": "OCT-MY-01",
+   "teaching_period": "October intake",
+   "time": ""
+  },
+  {
+   "campus": "AUS",
+   "raw": "Graduation ceremonies end: April/May round (Australia)",
+   "milestone": "Graduation ceremonies end",
+   "title": "Graduation ceremonies end: April/May round (Australia)",
+   "period_codes": "",
+   "teaching_period": "",
+   "time": ""
+  },
+  {
+   "campus": "AUS",
+   "raw": "Commonwealth Assistance Notice (CAN) released: SA-HELP incurred in 2022 (available in WES)",
+   "milestone": "CAN released",
+   "title": "CAN released: SA-HELP incurred in 2022 (available)",
+   "period_codes": "",
+   "teaching_period": "",
+   "time": ""
+  },
+  {
+   "campus": "AUS",
+   "raw": "Final assessment and teaching periods end: Summer semester A (SSA-02) 2025, November intake (NOV12) 2025, and summer semester B (SSB-01) 2026",
+   "milestone": "Final assessments and teaching end",
+   "title": "Final assessments and teaching end: Summer A (SSA-02), November intake (NOV12), Summer B (SSB-01)",
+   "period_codes": "SSA-02; NOV12; SSB-01",
+   "teaching_period": "Summer A; November intake; Summer B",
+   "time": ""
+  },
+  {
+   "campus": "AUS",
+   "raw": "Allocate+ preference entry opens 10am: Semester one (S1-01)",
+   "milestone": "Allocate+ preference entry opens",
+   "title": "Allocate+ preference entry opens: Semester 1 (S1-01)",
+   "period_codes": "S1-01",
+   "teaching_period": "Semester 1",
+   "time": "10am"
+  },
+  {
+   "campus": "AUS",
+   "raw": "Enrolment starts: November intake (NOV12)",
+   "milestone": "Enrolment starts",
+   "title": "Enrolment starts: November intake (NOV12)",
+   "period_codes": "NOV12",
+   "teaching_period": "November intake",
+   "time": ""
+  },
+  {
+   "campus": "ID",
+   "raw": "Census date: Monash Indonesia term 2 (MI-T2-6). Last day to withdraw from units without incurring fees and Withdrawn showing on your academic record",
+   "milestone": "Census date",
+   "title": "Census date: Term 2 (MI-T2-6)",
+   "period_codes": "MI-T2-6",
+   "teaching_period": "Term 2",
+   "time": ""
+  },
+  {
+   "campus": "MY",
+   "raw": "Fees due: for semester one (S1-01). A late payment penalty will apply after this date",
+   "milestone": "Fees due",
+   "title": "Fees due: Semester 1 (S1-01)",
+   "period_codes": "S1-01",
+   "teaching_period": "Semester 1",
+   "time": ""
+  },
+  {
+   "campus": "AUS",
+   "raw": "Pre-Orientation events start: Semester one (S1-01)",
+   "milestone": "Pre-orientation starts",
+   "title": "Pre-orientation starts: Semester 1 (S1-01)",
+   "period_codes": "S1-01",
+   "teaching_period": "Semester 1",
+   "time": ""
+  },
+  {
+   "campus": "AUS",
+   "raw": "Mid-semester break ends: Semester two (S2-01)",
+   "milestone": "Mid-semester break ends",
+   "title": "Mid-semester break ends: Semester 2 (S2-01)",
+   "period_codes": "S2-01",
+   "teaching_period": "Semester 2",
+   "time": ""
+  },
+  {
+   "campus": "AUS",
+   "raw": "Re-enrolment (timely) starts: 2024",
+   "milestone": "Re-enrolment (timely) starts",
+   "title": "Re-enrolment (timely) starts",
+   "period_codes": "",
+   "teaching_period": "",
+   "time": ""
+  },
+  {
+   "campus": "AUS",
+   "raw": "Last day to add on-campus units: Semester one (S1-01) and full-year (FY-01)",
+   "milestone": "Last day to add on-campus units",
+   "title": "Last day to add on-campus units: Semester 1 (S1-01), Full year (FY-01)",
+   "period_codes": "S1-01; FY-01",
+   "teaching_period": "Semester 1; Full year",
+   "time": ""
+  },
+  {
+   "campus": "MY",
+   "raw": "Fees: last day for course discontinuation semester two (S2-01) to qualify for a partial refund of fees",
+   "milestone": "Last day for partial fee refund",
+   "title": "Last day for partial fee refund: Semester 2 (S2-01)",
+   "period_codes": "S2-01",
+   "teaching_period": "Semester 2",
+   "time": ""
+  },
+  {
+   "campus": "MY",
+   "raw": "Course transfers to Monash Australia: Last day for eligible students to accept an offer for semester one (S1-01) 2027 by submitting their ISCA",
+   "milestone": "Course transfer offer acceptance closes",
+   "title": "Course transfer offer acceptance closes: Semester 1 (S1-01)",
+   "period_codes": "S1-01",
+   "teaching_period": "Semester 1",
+   "time": ""
+  },
+  {
+   "campus": "AUS",
+   "raw": "Daylight saving starts: Turn clocks forward one hour",
+   "milestone": "Daylight saving starts",
+   "title": "Daylight saving starts: Turn clocks forward one hour",
+   "period_codes": "",
+   "teaching_period": "",
+   "time": ""
+  },
+  {
+   "campus": "ID",
+   "raw": "Swot vac starts: Monash Indonesia Semester 2 (MI-S2)",
+   "milestone": "Swot vac starts",
+   "title": "Swot vac starts: Semester 2 (MI-S2)",
+   "period_codes": "MI-S2",
+   "teaching_period": "Semester 2",
+   "time": ""
+  },
+  {
+   "campus": "AUS",
+   "raw": "Monash Online 6 (MO-TP6-01)",
+   "milestone": "Teaching period",
+   "title": "Teaching period: Monash Online 6 (MO-TP6-01)",
+   "period_codes": "MO-TP6-01",
+   "teaching_period": "Monash Online 6",
+   "time": ""
+  },
+  {
+   "campus": "ID",
+   "raw": "Graduation applications open: November round (Indonesia)",
+   "milestone": "Graduation applications open",
+   "title": "Graduation applications open: November round (Indonesia)",
+   "period_codes": "",
+   "teaching_period": "",
+   "time": ""
+  },
+  {
+   "campus": "AUS",
+   "raw": "University reopens",
+   "milestone": "University reopens",
+   "title": "University reopens",
+   "period_codes": "",
+   "teaching_period": "",
+   "time": ""
+  },
+  {
+   "campus": "ID",
+   "raw": "Graduation applications close: November round (Indonesia)",
+   "milestone": "Graduation applications close",
+   "title": "Graduation applications close: November round (Indonesia)",
+   "period_codes": "",
+   "teaching_period": "",
+   "time": ""
+  },
+  {
+   "campus": "",
+   "raw": "Mid-semester break: begins for semester one (S1-01)",
+   "milestone": "Mid-semester break starts",
+   "title": "Mid-semester break starts: Semester 1 (S1-01)",
+   "period_codes": "S1-01",
+   "teaching_period": "Semester 1",
+   "time": ""
+  },
+  {
+   "campus": "",
+   "raw": "Results released: Deferred and supplementary for Semester one (S1-01)",
+   "milestone": "Deferred and supplementary results released",
+   "title": "Deferred and supplementary results released: Semester 1 (S1-01)",
+   "period_codes": "S1-01",
+   "teaching_period": "Semester 1",
+   "time": ""
+  },
+  {
+   "campus": "",
+   "raw": "Orientation Week: Semester 1 (S1-01) ends",
+   "milestone": "Orientation ends",
+   "title": "Orientation ends: Semester 1 (S1-01)",
+   "period_codes": "S1-01",
+   "teaching_period": "Semester 1",
+   "time": ""
+  },
+  {
+   "campus": "",
+   "raw": "October intake (OCT-MY-01) ends. Last day to withdraw from the October intake (OCT-MY-01) units with Withdrawn Fail showing on your academic record. Units cannot be withdrawn after this date",
+   "milestone": "Teaching ends",
+   "title": "Teaching ends: October intake (OCT-MY-01)",
+   "period_codes": "OCT-MY-01",
+   "teaching_period": "October intake",
+   "time": ""
+  },
+  {
+   "campus": "",
+   "raw": "Allocate+ adjustment: opens 10am for semester one (S1-01)",
+   "milestone": "Allocate+ adjustment opens",
+   "title": "Allocate+ adjustment opens: Semester 1 (S1-01)",
+   "period_codes": "S1-01",
+   "teaching_period": "Semester 1",
+   "time": "10am"
+  },
+  {
+   "campus": "",
+   "raw": "Allocate+ adjustment opens at 10am: Semester two (S2-01)",
+   "milestone": "Allocate+ adjustment opens",
+   "title": "Allocate+ adjustment opens: Semester 2 (S2-01)",
+   "period_codes": "S2-01",
+   "teaching_period": "Semester 2",
+   "time": "10am"
+  },
+  {
+   "campus": "",
+   "raw": "Results (deferred and supplementary): released for Summer semester A (SSA-02) 2025 and Summer semester B (SSB-01) 2026",
+   "milestone": "Deferred and supplementary results released",
+   "title": "Deferred and supplementary results released: Summer A (SSA-02), Summer B (SSB-01)",
+   "period_codes": "SSA-02; SSB-01",
+   "teaching_period": "Summer A; Summer B",
+   "time": ""
+  },
+  {
+   "campus": "",
+   "raw": "Replacement holiday: Deepavali* (University closed)",
+   "milestone": "University closed",
+   "title": "University closed: Deepavali (replacement holiday)",
+   "period_codes": "",
+   "teaching_period": "",
+   "time": ""
+  },
+  {
+   "campus": "",
+   "raw": "University closed: Hari Raya Aidilfitri Day 1",
+   "milestone": "University closed",
+   "title": "University closed: Hari Raya Aidilfitri Day 1",
+   "period_codes": "",
+   "teaching_period": "",
+   "time": ""
+  },
+  {
+   "campus": "",
+   "raw": "Mid-year Orientation Week starts: Semester Two (S2-01)",
+   "milestone": "Orientation starts",
+   "title": "Orientation starts: Semester 2 (S2-01)",
+   "period_codes": "S2-01",
+   "teaching_period": "Semester 2",
+   "time": ""
+  },
+  {
+   "campus": "",
+   "raw": "Final assessment period and teaching period: end for  the October intake (OCT-MY-01) 2026",
+   "milestone": "Final assessments and teaching end",
+   "title": "Final assessments and teaching end: October intake (OCT-MY-01)",
+   "period_codes": "OCT-MY-01",
+   "teaching_period": "October intake",
+   "time": ""
+  },
+  {
+   "campus": "",
+   "raw": "Course transfers to Monash Australia: Applications close at 11.59pm (Melbourne time) for semester two (S2-01)",
+   "milestone": "Course transfer applications close",
+   "title": "Course transfer applications close: Semester 2 (S2-01)",
+   "period_codes": "S2-01",
+   "teaching_period": "Semester 2",
+   "time": "11:59pm"
+  },
+  {
+   "campus": "",
+   "raw": "Teaching starts: Monash Indonesia Semester 2 (MI-S2)",
+   "milestone": "Teaching starts",
+   "title": "Teaching starts: Semester 2 (MI-S2)",
+   "period_codes": "MI-S2",
+   "teaching_period": "Semester 2",
+   "time": ""
+  },
+  {
+   "campus": "",
+   "raw": "Re-enrolment (late) starts: 2027 (a late fee applies)",
+   "milestone": "Re-enrolment (late) starts",
+   "title": "Re-enrolment (late) starts",
+   "period_codes": "",
+   "teaching_period": "",
+   "time": ""
+  }
+ ]
+}

@@ -1,0 +1,500 @@
+{
+  "_about": [
+    "Normalisation rules for Monash principal dates (Australia, Malaysia, Indonesia).",
+    "Used by principal_dates.py (the .ics feeds) and by the Calendar Dashboard Apps Script, which",
+    "fetches this file from GitHub on every sync. Patterns are case-insensitive regexes written in",
+    "the subset shared by Python and JavaScript. First matching milestone rule wins.",
+    "milestones: matched against the milestone text (before the first colon, time removed).",
+    "rewrites: applied in order to the raw title before anything else ($1 = first group).",
+    "  'milestone' = canonical name. 'phase' (optional) tells the academic-week builder what the",
+    "  event marks: teaching_start, teaching_end, break_start, break_end, swot_start, swot_end,",
+    "  exams_start, exams_end, exams_and_teaching_end, results.",
+    "titles: matched against the whole raw title; for titles that have no milestone prefix.",
+    "periods: canonical teaching-period names, matched against the period code (e.g. S1-01).",
+    "period_names: used when a title names a period without a code.",
+    "exclude: raw titles matching these are dropped from the feeds and flagged Exclude in the sheet."
+  ],
+  "version": "2026-10-19",
+  "rewrites": [
+    {
+      "pattern": "^replacement (?:public )?holiday(?: for(?: public holiday)?)?:?\\s*(.*?)\\*?\\s*\\(university closed\\)$",
+      "replace": "University closed: $1 (replacement holiday)"
+    },
+    {
+      "pattern": "^(?:public )?holiday:\\s*(.*?)\\*?\\s*\\(university closed\\)$",
+      "replace": "University closed: $1"
+    },
+    {
+      "pattern": "\\s*\\(university closed\\)",
+      "replace": ""
+    },
+    {
+      "pattern": "\\bNew Years\\b",
+      "replace": "New Year's"
+    },
+    {
+      "pattern": "\\s*\\(exams?\\)",
+      "replace": ""
+    },
+    {
+      "pattern": "\\s*\\((?:or|see) [^)]*\\)",
+      "replace": ""
+    },
+    {
+      "pattern": "\\s+in (?:the )?(?:Allocate\\+|Web Enrolment Systems?(?: \\(WES\\))?|WES)(?=\\W|$)",
+      "replace": ""
+    },
+    {
+      "pattern": "\\b(period|for|the) \\1\\b",
+      "replace": "$1"
+    },
+    {
+      "pattern": "^([^:(]*?)\\s*\\((deferred and supplementary)(?: exams?)?\\)",
+      "replace": "$2 $1"
+    },
+    {
+      "pattern": "^([^:]+):\\s*([^:]+?)\\s+(begins?|ends?|starts?)$",
+      "replace": "$1 $3: $2"
+    },
+    {
+      "pattern": "^([^:]*?\\b(?:begins?|ends?|starts?|commences?|opens?|closes?|released|published|due))\\s+for\\s+(?!.*:)",
+      "replace": "$1: "
+    }
+  ],
+  "milestones": [
+    {
+      "pattern": "^(teaching( period)?|classes|lectures) (starts?|begins?|commences?)$",
+      "milestone": "Teaching starts",
+      "phase": "teaching_start"
+    },
+    {
+      "pattern": "^(teaching( period)?|classes|lectures) (ends?|finish(es)?|concludes?)$",
+      "milestone": "Teaching ends",
+      "phase": "teaching_end"
+    },
+    {
+      "pattern": "^final assessments?( period)? and teaching periods? ends?$",
+      "milestone": "Final assessments and teaching end",
+      "phase": "exams_and_teaching_end"
+    },
+    {
+      "pattern": "^census date( for (the )?teaching periods?)?$",
+      "milestone": "Census date"
+    },
+    {
+      "pattern": "^university (is )?closed$|^university closes$|^public holiday$|^university holiday$",
+      "milestone": "University closed"
+    },
+    {
+      "pattern": "^university (re-?opens|open)$",
+      "milestone": "University reopens"
+    },
+    {
+      "pattern": "^mid-?\\s?(semester|sem|term|year)? ?break:? ?(starts?|begins?|commences?)$|^(semester|teaching) break:? (starts?|begins?)$",
+      "milestone": "Mid-semester break starts",
+      "phase": "break_start"
+    },
+    {
+      "pattern": "^mid-?\\s?(semester|sem|term|year)? ?break:? ?(ends?|finish(es)?)$|^(semester|teaching) break:? ends?$",
+      "milestone": "Mid-semester break ends",
+      "phase": "break_end"
+    },
+    {
+      "pattern": "\\b(swot ?vac(ation)?|self-directed study week|study (break|week|period)):? (starts?|begins?)$",
+      "milestone": "Swot vac starts",
+      "phase": "swot_start"
+    },
+    {
+      "pattern": "\\b(swot ?vac(ation)?|self-directed study week|study (break|week|period)):? (ends?|finish(es)?)$",
+      "milestone": "Swot vac ends",
+      "phase": "swot_end"
+    },
+    {
+      "pattern": "^results released:? rescheduled deferred( and supplementary)?( assessments?)?$|^rescheduled deferred( and supplementary)? (assessments? )?results:? released$",
+      "milestone": "Rescheduled deferred results released"
+    },
+    {
+      "pattern": "^(deferred and supplementary|supplementary and deferred|deferred/supplementary)( final)?( (assessments?|exams?))?( period)?:? ?(results:? )?(released?|results released)$|^results released:? deferred and supplementary$|^deferred and supplementary results:? released$",
+      "milestone": "Deferred and supplementary results released",
+      "phase": "results"
+    },
+    {
+      "pattern": "^rescheduled deferred( and supplementary)?( final)? (assessments?|exams?)( period)?:? (starts?|begins?)$",
+      "milestone": "Rescheduled deferred assessments start"
+    },
+    {
+      "pattern": "^rescheduled deferred( and supplementary)?( final)? (assessments?|exams?)( period)?:? ends?$",
+      "milestone": "Rescheduled deferred assessments end"
+    },
+    {
+      "pattern": "^rescheduled deferred( and supplementary)?( final)? (assessments?|exams?)( period)? timetables? (published|released)$|^rescheduled deferred\\b.*\\btimetables? (published|released)$",
+      "milestone": "Rescheduled deferred assessment timetable published"
+    },
+    {
+      "pattern": "^(deferred and supplementary|supplementary and deferred|deferred/supplementary)( final)? (assessments?|exams?)( period)?:? (starts?|begins?)$",
+      "milestone": "Deferred and supplementary assessments start"
+    },
+    {
+      "pattern": "^(deferred and supplementary|supplementary and deferred|deferred/supplementary)( final)? (assessments?|exams?)( period)?:? ends?$",
+      "milestone": "Deferred and supplementary assessments end"
+    },
+    {
+      "pattern": "^(deferred and supplementary|supplementary and deferred|deferred/supplementary)( final)? (assessments?|exams?)( period)? timetables? (published|released)$",
+      "milestone": "Deferred and supplementary assessment timetable published"
+    },
+    {
+      "pattern": "^final (assessments?|exam(ination)?s?)( period)? timetables?:? (published|released)$|^(final )?(exam(ination)?s?|assessments?) timetables?:?\\b.*\\b(published|released)$",
+      "milestone": "Final assessment timetable published"
+    },
+    {
+      "pattern": "^final (assessments?|exam(ination)?s?)( period)?:? (starts?|begins?|commences?)$|^(examinations?|exams?|assessment period) (starts?|begins?)$",
+      "milestone": "Final assessments start",
+      "phase": "exams_start"
+    },
+    {
+      "pattern": "^final (assessments?|exam(ination)?s?)( period)?:? (ends?|finish(es)?)$|^(examinations?|exams?|assessment period) ends?$",
+      "milestone": "Final assessments end",
+      "phase": "exams_end"
+    },
+    {
+      "pattern": "^results:? (released?|published|available)$|^(final )?results (release|released|publication)$|^release of results$",
+      "milestone": "Results released",
+      "phase": "results"
+    },
+    {
+      "pattern": "^last day to withdraw( from units)?( from .*)? with(out)? (fail|.?withdrawn fail)|with withdrawn (on|showing on) (your )?academic record|^last day to withdraw .*\\bWN\\b",
+      "milestone": "Last day to withdraw (WN)"
+    },
+    {
+      "pattern": "^last day to withdraw .*without (the unit |withdrawn )?(showing|appearing|being recorded)",
+      "milestone": "Last day to withdraw (no record)"
+    },
+    {
+      "pattern": "^last day to add off-?campus\\b",
+      "milestone": "Last day to add off-campus units"
+    },
+    {
+      "pattern": "^last day to add\\b(?!.*off-?campus)|^last day to enrol in units?$",
+      "milestone": "Last day to add on-campus units"
+    },
+    {
+      "pattern": "^fees? due$|^(tuition )?fee payment due$",
+      "milestone": "Fees due"
+    },
+    {
+      "pattern": "^(fees:? )?.*\\bfull refund",
+      "milestone": "Last day for full fee refund"
+    },
+    {
+      "pattern": "^(fees:? )?.*\\bpartial refund",
+      "milestone": "Last day for partial fee refund"
+    },
+    {
+      "pattern": "^re-?enrolment( \\(timely\\))?:? (starts?|opens?|begins?)$",
+      "milestone": "Re-enrolment (timely) starts"
+    },
+    {
+      "pattern": "^re-?enrolment( \\(timely\\))?:? (ends?|closes?)$",
+      "milestone": "Re-enrolment (timely) ends"
+    },
+    {
+      "pattern": "^re-?enrolment \\(late\\):? (starts?|opens?|begins?)$",
+      "milestone": "Re-enrolment (late) starts"
+    },
+    {
+      "pattern": "^re-?enrolment \\(late\\):? (ends?|closes?)$",
+      "milestone": "Re-enrolment (late) ends"
+    },
+    {
+      "pattern": "^enrolment:? (starts?|opens?|begins?)\\b",
+      "milestone": "Enrolment starts"
+    },
+    {
+      "pattern": "^pre-?orientation( events?)?:? (starts?|begins?)$",
+      "milestone": "Pre-orientation starts"
+    },
+    {
+      "pattern": "^(mid-year )?orientation( week)?:? (starts?|begins?|commences?)$|^(mid-year )?orientation( week)?$",
+      "milestone": "Orientation starts"
+    },
+    {
+      "pattern": "^(mid-year )?orientation( week)?:? ends?$",
+      "milestone": "Orientation ends"
+    },
+    {
+      "pattern": "^allocate\\+? (allocation )?adjustments?:? opens?$",
+      "milestone": "Allocate+ adjustment opens"
+    },
+    {
+      "pattern": "^allocate\\+? (allocation )?adjustments?:? closes?$",
+      "milestone": "Allocate+ adjustment closes"
+    },
+    {
+      "pattern": "^allocate\\+? preference entry:? opens?$|^allocate\\+? preferences? opens?$",
+      "milestone": "Allocate+ preference entry opens"
+    },
+    {
+      "pattern": "^allocate\\+? preference entry:? closes?$|^allocate\\+? preferences? closes?$",
+      "milestone": "Allocate+ preference entry closes"
+    },
+    {
+      "pattern": "^graduation applications:? opens?$|^applications for graduation:? opens?$",
+      "milestone": "Graduation applications open"
+    },
+    {
+      "pattern": "^graduation applications:? closes?$|^applications for graduation:? closes?$",
+      "milestone": "Graduation applications close"
+    },
+    {
+      "pattern": "^graduation( ceremonies| ceremony| week)?:? (starts?|begins?)$|^graduation ceremon(y|ies)$|^graduation$",
+      "milestone": "Graduation ceremonies start"
+    },
+    {
+      "pattern": "^graduation( ceremonies| ceremony| week)?:? ends?$",
+      "milestone": "Graduation ceremonies end"
+    },
+    {
+      "pattern": "^graduate research scholarships?( applications)?:? opens?$|^graduate research scholarships?$",
+      "milestone": "Graduate research scholarships open"
+    },
+    {
+      "pattern": "^graduate research scholarships?( applications)?:? closes?$",
+      "milestone": "Graduate research scholarships close"
+    },
+    {
+      "pattern": "^coursework scholarships?( applications)?:? opens?$",
+      "milestone": "Coursework scholarship applications open"
+    },
+    {
+      "pattern": "^coursework scholarships?( applications)?:? closes?$",
+      "milestone": "Coursework scholarship applications close"
+    },
+    {
+      "pattern": "^course transfers?(?: (?:to|from) monash \\w+)?\\b.*\\bapplications? opens?$",
+      "milestone": "Course transfer applications open"
+    },
+    {
+      "pattern": "^course transfers?(?: (?:to|from) monash \\w+)?\\b.*\\bapplications? closes?$",
+      "milestone": "Course transfer applications close"
+    },
+    {
+      "pattern": "^course transfers?(?: (?:to|from) monash \\w+)?\\b.*\\b(change (of )?preferences? (deadline|closes?)|last day to change preferences|preferences? finali[sz]ed)",
+      "milestone": "Course transfer preferences close"
+    },
+    {
+      "pattern": "^course transfers?(?: (?:to|from) monash \\w+)?\\b.*\\boffers?( notifications?)? sent",
+      "milestone": "Course transfer offers sent"
+    },
+    {
+      "pattern": "^course transfers?(?: (?:to|from) monash \\w+)?\\b.*\\b(international student course agreement|ISCA)\\b.*\\b(sent|receive)|^course transfers?(?: (?:to|from) monash \\w+)?\\b.*\\breceive an international student course agreement",
+      "milestone": "Course transfer ISCA sent"
+    },
+    {
+      "pattern": "^course transfers?(?: (?:to|from) monash \\w+)?\\b.*\\baccept an offer|^course transfer offer acceptance$",
+      "milestone": "Course transfer offer acceptance closes"
+    },
+    {
+      "pattern": "^course transfer applications:? opens?$",
+      "milestone": "Course transfer applications open"
+    },
+    {
+      "pattern": "^course transfer applications:? closes?$",
+      "milestone": "Course transfer applications close"
+    },
+    {
+      "pattern": "^course transfer offers?:? (sent|released)$",
+      "milestone": "Course transfer offers sent"
+    },
+    {
+      "pattern": "^course transfers? preferences? finali[sz]ed$",
+      "milestone": "Course transfer preferences close"
+    },
+    {
+      "pattern": "^course transfers?( (to|from) monash (australia|malaysia|indonesia))?$|^(intercampus|inter-campus) (course )?transfers?$",
+      "milestone": "Course transfers"
+    },
+    {
+      "pattern": "^daylight saving (starts|begins)$",
+      "milestone": "Daylight saving starts"
+    },
+    {
+      "pattern": "^daylight saving ends$",
+      "milestone": "Daylight saving ends"
+    },
+    {
+      "pattern": "^sa-?help incurral date$",
+      "milestone": "SA-HELP incurral date"
+    },
+    {
+      "pattern": "^commonwealth assistance notice( \\(can\\))? released$",
+      "milestone": "CAN released"
+    },
+    {
+      "pattern": "^mass leave$|^cuti bersama$|^collective leave$",
+      "milestone": "University closed"
+    },
+    {
+      "pattern": "^(?!.*\\b(orientation|break|swot|vac|study|assessments?|exams?|enrolment|census|graduation|allocate|results?|fees?|transfers?)\\b)[\\w ()&/'+-]*\\b(intake|semester|term|trimester|full[- ]?year|teaching period)\\b[\\w ()&/'+-]*?\\s(teaching\\s+)?(starts?|begins?|commences?)$",
+      "milestone": "Teaching starts",
+      "phase": "teaching_start"
+    },
+    {
+      "pattern": "^(?!.*\\b(orientation|break|swot|vac|study|assessments?|exams?|enrolment|census|graduation|allocate|results?|fees?|transfers?)\\b)[\\w ()&/'+-]*\\b(intake|semester|term|trimester|full[- ]?year|teaching period)\\b[\\w ()&/'+-]*?\\s(teaching\\s+)?(ends?|finish(es)?)$",
+      "milestone": "Teaching ends",
+      "phase": "teaching_end"
+    }
+  ],
+  "titles": [
+    {
+      "pattern": "^university closes \\(reopens",
+      "milestone": "University closed"
+    },
+    {
+      "pattern": "^(public holiday|hari|tahun baru|idul|isra|nyepi|waisak|kenaikan|wafat|maulid|deepavali|thaipusam|chinese new year|christmas|new year|good friday|labour day|wesak|agong|national day|malaysia day|merdeka|awal muharram|independence day|pancasila|ascension|easter)",
+      "milestone": "University closed"
+    },
+    {
+      "pattern": "^graduation garden party",
+      "milestone": "Graduation event"
+    },
+    {
+      "pattern": "^monash online \\d \\(MO-TP\\d-01\\)$",
+      "milestone": "Teaching period"
+    }
+  ],
+  "periods": [
+    {
+      "code": "^S1-(01|MY|MY-01)$",
+      "period": "Semester 1"
+    },
+    {
+      "code": "^S2-(01|MY|MY-01)$",
+      "period": "Semester 2"
+    },
+    {
+      "code": "^S1-32$",
+      "period": "Semester 1 (extended)"
+    },
+    {
+      "code": "^S2-32$",
+      "period": "Semester 2 (extended)"
+    },
+    {
+      "code": "^S1-60$",
+      "period": "Semester 1 (northern)"
+    },
+    {
+      "code": "^S2-60$",
+      "period": "Semester 2 (northern)"
+    },
+    {
+      "code": "^FY-01$",
+      "period": "Full year"
+    },
+    {
+      "code": "^FY-32$",
+      "period": "Full year (extended)"
+    },
+    {
+      "code": "^SSA-\\d+$",
+      "period": "Summer A"
+    },
+    {
+      "code": "^SSB-\\d+$",
+      "period": "Summer B"
+    },
+    {
+      "code": "^SS-S1-\\d+$",
+      "period": "Summer A - Semester 1"
+    },
+    {
+      "code": "^S2-SS-\\d+$",
+      "period": "Semester 2 - Summer A"
+    },
+    {
+      "code": "^S2-S1-\\d+$",
+      "period": "Semester 2 - Semester 1"
+    },
+    {
+      "code": "^WS-\\d+$",
+      "period": "Winter"
+    },
+    {
+      "code": "^T(\\d)-57$",
+      "period": "Term $1"
+    },
+    {
+      "code": "^T(\\d)-58$",
+      "period": "Trimester $1"
+    },
+    {
+      "code": "^TRI-([A-C])-\\d+$",
+      "period": "Trimester $1"
+    },
+    {
+      "code": "^MO-TP(\\d)-\\d+$",
+      "period": "Monash Online $1"
+    },
+    {
+      "code": "^MBA-TP(\\d)-\\d+$",
+      "period": "MBA $1"
+    },
+    {
+      "code": "^OCT-MY-\\d+$",
+      "period": "October intake"
+    },
+    {
+      "code": "^MI-T(\\d)-\\d+$",
+      "period": "Term $1"
+    },
+    {
+      "code": "^MI-S(\\d)-\\d+$",
+      "period": "Semester $1"
+    },
+    {
+      "code": "^MI-S(\\d)$",
+      "period": "Semester $1"
+    },
+    {
+      "code": "^NOV\\d+$",
+      "period": "November intake"
+    }
+  ],
+  "period_names": [
+    {
+      "pattern": "\\bsemester (one|1)\\b",
+      "period": "Semester 1"
+    },
+    {
+      "pattern": "\\bsemester (two|2)\\b",
+      "period": "Semester 2"
+    },
+    {
+      "pattern": "\\bfull[- ]year\\b",
+      "period": "Full year"
+    },
+    {
+      "pattern": "\\bsummer semester a\\b|\\bsummer a\\b",
+      "period": "Summer A"
+    },
+    {
+      "pattern": "\\bsummer semester b\\b|\\bsummer b\\b",
+      "period": "Summer B"
+    },
+    {
+      "pattern": "\\bwinter\\b",
+      "period": "Winter"
+    },
+    {
+      "pattern": "\\boctober intake\\b",
+      "period": "October intake"
+    }
+  ],
+  "main_periods": {
+    "_about": "Teaching periods used for the academic-week view per campus (codes, regex).",
+    "AUS": "^(S1-01|S2-01)$",
+    "MY": "^(S1-01|S2-01|OCT-MY-01)$",
+    "ID": "^(MI-T\\d-\\d+|MI-S\\d(-\\d+)?|S1-01|S2-01)$"
+  },
+  "exclude": []
+}
