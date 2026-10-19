@@ -42,7 +42,7 @@
  *     "University closed" entries on the same day (the Monash holidays calendar and the
  *     principal dates both list the closure).
  *   - Different campuses: the same milestone with the same start and end days, for an overlapping
- *     teaching period or, with no period, the same detail (the rule pdMarkShared_() uses for
+ *     teaching period code (or graduation round, see idRounds_) or, with no period, the same detail (the rule pdMarkShared_() uses for
  *     Shared With). An event never combines two different events of one campus.
  * Is AUS / Is MY / Is ID are 1 for each campus that lists the event and each campus its title
  * names (e.g. "(Malaysia)"). Event shows one wording (principal dates first, then Australia,
@@ -142,6 +142,31 @@ function idDate_(v) {
   return m ? new Date(Number(m[1]), Number(m[2]) - 1, Number(m[3])) : null;
 }
 
+const ID_MONTHS = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec'];
+const ID_COUNTRY = { australia: 'AUS', malaysia: 'MY', indonesia: 'ID' };
+
+/**
+ * Rounds named by month and country ("September/October round (Australia) and November round
+ * (Malaysia)", "July in Malaysia") as codes, one per month (AUS-SEP, AUS-OCT, MY-NOV), so they pair
+ * and merge like teaching period codes whatever the wording. Null unless every piece has both.
+ */
+function idRounds_(detailText) {
+  const pieces = detailText.split(/\s+and\s+|,\s*/).map(x => x.trim()).filter(Boolean);
+  if (!pieces.length) return null;
+  const codes = [], parts = [];
+  for (const piece of pieces) {
+    const country = (piece.match(/\b(Australia|Malaysia|Indonesia)\b/i) || [])[1];
+    const months = (piece.match(/\b(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*\b/gi) || [])
+      .map(m => m.slice(0, 3).toLowerCase()).filter(m => ID_MONTHS.indexOf(m) >= 0);
+    if (!country || !months.length) return null;
+    months.forEach(m => {
+      const code = ID_COUNTRY[country.toLowerCase()] + '-' + m.toUpperCase();
+      if (codes.indexOf(code) < 0) { codes.push(code); parts.push({ name: piece, code, round: true }); }
+    });
+  }
+  return { codes, parts };
+}
+
 /** Fills a listing's derived fields from its own (also used on snapshot listings by review_check.js). */
 function idHydrate_(it) {
   it.start = idDate_(it.start);
@@ -160,6 +185,10 @@ function idHydrate_(it) {
   it.time = it.time || '';
   it.endTime = it.endTime || '';
   it.detailText = it.detailText || '';
+  if (!it.codes.length) {
+    const rounds = idRounds_(it.detailText);
+    if (rounds) { it.codes = rounds.codes; it.parts = rounds.parts; }
+  }
   it.mKey = it.milestone.toLowerCase();
   it.detail = it.detailText.toLowerCase();
   it.pKeys = it.periods.map(p => p.toLowerCase());
@@ -319,17 +348,27 @@ function idRetitle_(it, title) {
 /** The listing's detail for some of its codes ("Semester 1 (S1-01), Full year (FY-01)"). */
 function idDetailFor_(it, codes) {
   const parts = it.parts.filter(p => codes.indexOf(p.code) >= 0);
-  return parts.length === codes.length ? parts.map(p => `${p.name} (${p.code})`).join(', ') : it.detailText;
+  if (parts.length !== codes.length) return it.detailText;
+  return idUnique_(parts.map(p => (p.round ? p.name : `${p.name} (${p.code})`))).join(', ');
 }
+
+/** Campuses a split listing's own wording names, e.g. only "(Malaysia)" for the Malaysian round of a joint opening. */
+function idMentions_(it, title) {
+  return it.parts.some(p => p.round) ? PD_CAMPUSES.filter(c => PD_CAMPUS_MENTION[c].test(title)) : it.mentions;
+}
+
+/** Teaching period names of some parts (rounds are not teaching periods). */
+function idPeriodNames_(parts) { return idUnique_(parts.filter(p => !p.round).map(p => p.name)); }
 
 /** A copy of a listing limited to some of its codes (the ones left after pairing). */
 function idSubset_(it, codes) {
   const detailText = idDetailFor_(it, codes);
   const parts = it.parts.filter(p => codes.indexOf(p.code) >= 0);
-  const periods = parts.length === codes.length ? idUnique_(parts.map(p => p.name)) : it.periods;
+  const periods = parts.length === codes.length ? idPeriodNames_(parts) : it.periods;
   return Object.assign({}, it, {
     codes, parts, periods, pKeys: periods.map(p => p.toLowerCase()), detailText, detail: detailText.toLowerCase(),
     title: it.milestone + (detailText ? ': ' + detailText : ''),
+    mentions: idMentions_(it, detailText),
   });
 }
 
@@ -337,14 +376,14 @@ function idSubset_(it, codes) {
 function idPeriod_(base, open, close, codes) {
   const detailText = codes.length ? idDetailFor_(open, codes) : open.detailText || close.detailText;
   const parts = open.parts.filter(p => codes.indexOf(p.code) >= 0);
-  const periods = codes.length && parts.length === codes.length ? idUnique_(parts.map(p => p.name))
+  const periods = codes.length && parts.length === codes.length ? idPeriodNames_(parts)
     : idUnique_(open.periods.concat(close.periods));
   return Object.assign({}, open, {
     end: close.end, endDay: close.endDay, milestone: base, mKey: base.toLowerCase(),
     title: base + (detailText ? ': ' + detailText : ''), detailText, detail: detailText.toLowerCase(),
     endTime: close.time, codes, parts, periods, pKeys: periods.map(p => p.toLowerCase()), isPeriod: true,
     calNames: idUnique_(open.calNames.concat(close.calNames)),
-    mentions: idUnique_(open.mentions.concat(close.mentions)),
+    mentions: idUnique_(idMentions_(open, detailText).concat(idMentions_(close, detailText))),
     keys: idUnique_(open.keys.concat(close.keys)),
     notes: open.notes.concat(close.notes),
     classified: open.classified !== false && close.classified !== false,
@@ -432,6 +471,7 @@ function idSameWithinCampus_(a, b) {
 /** Different campuses: pdMarkShared_()'s rule (same milestone and dates; overlapping period, else same detail). */
 function idSameAcrossCampuses_(a, b) {
   if (a.campus === b.campus || a.day !== b.day || a.endDay !== b.endDay || a.mKey !== b.mKey) return false;
+  if (a.codes.some(c => b.codes.indexOf(c) >= 0)) return true;   // same code or graduation round
   if (a.pKeys.length || b.pKeys.length) return a.pKeys.some(p => b.pKeys.indexOf(p) >= 0);
   return a.detail === b.detail;
 }

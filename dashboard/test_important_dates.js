@@ -83,6 +83,12 @@ const rows = [
   pd('AUS', '2025-08-01', 'Graduation applications open', 'Graduation applications open: May round (Australia)'),
   pd('AUS', '2026-08-01', 'Graduation applications open', 'Graduation applications open: May round (Australia)'),
   pd('AUS', '2026-09-15', 'Graduation applications close', 'Graduation applications close: May round (Australia)'),
+  // Graduation rounds pair and merge by month and country, whatever the wording.
+  pd('MY', '2026-01-16', 'Graduation applications open', 'Graduation applications open: September/October round (Australia) and November round (Malaysia)'),
+  pd('MY', '2026-06-30', 'Graduation applications close', 'Graduation applications close: September/October round (Australia)'),
+  pd('MY', '2026-07-31', 'Graduation applications close', 'Graduation applications close: November round (Malaysia)'),
+  pd('AUS', '2026-01-16', 'Graduation applications open', 'Graduation applications open: October round (Australia)'),
+  pd('AUS', '2026-06-30', 'Graduation applications close', 'Graduation applications close: October round (Australia)'),
   // VTAC: an opening with no detail takes the next closing; the later closings stay single.
   other('VTAC key dates', 'VTAC date', '2026-08-03', 'VTAC applications open (9am)'),
   other('VTAC key dates', 'VTAC date', '2026-09-28', 'VTAC applications close: Timely (5pm)'),
@@ -155,17 +161,22 @@ check('final assessments closed by "final assessments and teaching end"',
   [['2026-02-02', '2026-02-13', 12, 1, 'MY']]);
 check('unpaired opening stays a one-day row', find('2026-08-03', 'Course transfer applications open: Semester 1 (S1-01)')
   .map(span), [['2026-08-03', '2026-08-03', 1, 0]]);
-check('closing pairs with the latest opening before it', out.filter(r => /^Graduation applications/.test(r.Event))
+check('closing pairs with the latest opening before it', out.filter(r => /^Graduation applications.*May round/.test(r.Event))
   .map(r => [r.Event, ...span(r)]).sort(), [
   ['Graduation applications open: May round (Australia)', '2025-08-01', '2025-08-01', 1, 0],
   ['Graduation applications: May round (Australia)', '2026-08-01', '2026-09-15', 46, 1],
+]);
+check('graduation rounds split, pair and merge', out.filter(r => /^Graduation applications/.test(r.Event) && !/May round/.test(r.Event))
+  .map(r => [r.Event, ...span(r), r.Campuses, r['Teaching Period']]).sort(), [
+  ['Graduation applications: November round (Malaysia)', '2026-01-16', '2026-07-31', 197, 1, 'MY', ''],
+  ['Graduation applications: October round (Australia)', '2026-01-16', '2026-06-30', 166, 1, 'AUS, MY', ''],
 ]);
 check('VTAC applications period', out.filter(r => /^VTAC applications/.test(r.Event))
   .map(r => [r.Event, ...span(r), r['Start Time'], r['End Time']]).sort(), [
   ['VTAC applications close: Late', '2026-10-15', '2026-10-15', 1, 0, '5pm', ''],
   ['VTAC applications: Timely', '2026-08-03', '2026-09-28', 57, 1, '9am', '5pm'],
 ]);
-check('row count', out.length, 22);
+check('row count', out.length, 24);
 
 // Themes from important_dates_rules.json.
 const themeOf = event => out.filter(r => r.Event === event).map(r => r.Theme);
