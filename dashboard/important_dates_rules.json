@@ -1,36 +1,209 @@
 {
-  "version": "2026-10-19",
+  "version": "2026-10-20",
   "_doc": "Rules for the Calendar Dashboard's Important_Dates tab (dashboard/ImportantDates.js). The sync fetches this file from main on every run. standalone: milestones or titles (regex) that are deadlines on their own, so an opening or closing without a partner is not flagged. theme_rules: first pattern (case-insensitive regex) that matches the event's milestone, else its title, sets the theme. decisions: corrections from the daily Claude review (dashboard/review/REVIEW.md); listing keys are 'CAMPUS|YYYY-MM-DD|title' exactly as in dashboard/snapshot/listings.json.",
   "themes": [
-    "Teaching periods", "Orientation", "Census dates", "Fees", "Timetables", "Assessments", "Results",
-    "Graduations", "Scholarships", "Course transfers", "Re-enrolment", "University closed", "Public holidays",
-    "VTAC", "Other"
+    "Teaching periods",
+    "Orientation",
+    "Census dates",
+    "Fees",
+    "Timetables",
+    "Assessments",
+    "Results",
+    "Graduations",
+    "Scholarships",
+    "Course transfers",
+    "Re-enrolment",
+    "University closed",
+    "Public holidays",
+    "VTAC",
+    "Other"
   ],
   "theme_rules": [
-    { "theme": "VTAC", "pattern": "^VTAC\\b" },
-    { "theme": "University closed", "pattern": "^University (closed|reopens)" },
-    { "theme": "Public holidays", "pattern": "^Public holiday" },
-    { "theme": "Results", "pattern": "\\bresults?\\b" },
-    { "theme": "Assessments", "pattern": "assessment|\\bexams?\\b|\\btests?\\b" },
-    { "theme": "Timetables", "pattern": "^Allocate\\+|class timetable" },
-    { "theme": "Census dates", "pattern": "^Census date|^Last day to (add|withdraw|discontinue)" },
-    { "theme": "Fees", "pattern": "^Fees? |fee refund|^CAN released|SA-HELP|Commonwealth Assistance Notice" },
-    { "theme": "Course transfers", "pattern": "^Course transfer" },
-    { "theme": "Scholarships", "pattern": "scholarship" },
-    { "theme": "Graduations", "pattern": "^Graduat" },
-    { "theme": "Orientation", "pattern": "orientation" },
-    { "theme": "Re-enrolment", "pattern": "^(Re-)?enrolment" },
-    { "theme": "Teaching periods", "pattern": "^(Teaching|Mid-semester break|Swot vac)\\b" }
+    {
+      "theme": "VTAC",
+      "pattern": "^VTAC\\b"
+    },
+    {
+      "theme": "University closed",
+      "pattern": "^University (closed|reopens)"
+    },
+    {
+      "theme": "Public holidays",
+      "pattern": "^Public holiday"
+    },
+    {
+      "theme": "Results",
+      "pattern": "\\bresults?\\b"
+    },
+    {
+      "theme": "Assessments",
+      "pattern": "assessment|\\bexams?\\b|\\btests?\\b"
+    },
+    {
+      "theme": "Timetables",
+      "pattern": "^Allocate\\+|class timetable"
+    },
+    {
+      "theme": "Census dates",
+      "pattern": "^Census date|^Last day to (add|withdraw|discontinue)"
+    },
+    {
+      "theme": "Fees",
+      "pattern": "^Fees? |fee refund|^CAN released|SA-HELP|Commonwealth Assistance Notice"
+    },
+    {
+      "theme": "Course transfers",
+      "pattern": "^Course transfer"
+    },
+    {
+      "theme": "Scholarships",
+      "pattern": "scholarship"
+    },
+    {
+      "theme": "Graduations",
+      "pattern": "^Graduat"
+    },
+    {
+      "theme": "Orientation",
+      "pattern": "orientation"
+    },
+    {
+      "theme": "Re-enrolment",
+      "pattern": "^(Re-)?enrolment"
+    },
+    {
+      "theme": "Teaching periods",
+      "pattern": "^(Teaching|Mid-semester break|Swot vac)\\b"
+    }
   ],
   "standalone": [
-    "^VTAC preferences close", "^VTAC applications close: (Late|Very late)", "^Course transfer offer acceptance closes",
-    "^Course transfer preferences close", "^Daylight saving", "^Enrolment starts", "^Pre-orientation starts"
+    "^VTAC preferences close",
+    "^VTAC applications close: (Late|Very late)",
+    "^Course transfer offer acceptance closes",
+    "^Course transfer preferences close",
+    "^Daylight saving",
+    "^Enrolment starts",
+    "^Pre-orientation starts"
   ],
   "decisions": {
     "exclude": [],
     "unpair": [],
-    "pair": [],
-    "merge": [],
+    "pair": [
+      {
+        "open": "MY|2023-03-18|Graduation ceremonies start: March ceremonies begin at Kuala Lumpur, Malaysia",
+        "close": "MY|2023-03-19|Graduation ceremonies start: March ceremonies end at Kuala Lumpur, Malaysia",
+        "milestone": "Graduation ceremonies",
+        "title": "Graduation ceremonies: March ceremonies at Kuala Lumpur, Malaysia",
+        "reason": "Source wording labels the end date 'Graduation ceremonies start: ... ceremonies end'; it is the closing of the ceremony period.",
+        "added": "2026-10-20"
+      },
+      {
+        "open": "MY|2023-07-07|Graduation ceremonies start: July ceremonies begin at Kuala Lumpur, Malaysia",
+        "close": "MY|2023-07-09|Graduation ceremonies start: July ceremonies end at Kuala Lumpur, Malaysia",
+        "milestone": "Graduation ceremonies",
+        "title": "Graduation ceremonies: July ceremonies at Kuala Lumpur, Malaysia",
+        "reason": "Source wording labels the end date 'Graduation ceremonies start: ... ceremonies end'; it is the closing of the ceremony period.",
+        "added": "2026-10-20"
+      },
+      {
+        "open": "MY|2023-11-25|Graduation ceremonies start: November ceremonies begin at Kuala Lumpur, Malaysia",
+        "close": "MY|2023-11-26|Graduation ceremonies start: November ceremonies end at Kuala Lumpur, Malaysia",
+        "milestone": "Graduation ceremonies",
+        "title": "Graduation ceremonies: November ceremonies at Kuala Lumpur, Malaysia",
+        "reason": "Source wording labels the end date 'Graduation ceremonies start: ... ceremonies end'; it is the closing of the ceremony period.",
+        "added": "2026-10-20"
+      },
+      {
+        "open": "MY|2024-04-27|Graduation ceremonies start: April ceremonies begin at Kuala Lumpur, Malaysia",
+        "close": "MY|2024-04-28|Graduation ceremonies start: April ceremonies end at Kuala Lumpur, Malaysia",
+        "milestone": "Graduation ceremonies",
+        "title": "Graduation ceremonies: April ceremonies at Kuala Lumpur, Malaysia",
+        "reason": "Source wording labels the end date 'Graduation ceremonies start: ... ceremonies end'; it is the closing of the ceremony period.",
+        "added": "2026-10-20"
+      },
+      {
+        "open": "MY|2024-11-23|Graduation ceremonies start: November ceremonies begin at Kuala Lumpur, Malaysia",
+        "close": "MY|2024-11-24|Graduation ceremonies start: November ceremonies end at Kuala Lumpur, Malaysia",
+        "milestone": "Graduation ceremonies",
+        "title": "Graduation ceremonies: November ceremonies at Kuala Lumpur, Malaysia",
+        "reason": "Source wording labels the end date 'Graduation ceremonies start: ... ceremonies end'; it is the closing of the ceremony period.",
+        "added": "2026-10-20"
+      },
+      {
+        "open": "MY|2025-04-12|Graduation ceremonies start: April ceremonies begin at Kuala Lumpur, Malaysia",
+        "close": "MY|2025-04-13|Graduation ceremonies start: April ceremonies end at Kuala Lumpur, Malaysia",
+        "milestone": "Graduation ceremonies",
+        "title": "Graduation ceremonies: April ceremonies at Kuala Lumpur, Malaysia",
+        "reason": "Source wording labels the end date 'Graduation ceremonies start: ... ceremonies end'; it is the closing of the ceremony period.",
+        "added": "2026-10-20"
+      },
+      {
+        "open": "MY|2025-11-22|Graduation ceremonies start: November ceremonies begin at Kuala Lumpur, Malaysia",
+        "close": "MY|2025-11-23|Graduation ceremonies start: November ceremonies end at Kuala Lumpur, Malaysia",
+        "milestone": "Graduation ceremonies",
+        "title": "Graduation ceremonies: November ceremonies at Kuala Lumpur, Malaysia",
+        "reason": "Source wording labels the end date 'Graduation ceremonies start: ... ceremonies end'; it is the closing of the ceremony period.",
+        "added": "2026-10-20"
+      }
+    ],
+    "merge": [
+      {
+        "keys": [
+          "AUS|2023-01-02|University closed: Replacement public holiday for New Year's Day",
+          "MY|2023-01-02|University closed: New Year's Day (replacement holiday)"
+        ],
+        "reason": "Same public holiday observed at both campuses, worded differently.",
+        "added": "2026-10-20"
+      },
+      {
+        "keys": [
+          "ID|2026-02-17|University closed: Chinese New Year",
+          "MY|2026-02-17|University closed: Chinese New Year Day 1"
+        ],
+        "reason": "Same public holiday observed at both campuses, worded differently.",
+        "added": "2026-10-20"
+      },
+      {
+        "keys": [
+          "ID|2026-03-21|University closed: Idul Fitri",
+          "MY|2026-03-21|University closed: Hari Raya Aidilfitri Day 1"
+        ],
+        "reason": "Same public holiday observed at both campuses, worded differently.",
+        "added": "2026-10-20"
+      },
+      {
+        "keys": [
+          "ID|2026-03-22|University closed: Idul Fitri",
+          "MY|2026-03-22|University closed: Hari Raya Aidilfitri Day 2"
+        ],
+        "reason": "Same public holiday observed at both campuses, worded differently.",
+        "added": "2026-10-20"
+      },
+      {
+        "keys": [
+          "ID|2026-05-01|University closed: International Labour Day",
+          "MY|2026-05-01|University closed: Labour Day"
+        ],
+        "reason": "Same public holiday observed at both campuses, worded differently.",
+        "added": "2026-10-20"
+      },
+      {
+        "keys": [
+          "ID|2026-05-27|University closed: Idul Adha Public Holiday",
+          "MY|2026-05-27|University closed: Hari Raya Haji"
+        ],
+        "reason": "Same public holiday observed at both campuses, worded differently.",
+        "added": "2026-10-20"
+      },
+      {
+        "keys": [
+          "ID|2026-05-31|University closed: Waisak Day",
+          "MY|2026-05-31|University closed: Wesak Day"
+        ],
+        "reason": "Same public holiday observed at both campuses, worded differently.",
+        "added": "2026-10-20"
+      }
+    ],
     "separate": [],
     "set": [],
     "add": []
