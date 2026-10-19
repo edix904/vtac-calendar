@@ -51,7 +51,7 @@
  * Review decisions (all keyed by listing key "CAMPUS|YYYY-MM-DD|title"):
  *   exclude {key}            leave the listing out
  *   unpair {key}             never pair the listing automatically
- *   pair {open, close, milestone?, title?}   make one period of two listings of a campus
+ *   pair {open, close, milestone?, title?}   make one period of two listings (any campuses)
  *   merge {keys: [...]}      the events holding these listings are one event
  *   separate {keys: [...]}   the events holding these listings are never merged
  *   set {key, theme?, title?}                theme or wording of the event holding the listing
@@ -300,7 +300,7 @@ function idBuild_(items, rules, windowEnd) {
   const forced = [];
   D.pair.forEach(d => {
     const open = find(d.open), close = find(d.close);
-    if (!open || !close || open === close || open.campus !== close.campus) return;
+    if (!open || !close || open === close) return;
     const verb = open.milestone.match(ID_PERIOD_VERB);
     const base = d.milestone || (verb ? verb[1] : open.milestone);
     const shared = open.codes.filter(c => close.codes.indexOf(c) >= 0);
@@ -397,13 +397,19 @@ function idVerb_(it) {
   return m ? { base: m[1], opening: ID_OPENING.test(m[2]) } : null;
 }
 
-/** Replaces each campus's paired openings and closings with period listings (see the header). */
+/**
+ * Replaces each campus's paired openings and closings with period listings (see the header).
+ * Graduation rounds pair across campuses: one campus's page may list a round's opening and another
+ * campus's page its closing. An opening or closing that another campus lists on the same day as an
+ * already paired one joins that period, so each campus's listing ends up in the same event.
+ */
 function idPairPeriods_(listings) {
   const out = [], byThing = {};
   listings.forEach(it => {
     const v = !it.isPeriod && !it.noPair && idVerb_(it);
     if (!v) { out.push(it); return; }
-    const k = it.campus + '|' + v.base.toLowerCase();
+    const pooled = it.parts.length && it.parts.every(p => p.round);
+    const k = (pooled ? '*' : it.campus) + '|' + v.base.toLowerCase();
     const g = byThing[k] || (byThing[k] = { base: v.base, opens: [], closes: [] });
     (v.opening ? g.opens : g.closes).push(it);
   });
@@ -411,19 +417,33 @@ function idPairPeriods_(listings) {
   Object.keys(byThing).forEach(k => {
     const { base, opens, closes } = byThing[k];
     [opens, closes].forEach(list => list.sort((a, b) => a.start - b.start));
-    const pairs = [];           // {open, close, code}
+    const pairs = [];           // {open, close, code, campus}
     const pairedCodes = new Map();
+    const mark = (it, code) => (pairedCodes.get(it) || pairedCodes.set(it, []).get(it)).push(code);
     const pair = (os, cs, matches, sameThing, code) => {
-      const used = new Set();
+      const used = new Set(), mine = [];
       os.forEach((o, i) => {
         const next = os.slice(i + 1).find(x => x.start > o.start && sameThing(o, x));
         const limit = pdAddDays_(o.start, ID_MAX_SPAN + 1);
-        const c = cs.find(x => !used.has(x) && x.start >= o.start && x.start < limit &&
-          !(next && x.start >= next.start) && matches(o, x));
+        const fits = x => !used.has(x) && x.start >= o.start && x.start < limit &&
+          !(next && x.start >= next.start) && matches(o, x);
+        const c = cs.find(x => fits(x) && x.campus === o.campus) || cs.find(fits);   // own campus first
         if (!c) return;
         used.add(c);
-        pairs.push({ open: o, close: c, code });
-        [o, c].forEach(it => (pairedCodes.get(it) || pairedCodes.set(it, []).get(it)).push(code));
+        const p = { open: o, close: c, code, campus: o.campus };
+        pairs.push(p);
+        mine.push(p);
+        mark(o, code);
+        mark(c, code);
+      });
+      // Another campus's listing of the same opening or closing (same day) joins that period.
+      os.filter(o => !(pairedCodes.get(o) || []).includes(code)).forEach(o => {
+        const p = mine.find(q => q.open.day === o.day && q.open.campus !== o.campus);
+        if (p) { pairs.push({ open: o, close: p.close, code, campus: o.campus }); mark(o, code); }
+      });
+      cs.filter(c => !used.has(c)).forEach(c => {
+        const p = mine.find(q => q.close.day === c.day && q.close.campus !== c.campus);
+        if (p) { pairs.push({ open: p.open, close: c, code, campus: c.campus }); mark(c, code); }
       });
     };
     // With codes: one code at a time.
@@ -440,10 +460,17 @@ function idPairPeriods_(listings) {
     const periods = new Map();
     pairs.forEach(p => {
       const byClose = periods.get(p.open) || periods.set(p.open, new Map()).get(p.open);
-      (byClose.get(p.close) || byClose.set(p.close, []).get(p.close)).push(p.code);
+      const v = byClose.get(p.close) || byClose.set(p.close, { codes: [], campus: p.campus }).get(p.close);
+      v.codes.push(p.code);
     });
-    periods.forEach((byClose, open) => byClose.forEach((codes, close) =>
-      out.push(idPeriod_(base, open, close, codes.filter(Boolean)))));
+    periods.forEach((byClose, open) => byClose.forEach((v, close) => {
+      const period = idPeriod_(base, open, close, v.codes.filter(Boolean));
+      if (v.campus !== period.campus) {   // a closing listed by another campus: that campus's copy
+        period.campus = v.campus;
+        period.rank = Math.floor(period.rank / 10) * 10 + Math.max(0, PD_CAMPUSES.indexOf(v.campus));
+      }
+      out.push(period);
+    }));
     // Openings and closings (or the codes of them) left without a partner stay as they are.
     opens.concat(closes).forEach(it => {
       const done = pairedCodes.get(it) || [];

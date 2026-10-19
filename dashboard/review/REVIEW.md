@@ -33,10 +33,20 @@ correction in `dashboard/important_dates_rules.json`. The next sync (6am and 9am
    - **Flags**:
      - `theme-other`: give it a theme. Prefer a `theme_rules` pattern that covers the milestone in general;
        use a `set` decision only for a one-off.
-     - `opening-without-closing` / `closing-without-opening`: find the partner. It is often there under
-       other wording (e.g. "Graduation ceremonies start: March ceremonies end at Kuala Lumpur" is really an
-       end) → `pair`. If the date is a deadline on its own, add its milestone to `standalone`. If the
-       partner simply is not published yet, leave it.
+     - `opening-without-closing` / `closing-without-opening`: **the goal is one row (one Gantt bar) per
+       period**, e.g. each graduation application round from its opening to its closing. Find the
+       partner:
+       1. Under other wording or at another campus (one campus's page may list a round's opening and
+          another campus's page its closing; "Graduation ceremonies start: March ceremonies end at
+          Kuala Lumpur" is really an end) → `pair` (works across campuses).
+       2. Missing from the snapshot: look in the repo's sources (`backfill/*.csv`, the `.ics` feeds),
+          then the official pages if the network allows: monash.edu/students/admin/dates/principal-dates
+          (and its archive pages), monash.edu.my and monash.edu/indonesia principal dates, and their
+          Wayback Machine copies (web.archive.org). Found it → `add` it with the exact URL as `source`;
+          the sync then pairs it. Never estimate a date.
+       3. A deadline on its own (nothing opens or closes it) → add its milestone to `standalone`.
+       4. Not published anywhere you can reach → leave it, and list it under "Needs a source" in the
+          LOG (one line each: row, what is missing, where you looked).
      - `closing-may-be-after-window`: the closing may exist in a source feed after `window_end`. The sync
        does not store feed dates past its look-ahead (Config → Days forward). Do **not** add those dates;
        mention in the LOG if a Days forward of 450 would be needed.
