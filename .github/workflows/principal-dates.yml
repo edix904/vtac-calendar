@@ -1,0 +1,81 @@
+name: Update Monash Malaysia & Indonesia calendars
+
+on:
+  schedule:
+    - cron: "41 20 * * *"   # 20:41 UTC = ~4:41am Kuala Lumpur / ~3:41am Jakarta
+  workflow_dispatch:
+    inputs:
+      allow_drop:
+        description: "Publish even if the event count fell by more than half"
+        type: boolean
+        default: false
+  push:
+    branches: [main]
+    paths: [principal_dates.py, principal_dates_rules.json, monash_fetch.py, dashboard/Normalise.js]
+  # On pull requests: tests + a live scrape, nothing committed.
+  pull_request:
+    paths: [principal_dates.py, principal_dates_rules.json, monash_fetch.py, dashboard/**, test_principal_dates.py,
+            normalise_cases.json, .github/workflows/principal-dates.yml]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: principal-dates-${{ github.event_name == 'pull_request' && github.ref || 'main' }}
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      # The Monash pages sit behind a Cloudflare browser check, so they are loaded with
+      # headless Chromium (monash_fetch.py); plain HTTP gets a 403.
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt playwright
+          python -m playwright install --with-deps chromium
+
+      - name: Run tests
+        run: |
+          python -m unittest -v test_principal_dates.py
+          node dashboard/test_normalise.js
+
+      # Exit codes: 0 OK; 1 a calendar was NOT written (page blocked / layout changed / sharp drop);
+      # 2 written from a Wayback Machine snapshot because the live page was blocked.
+      - name: Generate monash-malaysia.ics and monash-indonesia.ics
+        id: gen
+        run: |
+          set +e
+          python principal_dates.py ${{ inputs.allow_drop && '--allow-drop' || '' }}
+          echo "code=$?" >> "$GITHUB_OUTPUT"
+
+      - name: Commit if dates changed
+        if: github.event_name != 'pull_request'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add monash-malaysia.ics monash-indonesia.ics 2>/dev/null || true
+          if git diff --cached -I '^DTSTAMP' --quiet; then
+            echo "No changes other than DTSTAMP; skipping commit."
+            git reset -q
+          else
+            git commit -m "Monash MY/ID principal dates updated $(TZ=Asia/Kuala_Lumpur date +%F)"
+            git pull -q --rebase && git push
+          fi
+
+      - name: Fail if a calendar needs attention
+        if: steps.gen.outputs.code != '0'
+        run: |
+          if [ "${{ steps.gen.outputs.code }}" = "2" ]; then
+            echo "::error::Published from a Wayback snapshot because the live page was blocked. Check the log."
+          else
+            echo "::error::At least one calendar was NOT updated. See the 'Generate' step log."
+          fi
+          exit 1

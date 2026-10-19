@@ -2,3 +2,6 @@
 __pycache__/
 .vtac-*.ics
 .wayback-cache/
+# Local clasp clone of the Calendar Dashboard Apps Script (contains personal calendar IDs)
+dashboard-script/
+.pd-*.ics
