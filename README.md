@@ -196,7 +196,7 @@ to the dashboard. Older Indonesia pages are not online or archived, so Indonesia
 
 ## Calendar Dashboard integration (`dashboard/`)
 
-`dashboard/Normalise.js` and `dashboard/PrincipalDates.js` are copied into the dashboard's Apps
+`dashboard/Normalise.js`, `dashboard/PrincipalDates.js` and `dashboard/ImportantDates.js` are copied into the dashboard's Apps
 Script project; `dashboard/build_embeds.py` generates `NormaliseRules.js` (fallback copy of the
 rules) and `CampusBackfill.js` (the backfill rows). The sync then adds:
 
@@ -210,5 +210,14 @@ rules) and `CampusBackfill.js` (the backfill rows). The sync then adds:
   teaching start / end, break, swot vac and final assessment dates, so weeks compare like for like.
   For Australia this matches the Semester summary calendar's week numbers exactly (2023–2026).
 - **Normalise_Overrides** tab: manual classifications (exact title → milestone / period / phase / exclude) that win over the rules.
+- **Important_Dates** tab (`dashboard/ImportantDates.js`): each event once, with `Is AUS` / `Is MY` / `Is ID`
+  (1 or 0), `Is Shared` and `Campuses`, so a report filtered on `Is MY = 1` gets every Malaysia-relevant date,
+  including ones that come from the Australian calendars. It lists principal dates of all three campuses,
+  Monash holidays (as `University closed: …`), non-university holidays, VTAC dates and Semester summary items
+  other than week labels. A campus's listings of one event (e.g. the Monash holidays calendar and the
+  principal dates both closing the university that day) become one row, and campuses join an event by
+  the `Shared With` rule above. `Event` shows one wording; `AUS Title` / `MY Title` / `ID Title` keep each
+  campus's own.
 
-Tests: `python -m unittest test_principal_dates.py` and `node dashboard/test_normalise.js`.
+Tests: `python -m unittest test_principal_dates.py`, `node dashboard/test_normalise.js` and
+`node dashboard/test_important_dates.js`.

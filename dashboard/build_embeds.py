@@ -5,7 +5,7 @@
   CampusBackfill.js  CAMPUS_BACKFILL: backfill/monash_my_id_backfill.csv as rows
 
 Usage: python dashboard/build_embeds.py --version 2026-10-20 [--out dashboard-script]
-Then copy dashboard/Normalise.js and dashboard/PrincipalDates.js alongside and `clasp push`.
+Then copy dashboard/Normalise.js, dashboard/PrincipalDates.js and dashboard/ImportantDates.js alongside and `clasp push`.
 """
 import argparse
 import csv
