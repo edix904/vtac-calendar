@@ -86,6 +86,31 @@ list('Events no longer present', removed, fmt);
 list('New events', added, fmt);
 list('Theme changes', retheme, e => `${fmt(e)} was ${b.get(e.id).theme}`);
 list('Campus changes', recampus, e => `${fmt(e)} was [${b.get(e.id).campuses}]`);
+// Worklist: every one-day opening or closing, with listings that could be its other half
+// (same thing, opposite verb, any campus or wording, within a year in the right direction).
+const verbOf = m => (m.match(/^(.*\S)\s+(opens?|starts?|begins?|commences?|closes?|ends?)$/i) || []);
+const work = built.events.filter(e => e.flags.some(f => /without-(opening|closing)/.test(f)));
+const partnerOf = e => {
+  const [, base, verb] = verbOf(e.milestone);
+  if (!base) return [];
+  const opening = /^(open|start|begin|commence)/i.test(verb);
+  const day = ctx.Utilities.formatDate(e.start);
+  return listings.filter(l => {
+    const [, b, v] = verbOf(l.milestone);
+    if (!b || b.toLowerCase() !== base.toLowerCase() || /^(open|start|begin|commence)/i.test(v) === opening) return false;
+    const gap = (new Date(l.start) - new Date(day)) / 864e5;
+    return opening ? gap >= 0 && gap <= 366 : gap <= 0 && gap >= -366;
+  }).map(l => `${l.key}`);
+};
+console.log(`\nWorklist (${work.length}): each needs a decision, a standalone pattern, or a "Needs a source" LOG line`);
+work.forEach((e, i) => {
+  const c = partnerOf(e);
+  console.log(`${i + 1}. ${fmt({ start: ctx.Utilities.formatDate(e.start), end: ctx.Utilities.formatDate(e.end),
+    campuses: e.campuses.join(','), event: e.event, theme: e.theme })}  keys: ${e.keys.join(' ; ')}`);
+  console.log(c.length ? '   candidate partners: ' + c.slice(0, 6).join(' ; ') + (c.length > 6 ? ` (+${c.length - 6})` : '')
+    : '   no candidate partner in the snapshot: look in backfill/*.csv, the .ics feeds, then the official pages');
+});
+
 const flagCount = {};
 after.forEach(e => e.flags.forEach(f => { flagCount[f] = (flagCount[f] || 0) + 1; }));
 console.log('Flags after: ' + (Object.keys(flagCount).map(f => `${f} ${flagCount[f]}`).join(', ') || 'none'));

@@ -27,7 +27,13 @@ correction in `dashboard/important_dates_rules.json`. The next sync (6am and 9am
    broken. Add a LOG entry saying so (with the date of the last snapshot), commit, push, stop.
 3. See what changed: `git diff <last reviewed snapshot commit> HEAD -- dashboard/snapshot/events.json`.
    On the first run, review everything.
-4. Review, in this order. Read `events.json` with `jq`/`python`; don't load it into context whole.
+4. Run `node dashboard/review_check.js` and work through **every item of its Worklist** (each
+   one-day opening or closing, with candidate partners). Each item must end in exactly one of: a
+   decision, a `standalone` pattern, or a line under "Needs a source" in your LOG entry saying
+   what is missing and where you looked. Do not stop at "no partner in the repo": try the official
+   pages with `curl -sL` (see below). If the network blocks them (HTTP 403 / `host_not_allowed`),
+   say so once in the LOG so the user can allow those domains, and carry on with the rest.
+   Then review, in this order. Read `events.json` with `jq`/`python`; don't load it into context whole.
    - **New and changed events** since the last review: right theme, sensible title, right campuses, dates
      match the source.
    - **Flags**:
@@ -58,6 +64,8 @@ correction in `dashboard/important_dates_rules.json`. The next sync (6am and 9am
    - **Wrong merges or pairings**: an event that joins two different things → `separate` or `unpair`.
    - **Missing dates** you can prove from a source file: `add`, with `source` naming the file (or an
      official monash.edu / vtac.edu.au URL) and the line or section.
+   - Same-day different holidays at two campuses (`possible-cross-campus-duplicate`): `separate`
+     them so the flag clears.
    - `status.json` → `unused_decisions`: decisions that no longer match anything (the source changed).
      Remove them, or update their keys.
 5. Edit `dashboard/important_dates_rules.json`, then run `node dashboard/review_check.js`. It must show no
