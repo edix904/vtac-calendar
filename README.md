@@ -224,6 +224,27 @@ rules) and `CampusBackfill.js` (the backfill rows). The sync then adds:
   per teaching period code (so a Semester 1 + Full year teaching start gives two periods), never past
   the next opening of the same code; ones without a partner stay one-day rows. Use it for Gantt charts
   or to filter activity between `Start Date` and `End Date (incl.)`.
+  Each row has a **Theme** (Teaching periods, Orientation, Census dates, Fees, Timetables, Assessments,
+  Results, Graduations, Scholarships, Course transfers, Re-enrolment, University closed, Public holidays,
+  VTAC, Other) from `theme_rules` in `dashboard/important_dates_rules.json`, which the sync fetches from
+  `main` on every run (fallback: the embedded copy in `ImportantDatesRules.js`).
+
+### Daily Claude review
+
+The rules miss things, so a scheduled Claude routine reviews the output every morning
+(`dashboard/review/REVIEW.md`):
+
+1. The 6am sync commits a snapshot of its inputs and output to `dashboard/snapshot/` (needs a GitHub
+   token in the script property `GITHUB_TOKEN`: fine-grained, this repository only, Contents read/write).
+   Rows the rules are unsure about carry flags there (an opening without its closing, a possible
+   cross-campus duplicate, theme Other, …).
+2. The routine reviews new and flagged events and commits corrections (`decisions`, `theme_rules`,
+   `standalone`) to `dashboard/important_dates_rules.json` on `main`, with an entry in
+   `dashboard/review/LOG.md`. `node dashboard/review_check.js` validates the file and previews its effect.
+3. The 9am sync applies them; the sheet's **Review Note** column shows which decision changed a row.
+
+Revert a review commit to undo its corrections.
 
 Tests: `python -m unittest test_principal_dates.py`, `node dashboard/test_normalise.js` and
-`node dashboard/test_important_dates.js`.
+`node dashboard/test_important_dates.js`; `node dashboard/review_check.js` checks the review rules against the
+latest snapshot.

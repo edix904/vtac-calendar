@@ -90,8 +90,16 @@ const rows = [
 ];
 
 const HEADERS = vm.runInContext('ID_HEADERS', ctx); // a top-level const, not a context property
+const RULES = JSON.parse(fs.readFileSync(path.join(__dirname, 'important_dates_rules.json'), 'utf8'));
 const items = rows.map(r => ctx.idItem_(r, C)).filter(Boolean);
-const out = ctx.idGroup_(ctx.idPairPeriods_(items)).map(g => Object.fromEntries(ctx.idRow_(g).map((v, i) => [HEADERS[i], v])));
+const build = (decisions, windowEnd) => {
+  const rules = ctx.idCompileRules_(Object.assign({}, RULES, { decisions: decisions || {} }));
+  const built = ctx.idBuild_(items.map(it => Object.assign({}, it)), rules, windowEnd);
+  built.rows = built.events.map(e => Object.assign(Object.fromEntries(ctx.idSheetRow_(e).map((v, i) => [HEADERS[i], v])),
+    { flags: e.flags }));
+  return built;
+};
+const out = build(null, day('2027-01-01')).rows;
 const find = (date, event) => out.filter(r => fmt(r['Start Date']) === date && r.Event === event);
 const span = r => [fmt(r['Start Date']), fmt(r['End Date (incl.)']), r.Days, r['Is Period']];
 
@@ -158,6 +166,53 @@ check('VTAC applications period', out.filter(r => /^VTAC applications/.test(r.Ev
   ['VTAC applications: Timely', '2026-08-03', '2026-09-28', 57, 1, '9am', '5pm'],
 ]);
 check('row count', out.length, 22);
+
+// Themes from important_dates_rules.json.
+const themeOf = event => out.filter(r => r.Event === event).map(r => r.Theme);
+check('themes', [
+  themeOf('Census date: Semester 1 (S1-01)'), themeOf('University closed: Good Friday'),
+  themeOf('Allocate+ preference entry: Semester 1 (S1-01)'), themeOf('Teaching: Semester 1 (S1-01)'),
+  themeOf('Final assessments: October intake (OCT-MY-01)'), themeOf('VTAC applications: Timely'),
+  themeOf('Public holiday (university open): Melbourne Cup'), themeOf('Graduation ceremonies'),
+  themeOf('Fees due: Semester 2 (S2-01)'), themeOf('Monash Business School’s mid-semester tests'),
+], [['Census dates'], ['University closed'], ['Timetables', 'Timetables'], ['Teaching periods'], ['Assessments'],
+  ['VTAC'], ['Public holidays'], ['Graduations'], ['Fees'], ['Assessments']]);
+
+// Flags for the review.
+const flagsOf = event => out.filter(r => r.Event === event).map(r => r.flags);
+check('unpaired opening flagged, closing may be after the window',
+  flagsOf('Course transfer applications open: Semester 1 (S1-01)'),
+  [['opening-without-closing', 'closing-may-be-after-window']]);
+check('standalone deadline not flagged', flagsOf('VTAC applications close: Late'), [[]]);
+check('paired period not flagged', flagsOf('Teaching: Semester 1 (S1-01)'), [[]]);
+
+// Review decisions.
+const K = (campus, date, title) => [campus, date, title].join('|');
+const d = build({
+  exclude: [{ key: K('AUS', '2026-01-06', 'Fees due: Semester 2 (S2-01)'), reason: 'duplicate' }],
+  unpair: [{ key: K('AUS', '2026-06-05', 'Teaching ends: Semester 1 (S1-01)'), reason: 'test' }],
+  pair: [{ open: K('MY', '2026-08-03', 'Course transfer applications open: Semester 1 (S1-01)'),
+    close: K('MY', '2026-12-17', 'Some later closing'), reason: 'missing' }],
+  merge: [{ keys: [K('MY', '2026-03-20', 'University closed: Hari Raya Aidilfitri Day 1'),
+    K('AUS', '2026-03-20', 'University closed: Some Australian holiday')], reason: 'test merge' }],
+  set: [{ key: K('MY', '2026-05-01', 'Graduation ceremonies'), theme: 'Other', title: 'Graduation ceremonies (Kuala Lumpur)', reason: 'wording' }],
+  add: [{ campuses: ['MY', 'ID'], start: '2026-12-01', end: '2026-12-04', title: 'Orientation: Test intake', milestone: 'Orientation',
+    source: 'https://example.org', reason: 'missing from feed' }],
+  separate: [],
+}, day('2027-01-01'));
+const dr = event => d.rows.filter(r => r.Event === event);
+check('exclude', dr('Fees due: Semester 2 (S2-01)').length, 0);
+check('unpaired closing flagged', dr('Teaching ends: Semester 1 (S1-01)').map(r => r.flags), [['closing-without-opening']]);
+check('unpair keeps the closing single', [dr('Teaching ends: Semester 1 (S1-01)').length,
+  dr('Teaching: Full year (FY-01)').map(r => fmt(r['End Date (incl.)']))], [1, ['2026-10-23']]);
+check('pair with an unknown key is unused', d.unused.map(u => u.kind), ['pair']);
+check('merge', d.rows.filter(r => fmt(r['Start Date']) === '2026-03-20').map(r => [r.Campuses, r['Review Note']]),
+  [['AUS, MY', '']]);
+check('set theme and wording', dr('Graduation ceremonies (Kuala Lumpur)').map(r => [r.Theme, r['Review Note']]),
+  [['Other', 'Review set: wording']]);
+check('add for two campuses is one event', dr('Orientation: Test intake').map(r => [r.Campuses, r.Days, r.Theme, r['Is Period']]),
+  [['MY, ID', 4, 'Orientation', 1]]);
+check('applied count', [d.applied, d.decisionCount], [5, 6]);
 
 console.log(bad ? `${bad} checks failed` : `all checks passed (${out.length} rows from ${rows.length} Events rows)`);
 process.exit(bad ? 1 : 0);
