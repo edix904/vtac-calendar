@@ -591,7 +591,8 @@ function idFlag_(events, windowEnd, rules, use) {
   events.forEach(e => {
     if (e.theme === ID_OTHER) e.flags.push('theme-other');
     if (e.members.some(m => m.classified === false)) e.flags.push('unclassified-title');
-    const v = !e.isPeriod && !standalone(e) && idVerb_(e.members[0]);
+    // An unpair decision marks a one-day opening or closing as checked (its partner is not published).
+    const v = !e.isPeriod && !standalone(e) && !e.members.some(m => m.noPair) && idVerb_(e.members[0]);
     if (v) {
       e.flags.push(v.opening ? 'opening-without-closing' : 'closing-without-opening');
       if (v.opening && windowEnd && (windowEnd - e.start) / 864e5 < ID_MAX_SPAN) e.flags.push('closing-may-be-after-window');

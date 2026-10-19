@@ -1,284 +1,318 @@
 {
-  "version": "2026-10-20",
-  "_doc": "Rules for the Calendar Dashboard's Important_Dates tab (dashboard/ImportantDates.js). The sync fetches this file from main on every run. standalone: milestones or titles (regex) that are deadlines on their own, so an opening or closing without a partner is not flagged. theme_rules: first pattern (case-insensitive regex) that matches the event's milestone, else its title, sets the theme. decisions: corrections from the daily Claude review (dashboard/review/REVIEW.md); listing keys are 'CAMPUS|YYYY-MM-DD|title' exactly as in dashboard/snapshot/listings.json.",
-  "themes": [
-    "Teaching periods",
-    "Orientation",
-    "Census dates",
-    "Fees",
-    "Timetables",
-    "Assessments",
-    "Results",
-    "Graduations",
-    "Scholarships",
-    "Course transfers",
-    "Re-enrolment",
-    "University closed",
-    "Public holidays",
-    "VTAC",
-    "Other"
-  ],
-  "theme_rules": [
-    {
-      "theme": "VTAC",
-      "pattern": "^VTAC\\b"
-    },
-    {
-      "theme": "University closed",
-      "pattern": "^University (closed|reopens)"
-    },
-    {
-      "theme": "Public holidays",
-      "pattern": "^Public holiday"
-    },
-    {
-      "theme": "Results",
-      "pattern": "\\bresults?\\b"
-    },
-    {
-      "theme": "Assessments",
-      "pattern": "assessment|\\bexams?\\b|\\btests?\\b"
-    },
-    {
-      "theme": "Timetables",
-      "pattern": "^Allocate\\+|class timetable"
-    },
-    {
-      "theme": "Census dates",
-      "pattern": "^Census date|^Last day to (add|withdraw|discontinue)"
-    },
-    {
-      "theme": "Fees",
-      "pattern": "^Fees? |fee refund|^CAN released|SA-HELP|Commonwealth Assistance Notice"
-    },
-    {
-      "theme": "Course transfers",
-      "pattern": "^Course transfer"
-    },
-    {
-      "theme": "Scholarships",
-      "pattern": "scholarship"
-    },
-    {
-      "theme": "Graduations",
-      "pattern": "^Graduat"
-    },
-    {
-      "theme": "Orientation",
-      "pattern": "orientation"
-    },
-    {
-      "theme": "Re-enrolment",
-      "pattern": "^(Re-)?enrolment"
-    },
-    {
-      "theme": "Teaching periods",
-      "pattern": "^(Teaching|Mid-semester break|Swot vac)\\b"
-    }
-  ],
-  "standalone": [
-    "^VTAC preferences close",
-    "^VTAC applications close: (Late|Very late)",
-    "^Course transfer offer acceptance closes",
-    "^Course transfer preferences close",
-    "^Daylight saving",
-    "^Enrolment starts",
-    "^Pre-orientation starts"
-  ],
-  "decisions": {
-    "exclude": [],
-    "unpair": [],
-    "pair": [
-      {
-        "open": "MY|2023-03-18|Graduation ceremonies start: March ceremonies begin at Kuala Lumpur, Malaysia",
-        "close": "MY|2023-03-19|Graduation ceremonies start: March ceremonies end at Kuala Lumpur, Malaysia",
-        "milestone": "Graduation ceremonies",
-        "title": "Graduation ceremonies: March ceremonies at Kuala Lumpur, Malaysia",
-        "reason": "Source wording labels the end date 'Graduation ceremonies start: ... ceremonies end'; it is the closing of the ceremony period.",
-        "added": "2026-10-20"
-      },
-      {
-        "open": "MY|2023-07-07|Graduation ceremonies start: July ceremonies begin at Kuala Lumpur, Malaysia",
-        "close": "MY|2023-07-09|Graduation ceremonies start: July ceremonies end at Kuala Lumpur, Malaysia",
-        "milestone": "Graduation ceremonies",
-        "title": "Graduation ceremonies: July ceremonies at Kuala Lumpur, Malaysia",
-        "reason": "Source wording labels the end date 'Graduation ceremonies start: ... ceremonies end'; it is the closing of the ceremony period.",
-        "added": "2026-10-20"
-      },
-      {
-        "open": "MY|2023-11-25|Graduation ceremonies start: November ceremonies begin at Kuala Lumpur, Malaysia",
-        "close": "MY|2023-11-26|Graduation ceremonies start: November ceremonies end at Kuala Lumpur, Malaysia",
-        "milestone": "Graduation ceremonies",
-        "title": "Graduation ceremonies: November ceremonies at Kuala Lumpur, Malaysia",
-        "reason": "Source wording labels the end date 'Graduation ceremonies start: ... ceremonies end'; it is the closing of the ceremony period.",
-        "added": "2026-10-20"
-      },
-      {
-        "open": "MY|2024-04-27|Graduation ceremonies start: April ceremonies begin at Kuala Lumpur, Malaysia",
-        "close": "MY|2024-04-28|Graduation ceremonies start: April ceremonies end at Kuala Lumpur, Malaysia",
-        "milestone": "Graduation ceremonies",
-        "title": "Graduation ceremonies: April ceremonies at Kuala Lumpur, Malaysia",
-        "reason": "Source wording labels the end date 'Graduation ceremonies start: ... ceremonies end'; it is the closing of the ceremony period.",
-        "added": "2026-10-20"
-      },
-      {
-        "open": "MY|2024-11-23|Graduation ceremonies start: November ceremonies begin at Kuala Lumpur, Malaysia",
-        "close": "MY|2024-11-24|Graduation ceremonies start: November ceremonies end at Kuala Lumpur, Malaysia",
-        "milestone": "Graduation ceremonies",
-        "title": "Graduation ceremonies: November ceremonies at Kuala Lumpur, Malaysia",
-        "reason": "Source wording labels the end date 'Graduation ceremonies start: ... ceremonies end'; it is the closing of the ceremony period.",
-        "added": "2026-10-20"
-      },
-      {
-        "open": "MY|2025-04-12|Graduation ceremonies start: April ceremonies begin at Kuala Lumpur, Malaysia",
-        "close": "MY|2025-04-13|Graduation ceremonies start: April ceremonies end at Kuala Lumpur, Malaysia",
-        "milestone": "Graduation ceremonies",
-        "title": "Graduation ceremonies: April ceremonies at Kuala Lumpur, Malaysia",
-        "reason": "Source wording labels the end date 'Graduation ceremonies start: ... ceremonies end'; it is the closing of the ceremony period.",
-        "added": "2026-10-20"
-      },
-      {
-        "open": "MY|2025-11-22|Graduation ceremonies start: November ceremonies begin at Kuala Lumpur, Malaysia",
-        "close": "MY|2025-11-23|Graduation ceremonies start: November ceremonies end at Kuala Lumpur, Malaysia",
-        "milestone": "Graduation ceremonies",
-        "title": "Graduation ceremonies: November ceremonies at Kuala Lumpur, Malaysia",
-        "reason": "Source wording labels the end date 'Graduation ceremonies start: ... ceremonies end'; it is the closing of the ceremony period.",
-        "added": "2026-10-20"
-      },
-      {
-        "open": "MY|2024-04-01|Mid-semester break starts: Semester 1 (S1-01)",
-        "close": "MY|2024-04-05|Mid-semester break ends",
-        "milestone": "Mid-semester break",
-        "title": "Mid-semester break: Semester 1 (S1-01)",
-        "reason": "Same campus, same semester; the Malaysia page words the end without the intake label.",
-        "added": "2026-10-20"
-      },
-      {
-        "open": "AUS|2025-09-01|Graduate research scholarships open: Round 1/2025 (international students)",
-        "close": "AUS|2026-03-31|Graduate research scholarships close: Round 1/2026 (international students)",
-        "milestone": "Graduate research scholarships",
-        "title": "Graduate research scholarships: Round 1/2026 (international students)",
-        "reason": "International round opens 1 Sep and closes 31 Mar, as in the established rows (2024-09-02 to 2025-03-31); the source labels the opening with the previous year.",
-        "added": "2026-10-20"
-      },
-      {
-        "open": "AUS|2025-11-03|Graduate research scholarships open: Round 2/2025 (domestic students)",
-        "close": "AUS|2026-05-31|Graduate research scholarships close: Round 2/2026 (domestic students)",
-        "milestone": "Graduate research scholarships",
-        "title": "Graduate research scholarships: Round 2/2026 (domestic students)",
-        "reason": "Domestic round opens 1 Nov and closes 31 May, as in the established rows (2024-11-01 to 2025-05-31); the source labels the opening with the previous year.",
-        "added": "2026-10-20"
-      }
-    ],
-    "merge": [
-      {
-        "keys": [
-          "AUS|2023-01-02|University closed: Replacement public holiday for New Year's Day",
-          "MY|2023-01-02|University closed: New Year's Day (replacement holiday)"
-        ],
-        "reason": "Same public holiday observed at both campuses, worded differently.",
-        "added": "2026-10-20"
-      },
-      {
-        "keys": [
-          "ID|2026-02-17|University closed: Chinese New Year",
-          "MY|2026-02-17|University closed: Chinese New Year Day 1"
-        ],
-        "reason": "Same public holiday observed at both campuses, worded differently.",
-        "added": "2026-10-20"
-      },
-      {
-        "keys": [
-          "ID|2026-03-21|University closed: Idul Fitri",
-          "MY|2026-03-21|University closed: Hari Raya Aidilfitri Day 1"
-        ],
-        "reason": "Same public holiday observed at both campuses, worded differently.",
-        "added": "2026-10-20"
-      },
-      {
-        "keys": [
-          "ID|2026-03-22|University closed: Idul Fitri",
-          "MY|2026-03-22|University closed: Hari Raya Aidilfitri Day 2"
-        ],
-        "reason": "Same public holiday observed at both campuses, worded differently.",
-        "added": "2026-10-20"
-      },
-      {
-        "keys": [
-          "ID|2026-05-01|University closed: International Labour Day",
-          "MY|2026-05-01|University closed: Labour Day"
-        ],
-        "reason": "Same public holiday observed at both campuses, worded differently.",
-        "added": "2026-10-20"
-      },
-      {
-        "keys": [
-          "ID|2026-05-27|University closed: Idul Adha Public Holiday",
-          "MY|2026-05-27|University closed: Hari Raya Haji"
-        ],
-        "reason": "Same public holiday observed at both campuses, worded differently.",
-        "added": "2026-10-20"
-      },
-      {
-        "keys": [
-          "ID|2026-05-31|University closed: Waisak Day",
-          "MY|2026-05-31|University closed: Wesak Day"
-        ],
-        "reason": "Same public holiday observed at both campuses, worded differently.",
-        "added": "2026-10-20"
-      },
-      {
-        "keys": [
-          "AUS|2026-01-30|Teaching ends: Summer A (SSA-02)",
-          "MY|2026-01-30|Teaching ends: Summer A (SSA-02)"
-        ],
-        "reason": "Same Summer A teaching end at both campuses; the Malaysia end has no opening of its own.",
-        "added": "2026-10-20"
-      },
-      {
-        "keys": [
-          "AUS|2026-02-06|Teaching ends: Summer B (SSB-01)",
-          "MY|2026-02-06|Teaching ends: Summer B (SSB-01)"
-        ],
-        "reason": "Same Summer B teaching end at both campuses; the Malaysia end has no opening of its own.",
-        "added": "2026-10-20"
-      }
-    ],
-    "separate": [
-      {
-        "keys": [
-          "AUS|2023-04-08|University closed: Easter Saturday",
-          "MY|2023-04-08|University closed: Nuzul Al-Quran"
-        ],
-        "reason": "Different holidays on the same day.",
-        "added": "2026-10-20"
-      },
-      {
-        "keys": [
-          "MY|2026-03-20|University closed: Additional Public Holiday (Hari Raya Aidilfitri)",
-          "ID|2026-03-20|University closed: Idul Fitri Mass Leave"
-        ],
-        "reason": "Different leave days (Malaysia additional public holiday, Indonesia mass leave).",
-        "added": "2026-10-20"
-      },
-      {
-        "keys": [
-          "MY|2026-03-23|University closed: Hari Raya Aidilfitri Day (replacement public holiday)",
-          "ID|2026-03-23|University closed: Idul Fitri Mass Leave"
-        ],
-        "reason": "Different leave days (Malaysia replacement holiday, Indonesia mass leave).",
-        "added": "2026-10-20"
-      },
-      {
-        "keys": [
-          "MY|2026-06-01|University closed: King's Birthday",
-          "ID|2026-06-01|University closed: Pancasila Day"
-        ],
-        "reason": "Different holidays on the same day.",
-        "added": "2026-10-20"
-      }
-    ],
-    "set": [],
-    "add": []
+ "version": "2026-10-20",
+ "_doc": "Rules for the Calendar Dashboard's Important_Dates tab (dashboard/ImportantDates.js). The sync fetches this file from main on every run. standalone: milestones or titles (regex) that are deadlines on their own, so an opening or closing without a partner is not flagged. theme_rules: first pattern (case-insensitive regex) that matches the event's milestone, else its title, sets the theme. decisions: corrections from the daily Claude review (dashboard/review/REVIEW.md); listing keys are 'CAMPUS|YYYY-MM-DD|title' exactly as in dashboard/snapshot/listings.json.",
+ "themes": [
+  "Teaching periods",
+  "Orientation",
+  "Census dates",
+  "Fees",
+  "Timetables",
+  "Assessments",
+  "Results",
+  "Graduations",
+  "Scholarships",
+  "Course transfers",
+  "Re-enrolment",
+  "University closed",
+  "Public holidays",
+  "VTAC",
+  "Other"
+ ],
+ "theme_rules": [
+  {
+   "theme": "VTAC",
+   "pattern": "^VTAC\\b"
+  },
+  {
+   "theme": "University closed",
+   "pattern": "^University (closed|reopens)"
+  },
+  {
+   "theme": "Public holidays",
+   "pattern": "^Public holiday"
+  },
+  {
+   "theme": "Results",
+   "pattern": "\\bresults?\\b"
+  },
+  {
+   "theme": "Assessments",
+   "pattern": "assessment|\\bexams?\\b|\\btests?\\b"
+  },
+  {
+   "theme": "Timetables",
+   "pattern": "^Allocate\\+|class timetable"
+  },
+  {
+   "theme": "Census dates",
+   "pattern": "^Census date|^Last day to (add|withdraw|discontinue)"
+  },
+  {
+   "theme": "Fees",
+   "pattern": "^Fees? |fee refund|^CAN released|SA-HELP|Commonwealth Assistance Notice"
+  },
+  {
+   "theme": "Course transfers",
+   "pattern": "^Course transfer"
+  },
+  {
+   "theme": "Scholarships",
+   "pattern": "scholarship"
+  },
+  {
+   "theme": "Graduations",
+   "pattern": "^Graduat"
+  },
+  {
+   "theme": "Orientation",
+   "pattern": "orientation"
+  },
+  {
+   "theme": "Re-enrolment",
+   "pattern": "^(Re-)?enrolment"
+  },
+  {
+   "theme": "Teaching periods",
+   "pattern": "^(Teaching|Mid-semester break|Swot vac)\\b"
   }
+ ],
+ "standalone": [
+  "^VTAC preferences close",
+  "^VTAC applications close: (Late|Very late)",
+  "^Course transfer offer acceptance closes",
+  "^Course transfer preferences close",
+  "^Daylight saving",
+  "^Enrolment starts",
+  "^Pre-orientation starts"
+ ],
+ "decisions": {
+  "exclude": [],
+  "unpair": [
+   {
+    "key": "AUS|2023-01-15|Graduation applications close: May round (Australia)",
+    "reason": "Confirmed single date: opening (late 2022) not listed on any principal dates page",
+    "added": "2026-10-20"
+   },
+   {
+    "key": "MY|2024-01-15|Graduation applications close: April in Malaysia",
+    "reason": "Confirmed single date: opening (late 2023) not listed; 2023 page lists only the Sep and Dec Australian rounds: https://web.archive.org/web/20230727072932/https://www.monash.edu/students/admin/dates/principal-dates",
+    "added": "2026-10-20"
+   },
+   {
+    "key": "AUS|2024-01-15|Graduation applications close: May round (Australia)",
+    "reason": "Confirmed single date: opening (late 2023) not listed; 2023 page lists only the Sep and Dec Australian rounds: https://web.archive.org/web/20230727072932/https://www.monash.edu/students/admin/dates/principal-dates",
+    "added": "2026-10-20"
+   },
+   {
+    "key": "AUS|2024-08-01|Graduation applications open: December round (Australia)",
+    "reason": "Confirmed single date: closing not published: the 2024 page lists this opening but no December-round closing: https://web.archive.org/web/20260325113921/https://www.monash.edu/students/admin/dates/principal-dates/archive/2024",
+    "added": "2026-10-20"
+   },
+   {
+    "key": "AUS|2026-01-15|Graduation applications close: April/May round (Australia)",
+    "reason": "Confirmed single date: opening (Oct 2025) not published: the Oct 2025 page lists no April/May 2026 opening: https://web.archive.org/web/20251016142420/https://www.monash.edu/students/admin/dates/principal-dates",
+    "added": "2026-10-20"
+   }
+  ],
+  "pair": [
+   {
+    "open": "MY|2023-03-18|Graduation ceremonies start: March ceremonies begin at Kuala Lumpur, Malaysia",
+    "close": "MY|2023-03-19|Graduation ceremonies start: March ceremonies end at Kuala Lumpur, Malaysia",
+    "milestone": "Graduation ceremonies",
+    "title": "Graduation ceremonies: March ceremonies at Kuala Lumpur, Malaysia",
+    "reason": "Source wording labels the end date 'Graduation ceremonies start: ... ceremonies end'; it is the closing of the ceremony period.",
+    "added": "2026-10-20"
+   },
+   {
+    "open": "MY|2023-07-07|Graduation ceremonies start: July ceremonies begin at Kuala Lumpur, Malaysia",
+    "close": "MY|2023-07-09|Graduation ceremonies start: July ceremonies end at Kuala Lumpur, Malaysia",
+    "milestone": "Graduation ceremonies",
+    "title": "Graduation ceremonies: July ceremonies at Kuala Lumpur, Malaysia",
+    "reason": "Source wording labels the end date 'Graduation ceremonies start: ... ceremonies end'; it is the closing of the ceremony period.",
+    "added": "2026-10-20"
+   },
+   {
+    "open": "MY|2023-11-25|Graduation ceremonies start: November ceremonies begin at Kuala Lumpur, Malaysia",
+    "close": "MY|2023-11-26|Graduation ceremonies start: November ceremonies end at Kuala Lumpur, Malaysia",
+    "milestone": "Graduation ceremonies",
+    "title": "Graduation ceremonies: November ceremonies at Kuala Lumpur, Malaysia",
+    "reason": "Source wording labels the end date 'Graduation ceremonies start: ... ceremonies end'; it is the closing of the ceremony period.",
+    "added": "2026-10-20"
+   },
+   {
+    "open": "MY|2024-04-27|Graduation ceremonies start: April ceremonies begin at Kuala Lumpur, Malaysia",
+    "close": "MY|2024-04-28|Graduation ceremonies start: April ceremonies end at Kuala Lumpur, Malaysia",
+    "milestone": "Graduation ceremonies",
+    "title": "Graduation ceremonies: April ceremonies at Kuala Lumpur, Malaysia",
+    "reason": "Source wording labels the end date 'Graduation ceremonies start: ... ceremonies end'; it is the closing of the ceremony period.",
+    "added": "2026-10-20"
+   },
+   {
+    "open": "MY|2024-11-23|Graduation ceremonies start: November ceremonies begin at Kuala Lumpur, Malaysia",
+    "close": "MY|2024-11-24|Graduation ceremonies start: November ceremonies end at Kuala Lumpur, Malaysia",
+    "milestone": "Graduation ceremonies",
+    "title": "Graduation ceremonies: November ceremonies at Kuala Lumpur, Malaysia",
+    "reason": "Source wording labels the end date 'Graduation ceremonies start: ... ceremonies end'; it is the closing of the ceremony period.",
+    "added": "2026-10-20"
+   },
+   {
+    "open": "MY|2025-04-12|Graduation ceremonies start: April ceremonies begin at Kuala Lumpur, Malaysia",
+    "close": "MY|2025-04-13|Graduation ceremonies start: April ceremonies end at Kuala Lumpur, Malaysia",
+    "milestone": "Graduation ceremonies",
+    "title": "Graduation ceremonies: April ceremonies at Kuala Lumpur, Malaysia",
+    "reason": "Source wording labels the end date 'Graduation ceremonies start: ... ceremonies end'; it is the closing of the ceremony period.",
+    "added": "2026-10-20"
+   },
+   {
+    "open": "MY|2025-11-22|Graduation ceremonies start: November ceremonies begin at Kuala Lumpur, Malaysia",
+    "close": "MY|2025-11-23|Graduation ceremonies start: November ceremonies end at Kuala Lumpur, Malaysia",
+    "milestone": "Graduation ceremonies",
+    "title": "Graduation ceremonies: November ceremonies at Kuala Lumpur, Malaysia",
+    "reason": "Source wording labels the end date 'Graduation ceremonies start: ... ceremonies end'; it is the closing of the ceremony period.",
+    "added": "2026-10-20"
+   },
+   {
+    "open": "MY|2024-04-01|Mid-semester break starts: Semester 1 (S1-01)",
+    "close": "MY|2024-04-05|Mid-semester break ends",
+    "milestone": "Mid-semester break",
+    "title": "Mid-semester break: Semester 1 (S1-01)",
+    "reason": "Same campus, same semester; the Malaysia page words the end without the intake label.",
+    "added": "2026-10-20"
+   },
+   {
+    "open": "AUS|2025-09-01|Graduate research scholarships open: Round 1/2025 (international students)",
+    "close": "AUS|2026-03-31|Graduate research scholarships close: Round 1/2026 (international students)",
+    "milestone": "Graduate research scholarships",
+    "title": "Graduate research scholarships: Round 1/2026 (international students)",
+    "reason": "International round opens 1 Sep and closes 31 Mar, as in the established rows (2024-09-02 to 2025-03-31); the source labels the opening with the previous year.",
+    "added": "2026-10-20"
+   },
+   {
+    "open": "AUS|2025-11-03|Graduate research scholarships open: Round 2/2025 (domestic students)",
+    "close": "AUS|2026-05-31|Graduate research scholarships close: Round 2/2026 (domestic students)",
+    "milestone": "Graduate research scholarships",
+    "title": "Graduate research scholarships: Round 2/2026 (domestic students)",
+    "reason": "Domestic round opens 1 Nov and closes 31 May, as in the established rows (2024-11-01 to 2025-05-31); the source labels the opening with the previous year.",
+    "added": "2026-10-20"
+   }
+  ],
+  "merge": [
+   {
+    "keys": [
+     "AUS|2023-01-02|University closed: Replacement public holiday for New Year's Day",
+     "MY|2023-01-02|University closed: New Year's Day (replacement holiday)"
+    ],
+    "reason": "Same public holiday observed at both campuses, worded differently.",
+    "added": "2026-10-20"
+   },
+   {
+    "keys": [
+     "ID|2026-02-17|University closed: Chinese New Year",
+     "MY|2026-02-17|University closed: Chinese New Year Day 1"
+    ],
+    "reason": "Same public holiday observed at both campuses, worded differently.",
+    "added": "2026-10-20"
+   },
+   {
+    "keys": [
+     "ID|2026-03-21|University closed: Idul Fitri",
+     "MY|2026-03-21|University closed: Hari Raya Aidilfitri Day 1"
+    ],
+    "reason": "Same public holiday observed at both campuses, worded differently.",
+    "added": "2026-10-20"
+   },
+   {
+    "keys": [
+     "ID|2026-03-22|University closed: Idul Fitri",
+     "MY|2026-03-22|University closed: Hari Raya Aidilfitri Day 2"
+    ],
+    "reason": "Same public holiday observed at both campuses, worded differently.",
+    "added": "2026-10-20"
+   },
+   {
+    "keys": [
+     "ID|2026-05-01|University closed: International Labour Day",
+     "MY|2026-05-01|University closed: Labour Day"
+    ],
+    "reason": "Same public holiday observed at both campuses, worded differently.",
+    "added": "2026-10-20"
+   },
+   {
+    "keys": [
+     "ID|2026-05-27|University closed: Idul Adha Public Holiday",
+     "MY|2026-05-27|University closed: Hari Raya Haji"
+    ],
+    "reason": "Same public holiday observed at both campuses, worded differently.",
+    "added": "2026-10-20"
+   },
+   {
+    "keys": [
+     "ID|2026-05-31|University closed: Waisak Day",
+     "MY|2026-05-31|University closed: Wesak Day"
+    ],
+    "reason": "Same public holiday observed at both campuses, worded differently.",
+    "added": "2026-10-20"
+   },
+   {
+    "keys": [
+     "AUS|2026-01-30|Teaching ends: Summer A (SSA-02)",
+     "MY|2026-01-30|Teaching ends: Summer A (SSA-02)"
+    ],
+    "reason": "Same Summer A teaching end at both campuses; the Malaysia end has no opening of its own.",
+    "added": "2026-10-20"
+   },
+   {
+    "keys": [
+     "AUS|2026-02-06|Teaching ends: Summer B (SSB-01)",
+     "MY|2026-02-06|Teaching ends: Summer B (SSB-01)"
+    ],
+    "reason": "Same Summer B teaching end at both campuses; the Malaysia end has no opening of its own.",
+    "added": "2026-10-20"
+   }
+  ],
+  "separate": [
+   {
+    "keys": [
+     "AUS|2023-04-08|University closed: Easter Saturday",
+     "MY|2023-04-08|University closed: Nuzul Al-Quran"
+    ],
+    "reason": "Different holidays on the same day.",
+    "added": "2026-10-20"
+   },
+   {
+    "keys": [
+     "MY|2026-03-20|University closed: Additional Public Holiday (Hari Raya Aidilfitri)",
+     "ID|2026-03-20|University closed: Idul Fitri Mass Leave"
+    ],
+    "reason": "Different leave days (Malaysia additional public holiday, Indonesia mass leave).",
+    "added": "2026-10-20"
+   },
+   {
+    "keys": [
+     "MY|2026-03-23|University closed: Hari Raya Aidilfitri Day (replacement public holiday)",
+     "ID|2026-03-23|University closed: Idul Fitri Mass Leave"
+    ],
+    "reason": "Different leave days (Malaysia replacement holiday, Indonesia mass leave).",
+    "added": "2026-10-20"
+   },
+   {
+    "keys": [
+     "MY|2026-06-01|University closed: King's Birthday",
+     "ID|2026-06-01|University closed: Pancasila Day"
+    ],
+    "reason": "Different holidays on the same day.",
+    "added": "2026-10-20"
+   },
+   {
+    "keys": [
+     "MY|2024-01-15|Graduation applications close: April in Malaysia",
+     "AUS|2024-01-15|Graduation applications close: May round (Australia)"
+    ],
+    "reason": "Different graduation rounds (April in Malaysia, May in Australia) closing the same day",
+    "added": "2026-10-20"
+   }
+  ],
+  "set": [],
+  "add": []
+ }
 }

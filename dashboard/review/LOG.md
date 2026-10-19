@@ -4,6 +4,20 @@ Newest first. Each entry: date, the snapshot commit reviewed, what changed in
 `dashboard/important_dates_rules.json`, and anything that needs the user (suggested themes, a
 Days forward change, a normaliser pull request).
 
+## 2026-10-20 (manual, from the interactive session): graduation applications
+
+Checked the 5 remaining one-day graduation-application rows against Wayback copies of the
+official pages (the routine's environment can't reach monash.edu or web.archive.org). Their other
+dates are not published:
+- 2023 page (web.archive.org/web/20230727072932) and Oct 2025 page (web.archive.org/web/20251016142420)
+  list only the September/October and December Australian rounds' openings and closings, never the
+  October openings of the next April/May rounds.
+- 2024 archive page (web.archive.org/web/20260325113921, .../archive/2024) lists the December round
+  opening (1 Aug 2024) with no closing.
+Recorded as 5 `unpair` decisions (an `unpair` now also clears the missing-partner flag) and 1
+`separate` (2024-01-15 April-in-Malaysia vs May-in-Australia closings). Graduation applications are
+now 15 periods plus these 5 single dates; a Gantt chart filtered on Is Period = 1 shows one bar per round.
+
 ## 2026-10-20 (third run): snapshot 006a368
 
 9 decisions (23 total, all applied; no unused): 3 `pair`, 2 `merge`, 4 `separate`. Events 1080 -> 1074; flags 96 -> 82 (closing-without-opening 22 -> 17, opening-without-closing 21 -> 18, possible-cross-campus-duplicate 47 -> 39).

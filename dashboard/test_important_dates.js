@@ -213,7 +213,7 @@ const d = build({
 }, day('2027-01-01'));
 const dr = event => d.rows.filter(r => r.Event === event);
 check('exclude', dr('Fees due: Semester 2 (S2-01)').length, 0);
-check('unpaired closing flagged', dr('Teaching ends: Semester 1 (S1-01)').map(r => r.flags), [['closing-without-opening']]);
+check('an unpaired (checked) closing is not flagged', dr('Teaching ends: Semester 1 (S1-01)').map(r => r.flags), [[]]);
 check('unpair keeps the closing single', [dr('Teaching ends: Semester 1 (S1-01)').length,
   dr('Teaching: Full year (FY-01)').map(r => fmt(r['End Date (incl.)']))], [1, ['2026-10-23']]);
 check('pair with an unknown key is unused', d.unused.map(u => u.kind), ['pair']);

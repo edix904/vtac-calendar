@@ -85,7 +85,7 @@ Keys are copied exactly from `listings.json` (`key`) or `events.json` (`keys`). 
 | Decision | Shape | Effect |
 | :- | :- | :- |
 | `exclude` | `{key}` | Leave the listing out (not a real date, or a duplicate the rules can't see) |
-| `unpair` | `{key}` | Never pair this listing automatically |
+| `unpair` | `{key}` | Never pair this listing automatically; also marks a one-day opening or closing as checked when its partner is confirmed unpublished (clears its flag; cite where you looked in `reason`) |
 | `pair` | `{open, close, milestone?, title?}` | One period from two listings of the same campus |
 | `merge` | `{keys: [...]}` | The events holding these listings are one event (any campuses) |
 | `separate` | `{keys: [...]}` | Never merge the events holding these listings |
