@@ -218,6 +218,12 @@ rules) and `CampusBackfill.js` (the backfill rows). The sync then adds:
   principal dates both closing the university that day) become one row, and campuses join an event by
   the `Shared With` rule above. `Event` shows one wording; `AUS Title` / `MY Title` / `ID Title` keep each
   campus's own.
+  Openings and closings are one **period** row (`Is Period` = 1) from `Start Date` to `End Date (incl.)`,
+  e.g. `Allocate+ preference entry opens` + `… closes` for Semester 1 (S1-01) →
+  `Allocate+ preference entry: Semester 1 (S1-01)`, with `Start Time` / `End Time` and `Days`. They pair
+  per teaching period code (so a Semester 1 + Full year teaching start gives two periods), never past
+  the next opening of the same code; ones without a partner stay one-day rows. Use it for Gantt charts
+  or to filter activity between `Start Date` and `End Date (incl.)`.
 
 Tests: `python -m unittest test_principal_dates.py`, `node dashboard/test_normalise.js` and
 `node dashboard/test_important_dates.js`.
