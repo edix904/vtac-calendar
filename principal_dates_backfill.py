@@ -10,7 +10,8 @@ Sources
       and the current page.
   ID  the current page only: older Indonesia pages are not online or in the Wayback Machine.
 
-Where pages overlap (the 2025 page also lists January 2026), the newer page wins.
+Where pages overlap (the 2025 page also lists January 2026), the newer page wins for any
+milestone it restates; dates only the older page lists (the end of an October intake) are kept.
 
 Usage:
     python principal_dates_backfill.py --until 2026-10-20               # fetch pages (needs a browser)
@@ -41,7 +42,7 @@ SOURCES = {
     ],
 }
 HEADER = ["Calendar Name", "Title", "Start Date", "End Date (incl.)", "Source", "Source URL"]
-SOURCE_PREFIX = "Monash principal dates page"  # rows starting with this are replaced by the dashboard
+SOURCE_PREFIX = "MY/ID principal dates page"  # rows starting with this are replaced by the dashboard
 
 
 def saved_name(url: str) -> str:
@@ -72,20 +73,23 @@ def rows_for(campus: str, rules: dict, since: date, until: date, pages_dir: str 
         if items:
             pages.append((year, url, src, items))
     pages.sort(key=lambda p: p[0], reverse=True)  # newest first
-    out, covered_from = [], None
+    # Keep every page's rows, except where a newer page restates the same milestone (same
+    # normalised title within 45 days, possibly with a corrected date): the newer page wins.
+    out, kept = [], {}
     for year, url, src, items in pages:
-        first = min(e.start for e, _ in items)
         label = "current page" if year == 9999 else f"{year} archive page"
+        mine = []
         for ev, n in items:
-            if covered_from and ev.start >= covered_from:
-                continue  # a newer page covers this date
-            if not (since <= ev.start < until):
-                continue
             title = n.title + (f" ({n.time})" if n.time else "")
-            link = url if src == "live" else src
-            out.append([info["name"], title, ev.start.isoformat(), ev.end.isoformat(),
-                        f"{SOURCE_PREFIX} ({campus}), {label}", link])
-        covered_from = first if covered_from is None else min(first, covered_from)
+            if any(abs((ev.start - d).days) <= 45 for d in kept.get(title, [])):
+                continue
+            mine.append((ev.start, title))
+            if since <= ev.start < until:
+                link = url if src == "live" else src
+                out.append([info["name"], title, ev.start.isoformat(), ev.end.isoformat(),
+                            f"{SOURCE_PREFIX} ({campus}), {label}", link])
+        for d, t in mine:
+            kept.setdefault(t, []).append(d)
     unclassified = sorted({n.raw for _, _, _, its in pages for _, n in its if not n.classified})
     for t in unclassified:
         print(f"WARNING [{campus}]: unclassified title: {t!r}", file=sys.stderr)

@@ -11,7 +11,7 @@ on:
         default: false
   push:
     branches: [main]
-    paths: [principal_dates.py, principal_dates_rules.json, monash_fetch.py]
+    paths: [principal_dates.py, principal_dates_rules.json, monash_fetch.py, dashboard/Normalise.js]
 
 permissions:
   contents: write
@@ -39,7 +39,9 @@ jobs:
           python -m playwright install --with-deps chromium
 
       - name: Run tests
-        run: python -m unittest -v test_principal_dates.py
+        run: |
+          python -m unittest -v test_principal_dates.py
+          node dashboard/test_normalise.js
 
       # Exit codes: 0 OK; 1 a calendar was NOT written (page blocked / layout changed / sharp drop);
       # 2 written from a Wayback Machine snapshot because the live page was blocked.

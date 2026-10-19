@@ -7,7 +7,7 @@
     "milestones: matched against the milestone text (before the first colon, time removed).",
     "rewrites: applied in order to the raw title before anything else ($1 = first group).",
     "  'milestone' = canonical name. 'phase' (optional) tells the academic-week builder what the",
-    "  event marks: teaching_start, teaching_end, break_start, break_end, swot_start, swot_end,",
+    "  event marks: orientation_start, teaching_start, teaching_end, break_start, break_end, swot_start, swot_end,",
     "  exams_start, exams_end, exams_and_teaching_end, results.",
     "titles: matched against the whole raw title; for titles that have no milestone prefix.",
     "periods: canonical teaching-period names, matched against the period code (e.g. S1-01).",
@@ -215,7 +215,8 @@
     },
     {
       "pattern": "^(mid-year )?orientation( week)?:? (starts?|begins?|commences?)$|^(mid-year )?orientation( week)?$",
-      "milestone": "Orientation starts"
+      "milestone": "Orientation starts",
+      "phase": "orientation_start"
     },
     {
       "pattern": "^(mid-year )?orientation( week)?:? ends?$",

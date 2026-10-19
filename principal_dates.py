@@ -72,6 +72,10 @@ def load_rules(path: str = RULES_PATH) -> dict:
     for r in rules["periods"]:
         r["_re"] = re.compile(r["code"])
     rules["_exclude"] = [re.compile(p, re.I) for p in rules.get("exclude", [])]
+    # Canonical names map to their own rule, so already-normalised titles stay classified.
+    rules["_canonical"] = {}
+    for r in rules["milestones"] + rules["titles"]:
+        rules["_canonical"].setdefault(r["milestone"].lower(), r)
     for r in rules.get("rewrites", []):
         r["_re"] = re.compile(r["pattern"], re.I)
         r["_repl"] = re.sub(r"\$(\d)", r"\\\1", r["replace"])
@@ -188,8 +192,11 @@ def candidates(head: str, detail: str) -> list[tuple[str, str]]:
 
 
 def _match_milestone(cands: list[tuple[str, str]], rules: dict):
+    canon = rules.get("_canonical", {})
     for text, residual in cands:
         key = clean_space(text).strip(" :;,.-")
+        if key.lower() in canon:  # already a canonical name (normalised feed titles)
+            return canon[key.lower()], residual
         for r in rules["milestones"]:
             if r["_re"].search(key):
                 return r, residual

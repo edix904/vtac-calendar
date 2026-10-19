@@ -133,3 +133,82 @@ On GitHub: **Actions → Update VTAC calendar → Run workflow**, or:
 ```bash
 gh workflow run vtac-calendar.yml -R edix904/vtac-calendar
 ```
+
+# Monash Malaysia & Indonesia principal dates (.ics)
+
+Two more subscribable calendars, built the same way as the VTAC one: the principal dates of
+[Monash University Malaysia](https://www.monash.edu.my/student-services/student-admin/principal-dates-for-monash-university-malaysia)
+and [Monash University Indonesia](https://www.monash.edu/indonesia/important-dates/principal-dates), scraped daily. Unofficial.
+
+| Calendar | Subscription URL |
+|---|---|
+| **Monash Malaysia** | `https://raw.githubusercontent.com/edix904/vtac-calendar/main/monash-malaysia.ics` |
+| **Monash Indonesia** | `https://raw.githubusercontent.com/edix904/vtac-calendar/main/monash-indonesia.ics` |
+
+Subscribe as for VTAC (Google Calendar: **Other calendars → + → From URL**). Events are all-day; a time, if any, is in brackets at the end of the title.
+
+## Consistent names across campuses and years
+
+Each campus words the same milestone differently, and the wording changes between years
+("Mid-semester break: begins for semester one", "Mid-semester break starts: Semester one";
+"Allocate+ adjustment: opens 10am", "Allocate+ adjustment opens at 10am"). Every title is
+rewritten to one pattern:
+
+```
+<Milestone>: <Teaching period> (<code>)[, <Teaching period> (<code>)] [(time)]
+```
+
+e.g. `Mid-semester break starts: Semester 1 (S1-01)`, `Allocate+ adjustment opens: Semester 1 (S1-01) (10am)`,
+`University closed: Hari Raya Aidilfitri Day 1`. Explanatory sentences after the first full stop
+go in the event description with the official wording.
+
+The rules live in **`principal_dates_rules.json`** (data, not code) and are shared:
+`principal_dates.py` uses them for the feeds, and the Calendar Dashboard sheet fetches the same
+file on every sync to normalise all three campuses, including the Australian dates. Check a title with:
+
+```bash
+python principal_dates.py --normalise "Mid-semester break: begins for semester one (S1-01)"
+```
+
+A title that no rule recognises still appears, with its own wording; the run log notes it, and
+the dashboard lists it on its **Normalise_Review** tab. A weekly scheduled Claude task reads that
+tab and proposes new rules in a pull request. `normalise_cases.json` holds the expected results
+that both implementations are tested against.
+
+## How it works
+
+- `monash_fetch.py` loads the pages with headless Chromium: they sit behind a Cloudflare browser
+  check that plain HTTP requests fail. If that fails it falls back to the newest Wayback snapshot.
+- `principal_dates.py` reads every Day/Date/Description table (Malaysia: Semester 1, Semester 2 and
+  October intake views, deduplicated; the Medicine and Year 5 rotation tables are skipped) and the
+  single full-year table (Indonesia). TBC dates are skipped until they get a date.
+- `.github/workflows/principal-dates.yml` runs daily at 20:41 UTC and on rule changes, and commits
+  the .ics files only when something other than `DTSTAMP` changed. It fails (so GitHub emails you)
+  when a page can't be fetched, parses to fewer than 20 events, drops by more than half, or was
+  only available from the Wayback Machine.
+- Event UIDs come from campus + year + normalised title, so a moved date updates the event.
+
+## History for the dashboard
+
+`principal_dates_backfill.py` writes `backfill/monash_my_id_backfill.csv` (Backfill tab layout) from
+the Malaysia archive pages for 2023–2025 plus the current pages, up to the day the feeds were added
+to the dashboard. Older Indonesia pages are not online or archived, so Indonesia starts in 2026.
+
+## Calendar Dashboard integration (`dashboard/`)
+
+`dashboard/Normalise.js` and `dashboard/PrincipalDates.js` are copied into the dashboard's Apps
+Script project; `dashboard/build_embeds.py` generates `NormaliseRules.js` (fallback copy of the
+rules) and `CampusBackfill.js` (the backfill rows). The sync then adds:
+
+- **Events** columns: `Campus`, `Is AUS` / `Is MY` / `Is ID` (true for the event's campus, campuses named
+  in the title, and campuses that list the same milestone for the same teaching period on the same
+  day), `Shared With`, `Milestone`, `Teaching Period`, `Period Codes`, `Normalised Title`,
+  `Milestone Time`, `Classified`, and the event's `Academic Period` / `Phase` / `Week`.
+- **Days** columns per campus: `<campus> Principal Dates`, `Academic Period`, `Academic Phase`, `Academic Week`.
+- **Academic_Weeks** tab: one row per campus × teaching period × week (Orientation, Teaching 1–12,
+  Mid-semester break, Swot vac, Exams), derived the same way for every campus from the normalised
+  teaching start / end, break, swot vac and final assessment dates, so weeks compare like for like.
+  For Australia this matches the Semester summary calendar's week numbers exactly (2023–2026).
+- **Normalise_Overrides** tab: manual classifications (exact title → milestone / period / phase / exclude) that win over the rules.
+
+Tests: `python -m unittest test_principal_dates.py` and `node dashboard/test_normalise.js`.

@@ -74,6 +74,16 @@ class Normalise(unittest.TestCase):
             again = pd.normalise(n.title + (f" ({n.time})" if n.time else ""), self.rules)
             self.assertEqual((again.title, again.time, again.milestone), (n.title, n.time, n.milestone))
 
+    def test_normalised_titles_normalise_to_themselves(self):
+        with open(os.path.join(HERE, "normalise_cases.json"), encoding="utf-8") as f:
+            cases = json.load(f)["cases"]
+        for c in cases:
+            n = pd.normalise(c["raw"], self.rules)
+            again = pd.normalise(n.title + (f" ({n.time})" if n.time else ""), self.rules)
+            with self.subTest(title=n.title):
+                self.assertTrue(again.classified)
+                self.assertEqual((again.milestone, again.title, again.time), (n.milestone, n.title, n.time))
+
     def test_unknown_title_is_flagged_not_dropped(self):
         n = pd.normalise("Something brand new: Semester one (S1-01)", self.rules)
         self.assertFalse(n.classified)

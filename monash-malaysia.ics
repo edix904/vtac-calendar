@@ -13,7 +13,7 @@ BEGIN:VEVENT
 SUMMARY:University closed: New Year's Day
 DTSTART;VALUE=DATE:20260101
 DTEND;VALUE=DATE:20260102
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:6e2ffb803a5cf8e4@monash-principal-dates
 CATEGORIES:University closed
 DESCRIPTION:Official wording: University closed: New Year's Day\nSection: 
@@ -28,7 +28,7 @@ SUMMARY:Deferred and supplementary assessment timetable published: Semeste
  r 2 (S1-02)
 DTSTART;VALUE=DATE:20260105
 DTEND;VALUE=DATE:20260106
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:74ab8ef6cfa51772@monash-principal-dates
 CATEGORIES:Deferred and supplementary assessment timetable published
 DESCRIPTION:Official wording: Deferred and supplementary final assessments
@@ -44,7 +44,7 @@ SUMMARY:Final assessment timetable published: Summer A (SSA-02)\, Summer B
   (SSB-01)
 DTSTART;VALUE=DATE:20260105
 DTEND;VALUE=DATE:20260106
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:eec802ea7d8df7fa@monash-principal-dates
 CATEGORIES:Final assessment timetable published
 DESCRIPTION:Official wording: Final assessments timetable published: Summe
@@ -59,7 +59,7 @@ BEGIN:VEVENT
 SUMMARY:University reopens
 DTSTART;VALUE=DATE:20260105
 DTEND;VALUE=DATE:20260106
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:51d1f853e405606c@monash-principal-dates
 CATEGORIES:University reopens
 DESCRIPTION:Official wording: University reopens\nSection: SEMESTER 1 2026
@@ -73,7 +73,7 @@ BEGIN:VEVENT
 SUMMARY:Allocate+ preference entry opens: Semester 1 (S1-01) (10am)
 DTSTART;VALUE=DATE:20260112
 DTEND;VALUE=DATE:20260113
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:b793989e2377f396@monash-principal-dates
 CATEGORIES:Allocate+ preference entry opens
 DESCRIPTION:Official wording: Allocate+ preference entry: opens 10am for s
@@ -88,7 +88,7 @@ BEGIN:VEVENT
 SUMMARY:Deferred and supplementary assessments start: Semester 2 (S2-01)
 DTSTART;VALUE=DATE:20260112
 DTEND;VALUE=DATE:20260113
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:0efb186f5132e801@monash-principal-dates
 CATEGORIES:Deferred and supplementary assessments start
 DESCRIPTION:Official wording: Deferred and supplementary final assessments
@@ -104,7 +104,7 @@ SUMMARY:Graduation applications close: April round (Malaysia) and May roun
  d (Australia)
 DTSTART;VALUE=DATE:20260115
 DTEND;VALUE=DATE:20260116
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:06a26b3f09ac7ec0@monash-principal-dates
 CATEGORIES:Graduation applications close
 DESCRIPTION:Official wording: Graduation applications close: April round (
@@ -119,7 +119,7 @@ BEGIN:VEVENT
 SUMMARY:Deferred and supplementary assessments end: Semester 2 (S2-01)
 DTSTART;VALUE=DATE:20260116
 DTEND;VALUE=DATE:20260117
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:d83935acea04dced@monash-principal-dates
 CATEGORIES:Deferred and supplementary assessments end
 DESCRIPTION:Official wording: Deferred and supplementary final assessments
@@ -135,7 +135,7 @@ SUMMARY:Graduation applications open: September/October round (Australia)
  and November round (Malaysia)
 DTSTART;VALUE=DATE:20260116
 DTEND;VALUE=DATE:20260117
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:a64a6e68751d6665@monash-principal-dates
 CATEGORIES:Graduation applications open
 DESCRIPTION:Official wording: Graduation applications open: September/Octo
@@ -150,7 +150,7 @@ BEGIN:VEVENT
 SUMMARY:Allocate+ preference entry closes: Semester 1 (S1-01) (5pm)
 DTSTART;VALUE=DATE:20260126
 DTEND;VALUE=DATE:20260127
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:b8703a64e9d943fd@monash-principal-dates
 CATEGORIES:Allocate+ preference entry closes
 DESCRIPTION:Official wording: Allocate+ preference entry: closes 5pm for s
@@ -165,7 +165,7 @@ BEGIN:VEVENT
 SUMMARY:Teaching ends: Summer A (SSA-02)
 DTSTART;VALUE=DATE:20260130
 DTEND;VALUE=DATE:20260131
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:20d0fc6a1ace5418@monash-principal-dates
 CATEGORIES:Teaching ends
 DESCRIPTION:Official wording: Teaching ends: Summer semester A (SSA-02) 20
@@ -180,7 +180,7 @@ BEGIN:VEVENT
 SUMMARY:University closed: Thaipusam
 DTSTART;VALUE=DATE:20260201
 DTEND;VALUE=DATE:20260202
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:605efaa98e4fcbae@monash-principal-dates
 CATEGORIES:University closed
 DESCRIPTION:Official wording: University closed: Thaipusam\nSection: SEMES
@@ -194,7 +194,7 @@ BEGIN:VEVENT
 SUMMARY:Deferred and supplementary results released: Semester 2 (S2-01)
 DTSTART;VALUE=DATE:20260202
 DTEND;VALUE=DATE:20260203
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:5e6c2d4b4125cd67@monash-principal-dates
 CATEGORIES:Deferred and supplementary results released
 DESCRIPTION:Official wording: Deferred and supplementary final assessments
@@ -209,7 +209,7 @@ BEGIN:VEVENT
 SUMMARY:Last day for full fee refund: Semester 1 (S1-01)
 DTSTART;VALUE=DATE:20260202
 DTEND;VALUE=DATE:20260203
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:e7eecbe8dd97cd85@monash-principal-dates
 CATEGORIES:Last day for full fee refund
 DESCRIPTION:Official wording: Fees: last day for students commencing in se
@@ -225,7 +225,7 @@ BEGIN:VEVENT
 SUMMARY:Final assessments start: Summer A (SSA-02)
 DTSTART;VALUE=DATE:20260202
 DTEND;VALUE=DATE:20260203
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:3d7ae53816af7820@monash-principal-dates
 CATEGORIES:Final assessments start
 DESCRIPTION:Official wording: Final assessments start: Summer semester A (
@@ -239,7 +239,7 @@ BEGIN:VEVENT
 SUMMARY:University closed: Thaipusam (replacement holiday)
 DTSTART;VALUE=DATE:20260202
 DTEND;VALUE=DATE:20260203
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:43cfd238eae9df33@monash-principal-dates
 CATEGORIES:University closed
 DESCRIPTION:Official wording: University closed: Thaipusam (replacement ho
@@ -253,7 +253,7 @@ BEGIN:VEVENT
 SUMMARY:Teaching ends: Summer B (SSB-01)
 DTSTART;VALUE=DATE:20260206
 DTEND;VALUE=DATE:20260207
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:2840581b515e5bb5@monash-principal-dates
 CATEGORIES:Teaching ends
 DESCRIPTION:Official wording: Teaching ends: Summer semester B (SSB-01). L
@@ -268,7 +268,7 @@ BEGIN:VEVENT
 SUMMARY:Final assessments start: Summer B (SSB-01)
 DTSTART;VALUE=DATE:20260209
 DTEND;VALUE=DATE:20260210
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:fd748c5f23514b1d@monash-principal-dates
 CATEGORIES:Final assessments start
 DESCRIPTION:Official wording: Final assessments start: Summer semester B (
@@ -282,7 +282,7 @@ BEGIN:VEVENT
 SUMMARY:Allocate+ adjustment opens: Semester 1 (S1-01) (10am)
 DTSTART;VALUE=DATE:20260210
 DTEND;VALUE=DATE:20260211
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:0dd78587fefd0718@monash-principal-dates
 CATEGORIES:Allocate+ adjustment opens
 DESCRIPTION:Official wording: Allocate+ adjustment: opens 10am for semeste
@@ -298,7 +298,7 @@ SUMMARY:Rescheduled deferred assessment timetable published: Semester 2 (S
  2-01)
 DTSTART;VALUE=DATE:20260211
 DTEND;VALUE=DATE:20260212
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:9a51760369b00c8b@monash-principal-dates
 CATEGORIES:Rescheduled deferred assessment timetable published
 DESCRIPTION:Official wording: Rescheduled deferred assessments timetable p
@@ -314,7 +314,7 @@ SUMMARY:Final assessments and teaching end: Summer A (SSA-02)\, Summer B (
  SSB-01)
 DTSTART;VALUE=DATE:20260213
 DTEND;VALUE=DATE:20260214
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:842e1dc3466cc7e9@monash-principal-dates
 CATEGORIES:Final assessments and teaching end
 DESCRIPTION:Official wording: Final assessments and teaching periods end: 
@@ -329,7 +329,7 @@ BEGIN:VEVENT
 SUMMARY:University closed: Chinese New Year Day 1
 DTSTART;VALUE=DATE:20260217
 DTEND;VALUE=DATE:20260218
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:939098fee1f6aa0a@monash-principal-dates
 CATEGORIES:University closed
 DESCRIPTION:Official wording: University closed: Chinese New Year Day 1\nS
@@ -343,7 +343,7 @@ BEGIN:VEVENT
 SUMMARY:University closed: Chinese New Year Day 2
 DTSTART;VALUE=DATE:20260218
 DTEND;VALUE=DATE:20260219
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:b180ca1b52f6cd67@monash-principal-dates
 CATEGORIES:University closed
 DESCRIPTION:Official wording: University closed: Chinese New Year Day 2\nS
@@ -357,7 +357,7 @@ BEGIN:VEVENT
 SUMMARY:Orientation starts: Semester 1 (S1-01)
 DTSTART;VALUE=DATE:20260223
 DTEND;VALUE=DATE:20260224
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:7f68263149f17750@monash-principal-dates
 CATEGORIES:Orientation starts
 DESCRIPTION:Official wording: Orientation starts: Semester one (S1-01)\nSe
@@ -371,7 +371,7 @@ BEGIN:VEVENT
 SUMMARY:Rescheduled deferred assessments start: Semester 2 (S2-01)
 DTSTART;VALUE=DATE:20260223
 DTEND;VALUE=DATE:20260224
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:89c2e495ad44182e@monash-principal-dates
 CATEGORIES:Rescheduled deferred assessments start
 DESCRIPTION:Official wording: Rescheduled deferred assessments start: Seme
@@ -386,7 +386,7 @@ BEGIN:VEVENT
 SUMMARY:Orientation ends: Semester 1 (S1-01)
 DTSTART;VALUE=DATE:20260227
 DTEND;VALUE=DATE:20260228
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:4483c57000d74c30@monash-principal-dates
 CATEGORIES:Orientation ends
 DESCRIPTION:Official wording: Orientation ends: Semester one (S1-01)\nSect
@@ -400,7 +400,7 @@ BEGIN:VEVENT
 SUMMARY:Rescheduled deferred assessments end: Semester 2 (S2-01)
 DTSTART;VALUE=DATE:20260227
 DTEND;VALUE=DATE:20260228
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:30ea9b7ab85c870f@monash-principal-dates
 CATEGORIES:Rescheduled deferred assessments end
 DESCRIPTION:Official wording: Rescheduled deferred assessments end: Semest
@@ -415,7 +415,7 @@ BEGIN:VEVENT
 SUMMARY:Results released: Summer A (SSA-02)\, Summer B (SSB-01)
 DTSTART;VALUE=DATE:20260302
 DTEND;VALUE=DATE:20260303
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:7d9384b06532cead@monash-principal-dates
 CATEGORIES:Results released
 DESCRIPTION:Official wording: Results released: Summer semester A (SSA-02)
@@ -430,7 +430,7 @@ BEGIN:VEVENT
 SUMMARY:Teaching starts: Semester 1 (S1-01)\, Full year (FY-01)
 DTSTART;VALUE=DATE:20260302
 DTEND;VALUE=DATE:20260303
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:89593ca398ced055@monash-principal-dates
 CATEGORIES:Teaching starts
 DESCRIPTION:Official wording: Teaching starts: Semester one (S1-01) and Fu
@@ -444,7 +444,7 @@ BEGIN:VEVENT
 SUMMARY:Fees due: Semester 1 (S1-01)
 DTSTART;VALUE=DATE:20260306
 DTEND;VALUE=DATE:20260307
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:5c76bf4761173200@monash-principal-dates
 CATEGORIES:Fees due
 DESCRIPTION:Official wording: Fees due: Semester one (S1-01). A late payme
@@ -459,7 +459,7 @@ BEGIN:VEVENT
 SUMMARY:University closed: Nuzul Al-Quran
 DTSTART;VALUE=DATE:20260307
 DTEND;VALUE=DATE:20260308
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:7a3c70a3085f9abf@monash-principal-dates
 CATEGORIES:University closed
 DESCRIPTION:Official wording: University closed: Nuzul Al-Quran\nSection: 
@@ -474,7 +474,7 @@ SUMMARY:Deferred and supplementary assessment timetable published: Summer
  A (SSA-02)\, Summer B (SSB-01)
 DTSTART;VALUE=DATE:20260311
 DTEND;VALUE=DATE:20260312
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:87d69a4f1916b70e@monash-principal-dates
 CATEGORIES:Deferred and supplementary assessment timetable published
 DESCRIPTION:Official wording: Deferred and supplementary final assessments
@@ -490,7 +490,7 @@ SUMMARY:Last day to add on-campus units: Semester 1 (S1-01)\, Full year (F
  Y-01)
 DTSTART;VALUE=DATE:20260313
 DTEND;VALUE=DATE:20260314
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:6e7bfef5ea30e396@monash-principal-dates
 CATEGORIES:Last day to add on-campus units
 DESCRIPTION:Official wording: Last day to add on-campus units: Semester on
@@ -505,7 +505,7 @@ BEGIN:VEVENT
 SUMMARY:Allocate+ adjustment closes: Semester 1 (S1-01) (5pm)
 DTSTART;VALUE=DATE:20260316
 DTEND;VALUE=DATE:20260317
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:fe79595f20e74996@monash-principal-dates
 CATEGORIES:Allocate+ adjustment closes
 DESCRIPTION:Official wording: Allocate+ adjustment: closes 5pm for semeste
@@ -520,7 +520,7 @@ BEGIN:VEVENT
 SUMMARY:Course transfer applications open: Semester 2 (S2-01) (9am)
 DTSTART;VALUE=DATE:20260316
 DTEND;VALUE=DATE:20260317
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:04e585e3bd36930d@monash-principal-dates
 CATEGORIES:Course transfer applications open
 DESCRIPTION:Official wording: Course transfers to Monash Australia: Applic
@@ -537,7 +537,7 @@ SUMMARY:University closed: Additional Public Holiday (Hari Raya Aidilfitri
  )
 DTSTART;VALUE=DATE:20260320
 DTEND;VALUE=DATE:20260321
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:58dbabe814ccc8e6@monash-principal-dates
 CATEGORIES:University closed
 DESCRIPTION:Official wording: University closed: Additional Public Holiday
@@ -552,7 +552,7 @@ BEGIN:VEVENT
 SUMMARY:University closed: Hari Raya Aidilfitri Day 1
 DTSTART;VALUE=DATE:20260321
 DTEND;VALUE=DATE:20260322
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:357743dea8a2d3e4@monash-principal-dates
 CATEGORIES:University closed
 DESCRIPTION:Official wording: University closed: Hari Raya Aidilfitri Day 
@@ -566,7 +566,7 @@ BEGIN:VEVENT
 SUMMARY:University closed: Hari Raya Aidilfitri Day 2
 DTSTART;VALUE=DATE:20260322
 DTEND;VALUE=DATE:20260323
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:58a3d88e0f3b5d7d@monash-principal-dates
 CATEGORIES:University closed
 DESCRIPTION:Official wording: University closed: Hari Raya Aidilfitri Day 
@@ -581,7 +581,7 @@ SUMMARY:Deferred and supplementary assessments start: Summer A (SSA-02)\,
  Summer B (SSB-01)
 DTSTART;VALUE=DATE:20260323
 DTEND;VALUE=DATE:20260324
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:38103d9ce2bc63d9@monash-principal-dates
 CATEGORIES:Deferred and supplementary assessments start
 DESCRIPTION:Official wording: Deferred and supplementary final assessments
@@ -597,7 +597,7 @@ SUMMARY:University closed: Hari Raya Aidilfitri Day (replacement public ho
  liday)
 DTSTART;VALUE=DATE:20260323
 DTEND;VALUE=DATE:20260324
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:8d0884996d882a43@monash-principal-dates
 CATEGORIES:University closed
 DESCRIPTION:Official wording: University closed: Hari Raya Aidilfitri Day 
@@ -613,7 +613,7 @@ SUMMARY:Deferred and supplementary assessments end: Summer A (SSA-02)\, Su
  mmer B (SSB-01)
 DTSTART;VALUE=DATE:20260327
 DTEND;VALUE=DATE:20260328
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:b90883a8816834ac@monash-principal-dates
 CATEGORIES:Deferred and supplementary assessments end
 DESCRIPTION:Official wording: Deferred and supplementary final assessments
@@ -628,7 +628,7 @@ BEGIN:VEVENT
 SUMMARY:Census date: Semester 1 (S1-01)
 DTSTART;VALUE=DATE:20260331
 DTEND;VALUE=DATE:20260401
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:04a3a7adcf470b97@monash-principal-dates
 CATEGORIES:Census date
 DESCRIPTION:Official wording: Census date: Semester one (S1-01). Last day 
@@ -643,7 +643,7 @@ BEGIN:VEVENT
 SUMMARY:Last day for partial fee refund: Semester 1 (S1-01)
 DTSTART;VALUE=DATE:20260331
 DTEND;VALUE=DATE:20260401
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:42a338ea587be864@monash-principal-dates
 CATEGORIES:Last day for partial fee refund
 DESCRIPTION:Official wording: Fees: last day for course discontinuation se
@@ -658,7 +658,7 @@ BEGIN:VEVENT
 SUMMARY:Census date: Full year (extended) (FY-32)
 DTSTART;VALUE=DATE:20260406
 DTEND;VALUE=DATE:20260407
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:30e81e0de714cb5b@monash-principal-dates
 CATEGORIES:Census date
 DESCRIPTION:Official wording: Census date: Full-year (extended) (FY-32). L
@@ -674,7 +674,7 @@ BEGIN:VEVENT
 SUMMARY:Mid-semester break starts: Semester 1 (S1-01)
 DTSTART;VALUE=DATE:20260406
 DTEND;VALUE=DATE:20260407
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:96a5d1a577bb0804@monash-principal-dates
 CATEGORIES:Mid-semester break starts
 DESCRIPTION:Official wording: Mid-semester break: begins for semester one 
@@ -688,7 +688,7 @@ BEGIN:VEVENT
 SUMMARY:Course transfer preferences close: Semester 2 (S2-01) (11:59pm)
 DTSTART;VALUE=DATE:20260410
 DTEND;VALUE=DATE:20260411
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:487f7bee3add0895@monash-principal-dates
 CATEGORIES:Course transfer preferences close
 DESCRIPTION:Official wording: Course transfers to Monash Australia: Change
@@ -704,7 +704,7 @@ BEGIN:VEVENT
 SUMMARY:Mid-semester break ends: Semester 1 (S1-01)
 DTSTART;VALUE=DATE:20260410
 DTEND;VALUE=DATE:20260411
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:a15b8afe93f3e82f@monash-principal-dates
 CATEGORIES:Mid-semester break ends
 DESCRIPTION:Official wording: Mid-semester break: ends for semester one (S
@@ -718,7 +718,7 @@ BEGIN:VEVENT
 SUMMARY:Graduation ceremonies start: April round (Malaysia)
 DTSTART;VALUE=DATE:20260411
 DTEND;VALUE=DATE:20260412
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:e2899d28d89d3e7b@monash-principal-dates
 CATEGORIES:Graduation ceremonies start
 DESCRIPTION:Official wording: Graduation ceremonies start: April round (Ma
@@ -732,7 +732,7 @@ BEGIN:VEVENT
 SUMMARY:Graduation ceremonies end: April round (Malaysia)
 DTSTART;VALUE=DATE:20260412
 DTEND;VALUE=DATE:20260413
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:7aeadba2b80de6a3@monash-principal-dates
 CATEGORIES:Graduation ceremonies end
 DESCRIPTION:Official wording: Graduation ceremonies end: April round (Mala
@@ -747,7 +747,7 @@ SUMMARY:Deferred and supplementary results released: Summer A (SSA-02)\, S
  ummer B (SSB-01)
 DTSTART;VALUE=DATE:20260413
 DTEND;VALUE=DATE:20260414
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:ebcdae55d6df0f81@monash-principal-dates
 CATEGORIES:Deferred and supplementary results released
 DESCRIPTION:Official wording: Results (deferred and supplementary): releas
@@ -762,7 +762,7 @@ BEGIN:VEVENT
 SUMMARY:Course transfer applications close: Semester 2 (S2-01) (11:59pm)
 DTSTART;VALUE=DATE:20260415
 DTEND;VALUE=DATE:20260416
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:4e27c55a3e47796f@monash-principal-dates
 CATEGORIES:Course transfer applications close
 DESCRIPTION:Official wording: Course transfers to Monash Australia: Applic
@@ -779,7 +779,7 @@ SUMMARY:Final assessment timetable published: Semester 1 (S1-01)\, Semeste
  r 1 (extended) (S1-32)\, Summer A - Semester 1 (SS-S1-01)
 DTSTART;VALUE=DATE:20260420
 DTEND;VALUE=DATE:20260421
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:be219cb25d08bc5c@monash-principal-dates
 CATEGORIES:Final assessment timetable published
 DESCRIPTION:Official wording: Final assessments timetable published: Semes
@@ -795,7 +795,7 @@ SUMMARY:Rescheduled deferred assessment timetable published: Summer A (SSA
  -02)\, Summer B (SSB-01)
 DTSTART;VALUE=DATE:20260429
 DTEND;VALUE=DATE:20260430
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:2a4bcafaa0a914d7@monash-principal-dates
 CATEGORIES:Rescheduled deferred assessment timetable published
 DESCRIPTION:Official wording: Rescheduled deferred and supplementary final
@@ -810,7 +810,7 @@ BEGIN:VEVENT
 SUMMARY:Course transfer offers sent: Semester 2 (S2-01) (5pm)
 DTSTART;VALUE=DATE:20260430
 DTEND;VALUE=DATE:20260501
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:8c019fb0dbdfb416@monash-principal-dates
 CATEGORIES:Course transfer offers sent
 DESCRIPTION:Official wording: Course transfers to Monash Australia: Offer 
@@ -826,7 +826,7 @@ BEGIN:VEVENT
 SUMMARY:University closed: Labour Day
 DTSTART;VALUE=DATE:20260501
 DTEND;VALUE=DATE:20260502
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:022385c2b696772a@monash-principal-dates
 CATEGORIES:University closed
 DESCRIPTION:Official wording: University closed: Labour Day\nSection: SEME
@@ -840,7 +840,7 @@ BEGIN:VEVENT
 SUMMARY:Census date: Full year (FY-01)
 DTSTART;VALUE=DATE:20260506
 DTEND;VALUE=DATE:20260507
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:90ad4a9296d23745@monash-principal-dates
 CATEGORIES:Census date
 DESCRIPTION:Official wording: Census date: Full-year (FY-01). Last day to 
@@ -855,7 +855,7 @@ BEGIN:VEVENT
 SUMMARY:Course transfer ISCA sent
 DTSTART;VALUE=DATE:20260508
 DTEND;VALUE=DATE:20260509
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:23f3328f8fc75bc1@monash-principal-dates
 CATEGORIES:Course transfer ISCA sent
 DESCRIPTION:Official wording: Course transfers to Monash Australia: Eligib
@@ -872,7 +872,7 @@ BEGIN:VEVENT
 SUMMARY:Last day to withdraw (WN): Semester 1 (S1-01)
 DTSTART;VALUE=DATE:20260511
 DTEND;VALUE=DATE:20260512
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:be0003b8aa1b1759@monash-principal-dates
 CATEGORIES:Last day to withdraw (WN)
 DESCRIPTION:Official wording: Last day to withdraw from units with Withdra
@@ -889,7 +889,7 @@ SUMMARY:Rescheduled deferred assessments start: Summer A (SSA-02)\, Summer
   B (SSB-01)
 DTSTART;VALUE=DATE:20260511
 DTEND;VALUE=DATE:20260512
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:9fd153b2f753ab07@monash-principal-dates
 CATEGORIES:Rescheduled deferred assessments start
 DESCRIPTION:Official wording: Rescheduled deferred and supplementary final
@@ -904,7 +904,7 @@ BEGIN:VEVENT
 SUMMARY:Course transfer offer acceptance closes: Semester 2 (S2-01)
 DTSTART;VALUE=DATE:20260515
 DTEND;VALUE=DATE:20260516
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:2210a2aff95b8054@monash-principal-dates
 CATEGORIES:Course transfer offer acceptance closes
 DESCRIPTION:Official wording: Course transfers to Monash Australia: Last d
@@ -921,7 +921,7 @@ SUMMARY:Rescheduled deferred assessments end: Summer A (SSA-02)\, Summer B
   (SSB-01)
 DTSTART;VALUE=DATE:20260515
 DTEND;VALUE=DATE:20260516
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:c0cd82bf3674e00f@monash-principal-dates
 CATEGORIES:Rescheduled deferred assessments end
 DESCRIPTION:Official wording: Rescheduled deferred and supplementary final
@@ -936,7 +936,7 @@ BEGIN:VEVENT
 SUMMARY:University closed: Hari Raya Haji
 DTSTART;VALUE=DATE:20260527
 DTEND;VALUE=DATE:20260528
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:63bfd48ad6817440@monash-principal-dates
 CATEGORIES:University closed
 DESCRIPTION:Official wording: University closed: Hari Raya Haji\nSection: 
@@ -950,7 +950,7 @@ BEGIN:VEVENT
 SUMMARY:Teaching ends: Semester 1 (S1-01)
 DTSTART;VALUE=DATE:20260529
 DTEND;VALUE=DATE:20260530
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:115e3650cd9d9282@monash-principal-dates
 CATEGORIES:Teaching ends
 DESCRIPTION:Official wording: Teaching ends: Semester one (S1-01). Last da
@@ -966,7 +966,7 @@ BEGIN:VEVENT
 SUMMARY:University closed: Wesak Day
 DTSTART;VALUE=DATE:20260531
 DTEND;VALUE=DATE:20260601
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:44df4c78ea54f865@monash-principal-dates
 CATEGORIES:University closed
 DESCRIPTION:Official wording: University closed: Wesak Day\nSection: SEMES
@@ -981,7 +981,7 @@ SUMMARY:Rescheduled deferred results released: Summer A (SSA-02)\, Summer
  B (SSB-01)
 DTSTART;VALUE=DATE:20260601
 DTEND;VALUE=DATE:20260602
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:ad8e4d21b85982f3@monash-principal-dates
 CATEGORIES:Rescheduled deferred results released
 DESCRIPTION:Official wording: Rescheduled deferred and supplementary asses
@@ -996,7 +996,7 @@ BEGIN:VEVENT
 SUMMARY:Swot vac starts: Semester 1 (S1-01)
 DTSTART;VALUE=DATE:20260601
 DTEND;VALUE=DATE:20260602
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:b3ed1776412a3cd9@monash-principal-dates
 CATEGORIES:Swot vac starts
 DESCRIPTION:Official wording: Swot vac starts: Semester one (S1-01)\nSecti
@@ -1010,7 +1010,7 @@ BEGIN:VEVENT
 SUMMARY:University closed: King's Birthday
 DTSTART;VALUE=DATE:20260601
 DTEND;VALUE=DATE:20260602
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:e26ffc666d06bbb9@monash-principal-dates
 CATEGORIES:University closed
 DESCRIPTION:Official wording: University closed: King's Birthday\nSection:
@@ -1024,7 +1024,7 @@ BEGIN:VEVENT
 SUMMARY:University closed: Wesak Day (replacement holiday)
 DTSTART;VALUE=DATE:20260602
 DTEND;VALUE=DATE:20260603
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:2e2abaf397646919@monash-principal-dates
 CATEGORIES:University closed
 DESCRIPTION:Official wording: University closed: Wesak Day (replacement ho
@@ -1038,7 +1038,7 @@ BEGIN:VEVENT
 SUMMARY:Swot vac ends: Semester 1 (S1-01)
 DTSTART;VALUE=DATE:20260605
 DTEND;VALUE=DATE:20260606
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:da63f8e8eebadeb7@monash-principal-dates
 CATEGORIES:Swot vac ends
 DESCRIPTION:Official wording: Swot vac ends: Semester one (S1-01)\nSection
@@ -1053,7 +1053,7 @@ SUMMARY:Final assessments start: Semester 1 (S1-01)\, Semester 1 (extended
  ) (S1-32)\, Summer A - Semester 1 (SS-S1-01)
 DTSTART;VALUE=DATE:20260608
 DTEND;VALUE=DATE:20260609
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:f100b19d809f0f68@monash-principal-dates
 CATEGORIES:Final assessments start
 DESCRIPTION:Official wording: Final assessments start: Semester one (S1-01
@@ -1068,7 +1068,7 @@ BEGIN:VEVENT
 SUMMARY:Allocate+ preference entry opens: Semester 2 (S2-01) (10am)
 DTSTART;VALUE=DATE:20260616
 DTEND;VALUE=DATE:20260617
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:b031099e45176011@monash-principal-dates
 CATEGORIES:Allocate+ preference entry opens
 DESCRIPTION:Official wording: Allocate+ preference entry: opens 10am for S
@@ -1083,7 +1083,7 @@ BEGIN:VEVENT
 SUMMARY:University closed: Awal Muharram
 DTSTART;VALUE=DATE:20260617
 DTEND;VALUE=DATE:20260618
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:ce3078c6e74f7f55@monash-principal-dates
 CATEGORIES:University closed
 DESCRIPTION:Official wording: University closed: Awal Muharram\nSection: S
@@ -1097,7 +1097,7 @@ BEGIN:VEVENT
 SUMMARY:Allocate+ preference entry closes: Semester 2 (S2-01) (10am)
 DTSTART;VALUE=DATE:20260623
 DTEND;VALUE=DATE:20260624
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:212cb558543290e8@monash-principal-dates
 CATEGORIES:Allocate+ preference entry closes
 DESCRIPTION:Official wording: Allocate+ preference entry: closes 10am for 
@@ -1113,7 +1113,7 @@ SUMMARY:Final assessments end: Semester 1 (S1-01)\, Semester 1 (extended)
  (S1-32)\, Summer A - Semester 1 (SS-S1-01)
 DTSTART;VALUE=DATE:20260626
 DTEND;VALUE=DATE:20260627
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:a019e5ce8ee23d9d@monash-principal-dates
 CATEGORIES:Final assessments end
 DESCRIPTION:Official wording: Final assessments end: Semester one (S1-01)
@@ -1128,7 +1128,7 @@ BEGIN:VEVENT
 SUMMARY:Last day for full fee refund: Semester 2 (S2-01)
 DTSTART;VALUE=DATE:20260629
 DTEND;VALUE=DATE:20260630
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:255f2e6bc1e62879@monash-principal-dates
 CATEGORIES:Last day for full fee refund
 DESCRIPTION:Official wording: Fees: last day for students commencing in se
@@ -1144,7 +1144,7 @@ BEGIN:VEVENT
 SUMMARY:Graduation applications close: September/October round (Australia)
 DTSTART;VALUE=DATE:20260630
 DTEND;VALUE=DATE:20260701
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:05f5e35e7c254e45@monash-principal-dates
 CATEGORIES:Graduation applications close
 DESCRIPTION:Official wording: Graduation applications close: September/Oct
@@ -1159,7 +1159,7 @@ BEGIN:VEVENT
 SUMMARY:Allocate+ adjustment opens: Semester 2 (S2-01) (10am)
 DTSTART;VALUE=DATE:20260707
 DTEND;VALUE=DATE:20260708
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:e90ba853f1c25ceb@monash-principal-dates
 CATEGORIES:Allocate+ adjustment opens
 DESCRIPTION:Official wording: Allocate+ adjustment: opens 10am for Semeste
@@ -1174,7 +1174,7 @@ BEGIN:VEVENT
 SUMMARY:Results released: Semester 1 (S1-01)
 DTSTART;VALUE=DATE:20260713
 DTEND;VALUE=DATE:20260714
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:8c257eaa37517b3a@monash-principal-dates
 CATEGORIES:Results released
 DESCRIPTION:Official wording: Results released: Semester one (S1-01)\nSect
@@ -1188,7 +1188,7 @@ BEGIN:VEVENT
 SUMMARY:Orientation starts: Semester 2 (S2-01)
 DTSTART;VALUE=DATE:20260720
 DTEND;VALUE=DATE:20260721
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:f676ce53d2fa82a4@monash-principal-dates
 CATEGORIES:Orientation starts
 DESCRIPTION:Official wording: Mid-year Orientation Week starts: Semester T
@@ -1203,7 +1203,7 @@ SUMMARY:Deferred and supplementary assessment timetable published: Semeste
  r 1 (S1-01)
 DTSTART;VALUE=DATE:20260722
 DTEND;VALUE=DATE:20260723
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:8c9f4aafa434fe5b@monash-principal-dates
 CATEGORIES:Deferred and supplementary assessment timetable published
 DESCRIPTION:Official wording: Deferred and supplementary final assessments
@@ -1218,7 +1218,7 @@ BEGIN:VEVENT
 SUMMARY:Orientation ends: Semester 2 (S2-01)
 DTSTART;VALUE=DATE:20260724
 DTEND;VALUE=DATE:20260725
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:7547a73bce51c07b@monash-principal-dates
 CATEGORIES:Orientation ends
 DESCRIPTION:Official wording: Mid-year Orientation Week ends: Semester Two
@@ -1232,7 +1232,7 @@ BEGIN:VEVENT
 SUMMARY:Teaching starts: Semester 2 (S2-01)
 DTSTART;VALUE=DATE:20260727
 DTEND;VALUE=DATE:20260728
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:81fa2ab85fd4cdf9@monash-principal-dates
 CATEGORIES:Teaching starts
 DESCRIPTION:Official wording: Teaching starts: Semester Two (S2-01)\nSecti
@@ -1246,7 +1246,7 @@ BEGIN:VEVENT
 SUMMARY:Fees due: Semester 2 (S2-01)
 DTSTART;VALUE=DATE:20260731
 DTEND;VALUE=DATE:20260801
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:a3d8f2a1e06b4b4c@monash-principal-dates
 CATEGORIES:Fees due
 DESCRIPTION:Official wording: Fees due: Semester two (S2-01). A late payme
@@ -1261,7 +1261,7 @@ BEGIN:VEVENT
 SUMMARY:Graduation applications close: November round (Malaysia)
 DTSTART;VALUE=DATE:20260731
 DTEND;VALUE=DATE:20260801
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:f6152cb0d89b7f08@monash-principal-dates
 CATEGORIES:Graduation applications close
 DESCRIPTION:Official wording: Graduation applications close: November roun
@@ -1275,7 +1275,7 @@ BEGIN:VEVENT
 SUMMARY:Course transfer applications open: Semester 1 (S1-01) (9am)
 DTSTART;VALUE=DATE:20260803
 DTEND;VALUE=DATE:20260804
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:d3ee50488563f461@monash-principal-dates
 CATEGORIES:Course transfer applications open
 DESCRIPTION:Official wording: Course transfers to Monash Australia: Applic
@@ -1291,7 +1291,7 @@ BEGIN:VEVENT
 SUMMARY:Deferred and supplementary assessments start: Semester 1 (S1-01)
 DTSTART;VALUE=DATE:20260803
 DTEND;VALUE=DATE:20260804
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:509317fd83e910c7@monash-principal-dates
 CATEGORIES:Deferred and supplementary assessments start
 DESCRIPTION:Official wording: Deferred and supplementary assessments start
@@ -1306,7 +1306,7 @@ BEGIN:VEVENT
 SUMMARY:Deferred and supplementary assessments end: Semester 1 (S1-01)
 DTSTART;VALUE=DATE:20260807
 DTEND;VALUE=DATE:20260808
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:bd8eccf25a3a34aa@monash-principal-dates
 CATEGORIES:Deferred and supplementary assessments end
 DESCRIPTION:Official wording: Deferred and supplementary assessments end: 
@@ -1321,7 +1321,7 @@ BEGIN:VEVENT
 SUMMARY:Last day to add on-campus units: Semester 2 (S2-01)
 DTSTART;VALUE=DATE:20260807
 DTEND;VALUE=DATE:20260808
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:e989f94072e93f39@monash-principal-dates
 CATEGORIES:Last day to add on-campus units
 DESCRIPTION:Official wording: Last day to add on-campus units: Semester Tw
@@ -1335,7 +1335,7 @@ BEGIN:VEVENT
 SUMMARY:Allocate+ adjustment closes: Semester 2 (S2-01) (5pm)
 DTSTART;VALUE=DATE:20260810
 DTEND;VALUE=DATE:20260811
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:80f147b1d7acce5b@monash-principal-dates
 CATEGORIES:Allocate+ adjustment closes
 DESCRIPTION:Official wording: Allocate+ adjustment: closes 5pm for Semeste
@@ -1350,7 +1350,7 @@ BEGIN:VEVENT
 SUMMARY:Deferred and supplementary results released: Semester 1 (S1-01)
 DTSTART;VALUE=DATE:20260817
 DTEND;VALUE=DATE:20260818
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:b8678f35b530bb83@monash-principal-dates
 CATEGORIES:Deferred and supplementary results released
 DESCRIPTION:Official wording: Results released: Deferred and supplementary
@@ -1365,7 +1365,7 @@ BEGIN:VEVENT
 SUMMARY:University closed: Prophet Muhammad's Birthday
 DTSTART;VALUE=DATE:20260825
 DTEND;VALUE=DATE:20260826
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:5f67e7730e72e973@monash-principal-dates
 CATEGORIES:University closed
 DESCRIPTION:Official wording: University closed: The Prophet Muhammad's Bi
@@ -1379,7 +1379,7 @@ BEGIN:VEVENT
 SUMMARY:Census date: Semester 2 (S2-01)
 DTSTART;VALUE=DATE:20260831
 DTEND;VALUE=DATE:20260901
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:271a0b652a8f09ed@monash-principal-dates
 CATEGORIES:Census date
 DESCRIPTION:Official wording: Census date: Semester 2 (S2-01). Last day to
@@ -1395,7 +1395,7 @@ BEGIN:VEVENT
 SUMMARY:Last day for partial fee refund: Semester 2 (S2-01)
 DTSTART;VALUE=DATE:20260831
 DTEND;VALUE=DATE:20260901
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:4bb57822a28606c2@monash-principal-dates
 CATEGORIES:Last day for partial fee refund
 DESCRIPTION:Official wording: Fees: last day for course discontinuation se
@@ -1410,7 +1410,7 @@ BEGIN:VEVENT
 SUMMARY:University closed: National Day
 DTSTART;VALUE=DATE:20260831
 DTEND;VALUE=DATE:20260901
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:cf474a4d0f7f5b29@monash-principal-dates
 CATEGORIES:University closed
 DESCRIPTION:Official wording: University closed: National Day\nSection: SE
@@ -1425,7 +1425,7 @@ SUMMARY:Rescheduled deferred assessment timetable published: Semester 1 (S
  1-01)
 DTSTART;VALUE=DATE:20260902
 DTEND;VALUE=DATE:20260903
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:7c89583ce1914538@monash-principal-dates
 CATEGORIES:Rescheduled deferred assessment timetable published
 DESCRIPTION:Official wording: Rescheduled deferred assessments timetable p
@@ -1441,7 +1441,7 @@ SUMMARY:Final assessment timetable published: Semester 2 (S2-01)\, Full ye
  ar (FY-01)\, Full year (extended) (FY-32)\, Trimester 3 (T3-58)
 DTSTART;VALUE=DATE:20260914
 DTEND;VALUE=DATE:20260915
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:c0861fe90d4ec204@monash-principal-dates
 CATEGORIES:Final assessment timetable published
 DESCRIPTION:Official wording: Final assessments timetable published: Semes
@@ -1457,7 +1457,7 @@ BEGIN:VEVENT
 SUMMARY:Rescheduled deferred assessments start: Semester 1 (S1-01)
 DTSTART;VALUE=DATE:20260914
 DTEND;VALUE=DATE:20260915
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:1d8fd65894a87f5e@monash-principal-dates
 CATEGORIES:Rescheduled deferred assessments start
 DESCRIPTION:Official wording: Rescheduled deferred assessments start: Seme
@@ -1472,7 +1472,7 @@ BEGIN:VEVENT
 SUMMARY:University closed: Malaysia Day
 DTSTART;VALUE=DATE:20260916
 DTEND;VALUE=DATE:20260917
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:a2436f6c20ad5c70@monash-principal-dates
 CATEGORIES:University closed
 DESCRIPTION:Official wording: University closed: Malaysia Day\nSection: SE
@@ -1486,7 +1486,7 @@ BEGIN:VEVENT
 SUMMARY:Rescheduled deferred assessments end: Semester 1 (S1-01)
 DTSTART;VALUE=DATE:20260918
 DTEND;VALUE=DATE:20260919
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:7a910a51246a7d9f@monash-principal-dates
 CATEGORIES:Rescheduled deferred assessments end
 DESCRIPTION:Official wording: Rescheduled deferred assessments end: Semest
@@ -1501,7 +1501,7 @@ BEGIN:VEVENT
 SUMMARY:Mid-semester break starts: Semester 2 (S2-01)
 DTSTART;VALUE=DATE:20260921
 DTEND;VALUE=DATE:20260922
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:b6395eee3c8ba904@monash-principal-dates
 CATEGORIES:Mid-semester break starts
 DESCRIPTION:Official wording: Mid-semester break starts: Semester Two (S2-
@@ -1515,7 +1515,7 @@ BEGIN:VEVENT
 SUMMARY:Mid-semester break ends: Semester 2 (S2-01)
 DTSTART;VALUE=DATE:20260925
 DTEND;VALUE=DATE:20260926
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:ae89dcf6afc3d231@monash-principal-dates
 CATEGORIES:Mid-semester break ends
 DESCRIPTION:Official wording: Mid-semester break ends: Semester Two (S2-01
@@ -1529,7 +1529,7 @@ BEGIN:VEVENT
 SUMMARY:Course transfer preferences close: Semester 1 (S1-01) (11:59pm)
 DTSTART;VALUE=DATE:20260928
 DTEND;VALUE=DATE:20260929
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:fa306928faca01b5@monash-principal-dates
 CATEGORIES:Course transfer preferences close
 DESCRIPTION:Official wording: Course transfers to Monash Australia: Change
@@ -1545,7 +1545,7 @@ BEGIN:VEVENT
 SUMMARY:Last day for full fee refund: October intake (OCT-MY-01)
 DTSTART;VALUE=DATE:20260928
 DTEND;VALUE=DATE:20260929
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:dfc4ca151f9eecc6@monash-principal-dates
 CATEGORIES:Last day for full fee refund
 DESCRIPTION:Official wording: Fees: last day for students commencing in Oc
@@ -1561,7 +1561,7 @@ BEGIN:VEVENT
 SUMMARY:Course transfer applications close: Semester 1 (S1-01) (11:59pm)
 DTSTART;VALUE=DATE:20260930
 DTEND;VALUE=DATE:20261001
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:08ef96c68ba0ae79@monash-principal-dates
 CATEGORIES:Course transfer applications close
 DESCRIPTION:Official wording: Course transfers to Monash Australia: Applic
@@ -1577,7 +1577,7 @@ BEGIN:VEVENT
 SUMMARY:Allocate+ adjustment opens: October intake (OCT-MY-01) (10am)
 DTSTART;VALUE=DATE:20261005
 DTEND;VALUE=DATE:20261006
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:4fc6f4098e0d6d08@monash-principal-dates
 CATEGORIES:Allocate+ adjustment opens
 DESCRIPTION:Official wording: Allocate+ adjustment: opens 10am for the Oct
@@ -1592,7 +1592,7 @@ BEGIN:VEVENT
 SUMMARY:Graduation ceremonies start: September/October round (Australia)
 DTSTART;VALUE=DATE:20261005
 DTEND;VALUE=DATE:20261006
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:58a00a284b910116@monash-principal-dates
 CATEGORIES:Graduation ceremonies start
 DESCRIPTION:Official wording: Graduation ceremonies start: September/Octob
@@ -1607,7 +1607,7 @@ BEGIN:VEVENT
 SUMMARY:Last day to withdraw (WN): Semester 2 (S2-01)
 DTSTART;VALUE=DATE:20261005
 DTEND;VALUE=DATE:20261006
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:d915f75b0b6d391e@monash-principal-dates
 CATEGORIES:Last day to withdraw (WN)
 DESCRIPTION:Official wording: Last day to withdraw from units with Withdra
@@ -1623,7 +1623,7 @@ BEGIN:VEVENT
 SUMMARY:Rescheduled deferred results released: Semester 1 (S1-01)
 DTSTART;VALUE=DATE:20261005
 DTEND;VALUE=DATE:20261006
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:c2fddd084ea08813@monash-principal-dates
 CATEGORIES:Rescheduled deferred results released
 DESCRIPTION:Official wording: Results released: Rescheduled deferred asses
@@ -1638,7 +1638,7 @@ BEGIN:VEVENT
 SUMMARY:Course transfer offers sent: Semester 1 (S1-01) (5pm)
 DTSTART;VALUE=DATE:20261009
 DTEND;VALUE=DATE:20261010
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:51bcda78a84b6829@monash-principal-dates
 CATEGORIES:Course transfer offers sent
 DESCRIPTION:Official wording: Course transfers to Monash Australia: Offer 
@@ -1654,7 +1654,7 @@ BEGIN:VEVENT
 SUMMARY:Re-enrolment (timely) starts
 DTSTART;VALUE=DATE:20261012
 DTEND;VALUE=DATE:20261013
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:cda80c592129614e@monash-principal-dates
 CATEGORIES:Re-enrolment (timely) starts
 DESCRIPTION:Official wording: Re-enrolment (timely) starts: 2027\nSection:
@@ -1668,7 +1668,7 @@ BEGIN:VEVENT
 SUMMARY:Course transfer ISCA sent
 DTSTART;VALUE=DATE:20261019
 DTEND;VALUE=DATE:20261020
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:23f3328f8fc75bc1-2@monash-principal-dates
 CATEGORIES:Course transfer ISCA sent
 DESCRIPTION:Official wording: Course transfers to Monash Australia: Eligib
@@ -1685,7 +1685,7 @@ BEGIN:VEVENT
 SUMMARY:Orientation starts: October intake (OCT-MY-01)
 DTSTART;VALUE=DATE:20261019
 DTEND;VALUE=DATE:20261020
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:facf891d6289ba12@monash-principal-dates
 CATEGORIES:Orientation starts
 DESCRIPTION:Official wording: Orientation starts: October intake (OCT-MY-0
@@ -1699,7 +1699,7 @@ BEGIN:VEVENT
 SUMMARY:Graduation ceremonies end: September/October round (Australia)
 DTSTART;VALUE=DATE:20261023
 DTEND;VALUE=DATE:20261024
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:41fcbd13d4bfc851@monash-principal-dates
 CATEGORIES:Graduation ceremonies end
 DESCRIPTION:Official wording: Graduation ceremonies end: September/October
@@ -1714,7 +1714,7 @@ BEGIN:VEVENT
 SUMMARY:Orientation ends: October intake (OCT-MY-01)
 DTSTART;VALUE=DATE:20261023
 DTEND;VALUE=DATE:20261024
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:ab627eceed7549e7@monash-principal-dates
 CATEGORIES:Orientation ends
 DESCRIPTION:Official wording: Orientation ends: October intake (OCT-MY-01)
@@ -1728,7 +1728,7 @@ BEGIN:VEVENT
 SUMMARY:Teaching ends: Semester 2 (S2-01)\, Full year (FY-01)
 DTSTART;VALUE=DATE:20261023
 DTEND;VALUE=DATE:20261024
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:958921a87456ae92@monash-principal-dates
 CATEGORIES:Teaching ends
 DESCRIPTION:Official wording: Teaching ends: Semester Two (S2-01) and Full
@@ -1744,7 +1744,7 @@ BEGIN:VEVENT
 SUMMARY:University closed: Sultan of Selangor's Silver Jubilee Celebration
 DTSTART;VALUE=DATE:20261025
 DTEND;VALUE=DATE:20261026
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:d5c5f239de512964@monash-principal-dates
 CATEGORIES:University closed
 DESCRIPTION:Official wording: University closed: Sultan of Selangor's Silv
@@ -1759,7 +1759,7 @@ BEGIN:VEVENT
 SUMMARY:Swot vac starts: Semester 2 (S2-01)
 DTSTART;VALUE=DATE:20261026
 DTEND;VALUE=DATE:20261027
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:a3ea339186eef2d9@monash-principal-dates
 CATEGORIES:Swot vac starts
 DESCRIPTION:Official wording: Swot vac starts: Semester Two (S2-01)\nSecti
@@ -1773,7 +1773,7 @@ BEGIN:VEVENT
 SUMMARY:Teaching starts: October intake (OCT-MY-01)
 DTSTART;VALUE=DATE:20261026
 DTEND;VALUE=DATE:20261027
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:318794c6b15417a1@monash-principal-dates
 CATEGORIES:Teaching starts
 DESCRIPTION:Official wording: Teaching starts: October intake (OCT-MY-01)
@@ -1788,7 +1788,7 @@ SUMMARY:University closed: Sultan of Selangor's Silver Jubilee Celebration
   (replacement holiday)
 DTSTART;VALUE=DATE:20261026
 DTEND;VALUE=DATE:20261027
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:278a46868068a650@monash-principal-dates
 CATEGORIES:University closed
 DESCRIPTION:Official wording: University closed: Sultan of Selangor's Silv
@@ -1803,7 +1803,7 @@ BEGIN:VEVENT
 SUMMARY:Fees due: October intake (OCT-MY-01)
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:0296e98f244d0dbb@monash-principal-dates
 CATEGORIES:Fees due
 DESCRIPTION:Official wording: Fees due: October intake (OCT-MY-01). A late
@@ -1818,7 +1818,7 @@ BEGIN:VEVENT
 SUMMARY:Swot vac ends: Semester 2 (S2-01)
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:cfc79a205c1264ab@monash-principal-dates
 CATEGORIES:Swot vac ends
 DESCRIPTION:Official wording: Swot vac ends: Semester Two (S2-01)\nSection
@@ -1832,7 +1832,7 @@ BEGIN:VEVENT
 SUMMARY:Teaching ends: Full year (extended) (FY-32)
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:5ebca4f8b366fc6e@monash-principal-dates
 CATEGORIES:Teaching ends
 DESCRIPTION:Official wording: Teaching ends: Full-year (extended) (FY-32).
@@ -1848,7 +1848,7 @@ BEGIN:VEVENT
 SUMMARY:Course transfer offer acceptance closes: Semester 1 (S1-01)
 DTSTART;VALUE=DATE:20261031
 DTEND;VALUE=DATE:20261101
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:4b5de088187fc3ce@monash-principal-dates
 CATEGORIES:Course transfer offer acceptance closes
 DESCRIPTION:Official wording: Course transfers to Monash Australia: Last d
@@ -1865,7 +1865,7 @@ SUMMARY:Final assessments start: Semester 2 (S2-01)\, Full year (FY-01)\,
  Full year (extended) (FY-32)\, Trimester 3 (T3-58)
 DTSTART;VALUE=DATE:20261102
 DTEND;VALUE=DATE:20261103
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:c74d143afb3340bb@monash-principal-dates
 CATEGORIES:Final assessments start
 DESCRIPTION:Official wording: Final assessments start: Semester two (S2-01
@@ -1881,7 +1881,7 @@ BEGIN:VEVENT
 SUMMARY:Last day to add on-campus units: October intake (OCT-MY-01)
 DTSTART;VALUE=DATE:20261106
 DTEND;VALUE=DATE:20261107
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:1c9e7084815ac87e@monash-principal-dates
 CATEGORIES:Last day to add on-campus units
 DESCRIPTION:Official wording: Last day to add on-campus units: October int
@@ -1896,7 +1896,7 @@ BEGIN:VEVENT
 SUMMARY:University closed: Deepavali
 DTSTART;VALUE=DATE:20261108
 DTEND;VALUE=DATE:20261109
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:b039b18223c36b45@monash-principal-dates
 CATEGORIES:University closed
 DESCRIPTION:Official wording: University closed: Deepavali\nSection: SEMES
@@ -1910,7 +1910,7 @@ BEGIN:VEVENT
 SUMMARY:Allocate+ adjustment closes: October intake (OCT-MY-01) (5pm)
 DTSTART;VALUE=DATE:20261109
 DTEND;VALUE=DATE:20261110
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:3cba1bd9381dd845@monash-principal-dates
 CATEGORIES:Allocate+ adjustment closes
 DESCRIPTION:Official wording: Allocate+ adjustment: closes 5pm for October
@@ -1925,7 +1925,7 @@ BEGIN:VEVENT
 SUMMARY:University closed: Deepavali (replacement holiday)
 DTSTART;VALUE=DATE:20261109
 DTEND;VALUE=DATE:20261110
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:423800e77ad692c5@monash-principal-dates
 CATEGORIES:University closed
 DESCRIPTION:Official wording: University closed: Deepavali (replacement ho
@@ -1940,7 +1940,7 @@ SUMMARY:Final assessments and teaching end: Semester 2 (S2-01)\, Full year
   (FY-01)\, Full year (extended) (FY-32)\, Trimester 3 (T3-58)
 DTSTART;VALUE=DATE:20261118
 DTEND;VALUE=DATE:20261119
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:8b29ae5e8f2cca3d@monash-principal-dates
 CATEGORIES:Final assessments and teaching end
 DESCRIPTION:Official wording: Final assessments and teaching periods end: 
@@ -1956,7 +1956,7 @@ BEGIN:VEVENT
 SUMMARY:Census date: October intake (OCT-MY-01)
 DTSTART;VALUE=DATE:20261123
 DTEND;VALUE=DATE:20261124
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:3932a84b971a7e33@monash-principal-dates
 CATEGORIES:Census date
 DESCRIPTION:Official wording: Census date: October intake (OCT-MY-01). Las
@@ -1972,7 +1972,7 @@ BEGIN:VEVENT
 SUMMARY:Last day for partial fee refund: October intake (OCT-MY-01)
 DTSTART;VALUE=DATE:20261123
 DTEND;VALUE=DATE:20261124
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:99090cd0787dd62c@monash-principal-dates
 CATEGORIES:Last day for partial fee refund
 DESCRIPTION:Official wording: Fees: last day to discontinue from your cour
@@ -1988,7 +1988,7 @@ BEGIN:VEVENT
 SUMMARY:Re-enrolment (timely) ends
 DTSTART;VALUE=DATE:20261127
 DTEND;VALUE=DATE:20261128
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:a88a3eb05a6564fe@monash-principal-dates
 CATEGORIES:Re-enrolment (timely) ends
 DESCRIPTION:Official wording: Re-enrolment (timely) ends: 2027\nSection: S
@@ -2002,7 +2002,7 @@ BEGIN:VEVENT
 SUMMARY:Graduation ceremonies start: November round (Malaysia)
 DTSTART;VALUE=DATE:20261128
 DTEND;VALUE=DATE:20261129
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:54536f83c39f3ab1@monash-principal-dates
 CATEGORIES:Graduation ceremonies start
 DESCRIPTION:Official wording: Graduation ceremonies start: November round 
@@ -2016,7 +2016,7 @@ BEGIN:VEVENT
 SUMMARY:Re-enrolment (late) starts
 DTSTART;VALUE=DATE:20261128
 DTEND;VALUE=DATE:20261129
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:2bd0c38b13047a79@monash-principal-dates
 CATEGORIES:Re-enrolment (late) starts
 DESCRIPTION:Official wording: Re-enrolment (late) starts: 2027. A late fee
@@ -2030,7 +2030,7 @@ BEGIN:VEVENT
 SUMMARY:Graduation ceremonies end: November round (Malaysia)
 DTSTART;VALUE=DATE:20261129
 DTEND;VALUE=DATE:20261130
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:13fcdaaed2c7eaff@monash-principal-dates
 CATEGORIES:Graduation ceremonies end
 DESCRIPTION:Official wording: Graduation ceremonies end: November round (M
@@ -2046,7 +2046,7 @@ SUMMARY:Results released: Semester 2 (S2-01)\, Full year (FY-01)\, Full ye
  )
 DTSTART;VALUE=DATE:20261203
 DTEND;VALUE=DATE:20261204
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:591b2c21aaf469b6@monash-principal-dates
 CATEGORIES:Results released
 DESCRIPTION:Official wording: Results released: Semester two (S2-01)\, ful
@@ -2062,7 +2062,7 @@ BEGIN:VEVENT
 SUMMARY:Re-enrolment (late) ends
 DTSTART;VALUE=DATE:20261211
 DTEND;VALUE=DATE:20261212
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:889eb433761e2ae8@monash-principal-dates
 CATEGORIES:Re-enrolment (late) ends
 DESCRIPTION:Official wording: Re-enrolment (late) ends: 2027\nSection: SEM
@@ -2076,7 +2076,7 @@ BEGIN:VEVENT
 SUMMARY:University closed: Birthday of the Sultan of Selangor
 DTSTART;VALUE=DATE:20261211
 DTEND;VALUE=DATE:20261212
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:9804a791cbff79d1@monash-principal-dates
 CATEGORIES:University closed
 DESCRIPTION:Official wording: University closed: Birthday of the Sultan of
@@ -2090,7 +2090,7 @@ BEGIN:VEVENT
 SUMMARY:Last day to withdraw (WN): October intake (OCT-MY-01)
 DTSTART;VALUE=DATE:20261221
 DTEND;VALUE=DATE:20261222
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:36e7a356d5eb0699@monash-principal-dates
 CATEGORIES:Last day to withdraw (WN)
 DESCRIPTION:Official wording: Last day to withdraw from the October intake
@@ -2106,7 +2106,7 @@ BEGIN:VEVENT
 SUMMARY:Mid-semester break starts: October intake (OCT-MY-01)
 DTSTART;VALUE=DATE:20261221
 DTEND;VALUE=DATE:20261222
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:74d695f241dac528@monash-principal-dates
 CATEGORIES:Mid-semester break starts
 DESCRIPTION:Official wording: Mid-semester break starts: October intake (O
@@ -2120,7 +2120,7 @@ BEGIN:VEVENT
 SUMMARY:Mid-semester break ends: October intake (OCT-MY-01)
 DTSTART;VALUE=DATE:20261225
 DTEND;VALUE=DATE:20261226
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:bcd42459fdf0c4e0@monash-principal-dates
 CATEGORIES:Mid-semester break ends
 DESCRIPTION:Official wording: Mid-semester break ends: October intake (OCT
@@ -2134,7 +2134,7 @@ BEGIN:VEVENT
 SUMMARY:University closed: Christmas Day
 DTSTART;VALUE=DATE:20261225
 DTEND;VALUE=DATE:20261226
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:775cc0ff16ebfd0b@monash-principal-dates
 CATEGORIES:University closed
 DESCRIPTION:Official wording: University closed: Christmas Day\nSection: S
@@ -2148,7 +2148,7 @@ BEGIN:VEVENT
 SUMMARY:University closed: New Year's Day
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:8cdf8986f509a902@monash-principal-dates
 CATEGORIES:University closed
 DESCRIPTION:Official wording: University closed: New Year's Day\nSection: 
@@ -2162,7 +2162,7 @@ BEGIN:VEVENT
 SUMMARY:Final assessment timetable published: October intake (OCT-MY-01)
 DTSTART;VALUE=DATE:20270104
 DTEND;VALUE=DATE:20270105
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:ea4179cc29c6e13b@monash-principal-dates
 CATEGORIES:Final assessment timetable published
 DESCRIPTION:Official wording: Final assessments timetable published: Octob
@@ -2177,7 +2177,7 @@ BEGIN:VEVENT
 SUMMARY:Deferred and supplementary assessments start: Semester 2 (S2-01)
 DTSTART;VALUE=DATE:20270111
 DTEND;VALUE=DATE:20270112
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:0fd444b447fd1be4@monash-principal-dates
 CATEGORIES:Deferred and supplementary assessments start
 DESCRIPTION:Official wording: Deferred and supplementary assessments start
@@ -2192,7 +2192,7 @@ BEGIN:VEVENT
 SUMMARY:Deferred and supplementary assessments end: Semester 2 (S2-01)
 DTSTART;VALUE=DATE:20270115
 DTEND;VALUE=DATE:20270116
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:5c1e5c73aa90fd8f@monash-principal-dates
 CATEGORIES:Deferred and supplementary assessments end
 DESCRIPTION:Official wording: Deferred and supplementary assessments end: 
@@ -2207,7 +2207,7 @@ BEGIN:VEVENT
 SUMMARY:Teaching ends: October intake (OCT-MY-01)
 DTSTART;VALUE=DATE:20270122
 DTEND;VALUE=DATE:20270123
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:ab895479d840963b@monash-principal-dates
 CATEGORIES:Teaching ends
 DESCRIPTION:Official wording: October intake (OCT-MY-01) ends. Last day to
@@ -2223,7 +2223,7 @@ BEGIN:VEVENT
 SUMMARY:Swot vac starts: October intake (OCT-MY-01)
 DTSTART;VALUE=DATE:20270125
 DTEND;VALUE=DATE:20270126
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:c912ea081cb1e2b3@monash-principal-dates
 CATEGORIES:Swot vac starts
 DESCRIPTION:Official wording: Swot vac starts: October intake (OCT-MY-01) 
@@ -2237,7 +2237,7 @@ BEGIN:VEVENT
 SUMMARY:Swot vac ends: October intake (OCT-MY-01)
 DTSTART;VALUE=DATE:20270129
 DTEND;VALUE=DATE:20270130
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:4eb8fe9e7dc54de3@monash-principal-dates
 CATEGORIES:Swot vac ends
 DESCRIPTION:Official wording: Swot vac ends: October intake (OCT-MY-01) 20
@@ -2251,7 +2251,7 @@ BEGIN:VEVENT
 SUMMARY:Final assessments start: October intake (OCT-MY-01)
 DTSTART;VALUE=DATE:20270201
 DTEND;VALUE=DATE:20270202
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:1b8788f4c3be2d57@monash-principal-dates
 CATEGORIES:Final assessments start
 DESCRIPTION:Official wording: Final assessments start: October intake (OCT
@@ -2265,7 +2265,7 @@ BEGIN:VEVENT
 SUMMARY:Deferred and supplementary results released: Semester 2 (S2-01)
 DTSTART;VALUE=DATE:20270201
 DTEND;VALUE=DATE:20270202
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:6f6e40a2efd46d84@monash-principal-dates
 CATEGORIES:Deferred and supplementary results released
 DESCRIPTION:Official wording: Results released: Deferred and supplementary
@@ -2280,7 +2280,7 @@ BEGIN:VEVENT
 SUMMARY:Final assessments and teaching end: October intake (OCT-MY-01)
 DTSTART;VALUE=DATE:20270212
 DTEND;VALUE=DATE:20270213
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:3ba6670ee92ef580@monash-principal-dates
 CATEGORIES:Final assessments and teaching end
 DESCRIPTION:Official wording: Final assessment period and teaching period:
@@ -2295,7 +2295,7 @@ BEGIN:VEVENT
 SUMMARY:Results released: October intake (OCT-MY-01)
 DTSTART;VALUE=DATE:20270301
 DTEND;VALUE=DATE:20270302
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:d7a4421b551d1b10@monash-principal-dates
 CATEGORIES:Results released
 DESCRIPTION:Official wording: Results released: October intake (OCT-MY-01)
@@ -2310,7 +2310,7 @@ SUMMARY:Deferred and supplementary assessments start: October intake (OCT-
  MY-01)
 DTSTART;VALUE=DATE:20270322
 DTEND;VALUE=DATE:20270323
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:67692b4b087ef331@monash-principal-dates
 CATEGORIES:Deferred and supplementary assessments start
 DESCRIPTION:Official wording: Deferred and supplementary final assessments
@@ -2326,7 +2326,7 @@ SUMMARY:Deferred and supplementary assessments end: October intake (OCT-MY
  -01)
 DTSTART;VALUE=DATE:20270325
 DTEND;VALUE=DATE:20270326
-DTSTAMP:20261019T025827Z
+DTSTAMP:20261019T030720Z
 UID:b434d32a2d8cd0de@monash-principal-dates
 CATEGORIES:Deferred and supplementary assessments end
 DESCRIPTION:Official wording: Deferred and supplementary final assessments
