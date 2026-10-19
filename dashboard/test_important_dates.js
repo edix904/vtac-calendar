@@ -213,6 +213,12 @@ check('set theme and wording', dr('Graduation ceremonies (Kuala Lumpur)').map(r 
 check('add for two campuses is one event', dr('Orientation: Test intake').map(r => [r.Campuses, r.Days, r.Theme, r['Is Period']]),
   [['MY, ID', 4, 'Orientation', 1]]);
 check('applied count', [d.applied, d.decisionCount], [5, 6]);
+const holidays = [K('MY', '2026-03-20', 'University closed: Hari Raya Aidilfitri Day 1'), K('AUS', '2026-03-20', 'University closed: Some Australian holiday')];
+check('different closures on one day are flagged', out.filter(r => fmt(r['Start Date']) === '2026-03-20').map(r => r.flags),
+  [['possible-cross-campus-duplicate'], ['possible-cross-campus-duplicate']]);
+const sep = build({ separate: [{ keys: holidays, reason: 'different holidays' }] }, day('2027-01-01'));
+check('separate silences the flag and counts as applied', [sep.rows.filter(r => fmt(r['Start Date']) === '2026-03-20')
+  .map(r => r.flags), sep.applied], [[[], []], 1]);
 
 console.log(bad ? `${bad} checks failed` : `all checks passed (${out.length} rows from ${rows.length} Events rows)`);
 process.exit(bad ? 1 : 0);

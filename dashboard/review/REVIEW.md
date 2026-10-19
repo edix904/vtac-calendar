@@ -42,8 +42,8 @@ correction in `dashboard/important_dates_rules.json`. The next sync (6am and 9am
        mention in the LOG if a Days forward of 450 would be needed.
      - `possible-cross-campus-duplicate`: the same milestone on the same dates at another campus, not merged
        because the wording differs. If it is the same event (e.g. the same public holiday), `merge` the
-       listings. If they are different (two different holidays on one day), add `separate` so the flag
-       is not raised again.
+       listings. If they are different (two different holidays on one day), add `separate` with both
+       listings' keys; that clears the flag.
      - `unclassified-title`: the title normaliser did not recognise it; check theme and wording.
    - **Wrong merges or pairings**: an event that joins two different things → `separate` or `unpair`.
    - **Missing dates** you can prove from a source file: `add`, with `source` naming the file (or an

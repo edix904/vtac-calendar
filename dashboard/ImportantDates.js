@@ -286,7 +286,7 @@ function idBuild_(items, rules, windowEnd) {
 
   const groups = idGroup_(listings, D, use);
   const events = groups.map(members => idEvent_(members, rules, D, use));
-  idFlag_(events, windowEnd, rules);
+  idFlag_(events, windowEnd, rules, use);
   events.sort((a, b) => a.start - b.start || a.event.localeCompare(b.event));
   const seen = {};
   events.forEach(e => {
@@ -515,7 +515,7 @@ function idEvent_(members, rules, D, use) {
 }
 
 /** Flags that point the review at events the rules may have got wrong. */
-function idFlag_(events, windowEnd, rules) {
+function idFlag_(events, windowEnd, rules, use) {
   const standalone = e => (rules.standalone || []).some(re => re.test(e.milestone) || re.test(e.event));
   // Same milestone and dates at other campuses but not merged: maybe one event worded differently.
   const sameDates = {};
@@ -529,7 +529,13 @@ function idFlag_(events, windowEnd, rules) {
       e.flags.push(v.opening ? 'opening-without-closing' : 'closing-without-opening');
       if (v.opening && windowEnd && (windowEnd - e.start) / 864e5 < ID_MAX_SPAN) e.flags.push('closing-may-be-after-window');
     }
-    if (sameDates[datesKey(e)].some(o => o !== e && !o.campuses.some(c => e.campuses.indexOf(c) >= 0))) {
+    // A review "separate" covering both events says they are different: no flag.
+    const separated = o => (rules.decisions.separate || []).some(d => {
+      const hit = d.keys.some(k => e.keys.indexOf(k) >= 0) && d.keys.some(k => o.keys.indexOf(k) >= 0);
+      if (hit && use) use(d);
+      return hit;
+    });
+    if (sameDates[datesKey(e)].some(o => o !== e && !o.campuses.some(c => e.campuses.indexOf(c) >= 0) && !separated(o))) {
       e.flags.push('possible-cross-campus-duplicate');
     }
   });
