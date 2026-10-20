@@ -4,6 +4,13 @@ Newest first. Each entry: date, the snapshot commit reviewed, what changed in
 `dashboard/important_dates_rules.json`, and anything that needs the user (suggested themes, a
 Days forward change, a normaliser pull request).
 
+## 2026-10-21: snapshot 6204594
+
+No rules changes (29 decisions, all applied, none unused; 1074 events, 75 flagged). `review_check.js` shows no PROBLEM lines and no new events, theme or campus changes. Worklist: 30 items, all the same rows as the earlier entries below; none has a provable partner, so each stays under "Needs a source" as listed in the third-run entry (row numbers 1-30 map to those lines; items 2, 5, 6, 7 were rechecked against listings and candidate partners are other campuses/rounds, not proven).
+Official pages: **still not reachable**. monash.edu principal-dates returns HTTP 403 and web.archive.org closes the tunnel. Please allow monash.edu, monash.edu.my and web.archive.org.
+The sync's window now ends 2027-10-21, but listings hold no 2027 scholarship, graduation, NOV12, Summer A or Allocate+ dates, so the `closing-may-be-after-window` rows still have no closing in the feed.
+Left: daylight saving `theme-other` (8; suggest a theme such as "Other dates"); remaining `possible-cross-campus-duplicate` (37) are academic AUS/MY same-date rows with different intake labels. Normaliser: no pull request needed.
+
 ## 2026-10-20 (manual, from the interactive session): graduation applications
 
 Checked the 5 remaining one-day graduation-application rows against Wayback copies of the
