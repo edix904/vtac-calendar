@@ -4,6 +4,12 @@ Newest first. Each entry: date, the snapshot commit reviewed, what changed in
 `dashboard/important_dates_rules.json`, and anything that needs the user (suggested themes, a
 Days forward change, a normaliser pull request).
 
+## 2026-10-21 (second run): snapshot dafce7f
+
+No rules changes. Snapshot events.json is identical to 6204594 (only status.json changed; 29 decisions all applied, none unused; 1074 events). `review_check.js` shows no PROBLEM lines and no new events, theme or campus changes; `test_important_dates.js` passes. Worklist: the same 30 items as the previous entry, none with a provable partner, so all stay under "Needs a source" as listed in the third-run entry of 2026-10-20.
+Official pages: **still not reachable** (monash.edu principal-dates HTTP 403; web.archive.org closes the tunnel). Please allow monash.edu, monash.edu.my and web.archive.org.
+Left: daylight saving `theme-other` (8; suggest a theme such as "Other dates"); 37 `possible-cross-campus-duplicate` are academic AUS/MY same-date rows with different intake labels. Normaliser: no pull request needed.
+
 ## 2026-10-21: snapshot 6204594
 
 No rules changes (29 decisions, all applied, none unused; 1074 events, 75 flagged). `review_check.js` shows no PROBLEM lines and no new events, theme or campus changes. Worklist: 30 items, all the same rows as the earlier entries below; none has a provable partner, so each stays under "Needs a source" as listed in the third-run entry (row numbers 1-30 map to those lines; items 2, 5, 6, 7 were rechecked against listings and candidate partners are other campuses/rounds, not proven).
