@@ -4,6 +4,11 @@ Newest first. Each entry: date, the snapshot commit reviewed, what changed in
 `dashboard/important_dates_rules.json`, and anything that needs the user (suggested themes, a
 Days forward change, a normaliser pull request).
 
+## 2026-10-27: snapshot f7f6dc9
+
+No rules changes. events.json is identical to 22e84c2 (only status.json changed; 29 decisions all applied, none unused; 1074 events). `review_check.js` shows no PROBLEM lines; `test_important_dates.js` passes. Worklist: the same 30 items; none has a provable partner, so all stay under "Needs a source" as listed in the 2026-10-20 third-run entry.
+Official pages: **still not reachable** (monash.edu principal-dates HTTP 403; web.archive.org tunnel closed). Please allow monash.edu, monash.edu.my and web.archive.org. Normaliser: no pull request needed.
+
 ## 2026-10-26: snapshot 22e84c2
 
 No rules changes. events.json is identical to 52be268 (only status.json changed; 29 decisions all applied, none unused; 1074 events, 75 flagged). `review_check.js` shows no PROBLEM lines; `test_important_dates.js` passes. Worklist: the same 30 items; none has a provable partner, so all stay under "Needs a source" as listed in the 2026-10-20 third-run entry.
