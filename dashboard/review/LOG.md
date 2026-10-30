@@ -4,6 +4,25 @@ Newest first. Each entry: date, the snapshot commit reviewed, what changed in
 `dashboard/important_dates_rules.json`, and anything that needs the user (suggested themes, a
 Days forward change, a normaliser pull request).
 
+## 2026-10-30 (second run): snapshot 6c7b267
+
+12 new decisions (29 -> 41 applied, none unused): 2 `pair`, 1 `add` + 1 `exclude`, 8 `separate`. Events 1074 -> 1072; flags 75 -> 61 (cross-campus-duplicate 37 -> 22, opening-without-closing 17 -> 14, closing-without-opening 13). Worklist 30 -> 27. `review_check.js` has no PROBLEM lines; `test_important_dates.js` passes.
+
+**Official pages: web.archive.org is now reachable** (copies of monash.edu/students/admin/dates/principal-dates for 2023, 2024, 2025, 2026 read). monash.edu itself and the Malaysia/Indonesia pages directly still return HTTP 403 (the Wayback copy of the Malaysia page had no usable content).
+- `pair`: AUS Allocate+ adjustment NOV12 2024-09-16 to 2024-12-10, and 2026-09-14 to 2026-12-08. The page opens it for "NOV12 and Summer A/B" and closes it for NOV12.
+- `add` (period 2024-04-05 to 2024-08-31) + `exclude` of the lone opening: AUS graduate research scholarships Round 3/2024. The archived 2024 page lists "Sat 31 Aug: close Round 3/2024"; the Google calendar lacks it. Source URL in the decision. (A `pair` cannot reference an added date, hence a whole-period `add`.)
+- `separate` (8): same date, different intakes/rounds: NOV12 vs October intake (final assessment timetable 2023-01-16 and 2024-01-08, enrolment starts 2023-07-31 and 2024-07-31, census 2023-12-07 incl. withdraw-no-record, 2025-12-02) and ID vs MY November graduation applications 2026-01-16.
+
+Needs a source (row: what is missing, where I looked; archived principal dates pages 2023-2026 and the repo feeds/backfill):
+- AUS 2025-12-08 grad ceremonies start December round: the 2025 page itself has no "ceremonies end" row. ID 2026-11-21 ceremonies start November round: end not published (MY 2026-11-29 is another campus's round).
+- Teaching ends with 2022 openings (pre-date the pages I could reach): MY 2023-01-20, AUS 2023-01-27, AUS 2024-01-24; AUS 2023-03-31 and 2023-05-31 scholarship closes (openings in 2022); AUS 2023-01-27 Allocate+ preference closes S1 (opening not on the 2023 page).
+- AUS 2024-10-07 and 2026-10-05 Allocate+ adjustment opens Summer B (SSB-01) and 2025-09-15 NOV12: no closing for that label on the pages (2026 page lists only "opens Summer B (SSB-01) 2027" on 5 Oct).
+- AUS 2024-11-14 Orientation starts NOV12, 2024-11-18 and 2025-11-03 and 2026-11-23 teaching starts NOV12, 2024-12-23 mid-semester break NOV12, 2026-11-02 Summer A teaching start: no matching "ends" row. (The 2026 page shows NOV12 2025 ends in "Final assessments and teaching periods end 13 Feb 2026", but I did not pair it as a teaching end; user's call.)
+- MY 2024-12-31 re-enrolment (late) ends conflicts with 2024-12-13 pairing; MY 2025-02-14 final assessments and teaching end (Oct intake): start absent; AUS 2025-02-14 Summer A/B, 2025-05-30 and 2026-05-29 SS-S1-01 ends, 2026-07-27 S2-SS-02 start, MY 2026-10-30 FY-32 ends, AUS 2026-11-27 MO-TP6 ends: partner with the same label not on the pages. The 2026 page has a bare row "Mon 19 Oct: Monash Online 6 (MO-TP6-01)" with no wording, so I did not use it.
+- AUS 2026-09-01 and 2026-11-01 scholarship opens: closings (Mar/May 2027) beyond what is published; a Days forward of about 450 would be needed for the 4 `closing-may-be-after-window` rows.
+
+Left: 22 `possible-cross-campus-duplicate` flags are AUS vs MY rows on the same date where MY has no intake label (Orientation, mid-semester break, rescheduled deferred assessments, census, S2 labels); probably the same event but I did not merge without proof. User to decide whether to `merge` these. Daylight saving `theme-other` (8) unchanged. Normaliser: no pull request needed.
+
 ## 2026-10-30: snapshot 19f84dc
 
 No rules changes. events.json is identical to a7ca065 (only status.json changed; 29 decisions all applied, none unused; 1074 events, 75 flagged). `review_check.js` shows no PROBLEM lines; `test_important_dates.js` passes. Worklist: the same 30 items; none has a provable partner, so all stay under "Needs a source" as listed in the 2026-10-20 third-run entry.

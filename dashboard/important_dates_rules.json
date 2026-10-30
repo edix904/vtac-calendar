@@ -1,5 +1,5 @@
 {
- "version": "2026-10-20",
+ "version": "2026-10-30",
  "_doc": "Rules for the Calendar Dashboard's Important_Dates tab (dashboard/ImportantDates.js). The sync fetches this file from main on every run. standalone: milestones or titles (regex) that are deadlines on their own, so an opening or closing without a partner is not flagged. theme_rules: first pattern (case-insensitive regex) that matches the event's milestone, else its title, sets the theme. decisions: corrections from the daily Claude review (dashboard/review/REVIEW.md); listing keys are 'CAMPUS|YYYY-MM-DD|title' exactly as in dashboard/snapshot/listings.json.",
  "themes": [
   "Teaching periods",
@@ -86,7 +86,13 @@
   "^Pre-orientation starts"
  ],
  "decisions": {
-  "exclude": [],
+  "exclude": [
+   {
+    "key": "AUS|2024-04-05|Graduate research scholarships open: Round 3/2024 (international students)",
+    "reason": "Replaced by the added 2024-04-05..2024-08-31 period (archived principal dates page).",
+    "added": "2026-10-30"
+   }
+  ],
   "unpair": [
    {
     "key": "AUS|2023-01-15|Graduation applications close: May round (Australia)",
@@ -194,6 +200,22 @@
     "title": "Graduate research scholarships: Round 2/2026 (domestic students)",
     "reason": "Domestic round opens 1 Nov and closes 31 May, as in the established rows (2024-11-01 to 2025-05-31); the source labels the opening with the previous year.",
     "added": "2026-10-20"
+   },
+   {
+    "open": "AUS|2024-09-16|Allocate+ adjustment opens: November intake (NOV12), Summer A (SSA-02)",
+    "close": "AUS|2024-12-10|Allocate+ adjustment closes: November intake (NOV12)",
+    "milestone": "Allocate+ adjustment",
+    "title": "Allocate+ adjustment: November intake (NOV12), Summer A (SSA-02)",
+    "reason": "Principal dates page: adjustment opens for NOV12 and Summer A on 16 Sep and closes for NOV12 on 10 Dec (web.archive.org/web/2025/https://www.monash.edu/students/admin/dates/principal-dates).",
+    "added": "2026-10-30"
+   },
+   {
+    "open": "AUS|2026-09-14|Allocate+ adjustment opens: November intake (NOV12), Summer B (SSB-02)",
+    "close": "AUS|2026-12-08|Allocate+ adjustment closes: November intake (NOV12)",
+    "milestone": "Allocate+ adjustment",
+    "title": "Allocate+ adjustment: November intake (NOV12), Summer B (SSB-02)",
+    "reason": "Principal dates 2026 page: adjustment opens 14 Sep for NOV12 and summer A (SSB-02) and closes 8 Dec for NOV12 (web.archive.org/web/20260906133555/https://www.monash.edu/students/admin/dates/principal-dates).",
+    "added": "2026-10-30"
    }
   ],
   "merge": [
@@ -310,9 +332,85 @@
     ],
     "reason": "Different graduation rounds (April in Malaysia, May in Australia) closing the same day",
     "added": "2026-10-20"
+   },
+   {
+    "keys": [
+     "AUS|2023-01-16|Final assessment timetable published: November intake (NOV12)",
+     "MY|2023-01-16|Final assessment timetable published: October intake (OCT-MY-01)"
+    ],
+    "reason": "Different intakes/rounds on the same date (e.g. NOV12 vs October intake, Indonesia vs Malaysia graduation round), not one event.",
+    "added": "2026-10-30"
+   },
+   {
+    "keys": [
+     "AUS|2023-07-31|Enrolment starts: November intake (NOV12)",
+     "MY|2023-07-31|Enrolment starts: October intake (OCT-MY-01)"
+    ],
+    "reason": "Different intakes/rounds on the same date (e.g. NOV12 vs October intake, Indonesia vs Malaysia graduation round), not one event.",
+    "added": "2026-10-30"
+   },
+   {
+    "keys": [
+     "AUS|2023-12-07|Census date: November intake (NOV12)",
+     "MY|2023-12-07|Census date: October intake (OCT-MY-01)"
+    ],
+    "reason": "Different intakes/rounds on the same date (e.g. NOV12 vs October intake, Indonesia vs Malaysia graduation round), not one event.",
+    "added": "2026-10-30"
+   },
+   {
+    "keys": [
+     "AUS|2023-12-07|Last day to withdraw (no record): November intake (NOV12)",
+     "MY|2023-12-07|Last day to withdraw (no record): October intake (OCT-MY-01)"
+    ],
+    "reason": "Different intakes/rounds on the same date (e.g. NOV12 vs October intake, Indonesia vs Malaysia graduation round), not one event.",
+    "added": "2026-10-30"
+   },
+   {
+    "keys": [
+     "AUS|2024-01-08|Final assessment timetable published: November intake (NOV12)",
+     "MY|2024-01-08|Final assessment timetable published: October intake (OCT-MY-01)"
+    ],
+    "reason": "Different intakes/rounds on the same date (e.g. NOV12 vs October intake, Indonesia vs Malaysia graduation round), not one event.",
+    "added": "2026-10-30"
+   },
+   {
+    "keys": [
+     "AUS|2024-07-31|Enrolment starts: November intake (NOV12)",
+     "MY|2024-07-31|Enrolment starts: October intake"
+    ],
+    "reason": "Different intakes/rounds on the same date (e.g. NOV12 vs October intake, Indonesia vs Malaysia graduation round), not one event.",
+    "added": "2026-10-30"
+   },
+   {
+    "keys": [
+     "AUS|2025-12-02|Census date: November intake (NOV12)",
+     "MY|2025-12-02|Census date: October intake (OCT-MY-01)"
+    ],
+    "reason": "Different intakes/rounds on the same date (e.g. NOV12 vs October intake, Indonesia vs Malaysia graduation round), not one event.",
+    "added": "2026-10-30"
+   },
+   {
+    "keys": [
+     "ID|2026-01-16|Graduation applications open: November round (Indonesia)",
+     "MY|2026-01-16|Graduation applications open: September/October round (Australia) and November round (Malaysia)"
+    ],
+    "reason": "Different intakes/rounds on the same date (e.g. NOV12 vs October intake, Indonesia vs Malaysia graduation round), not one event.",
+    "added": "2026-10-30"
    }
   ],
   "set": [],
-  "add": []
+  "add": [
+   {
+    "campus": "AUS",
+    "start": "2024-04-05",
+    "title": "Graduate research scholarships: Round 3/2024 (international students)",
+    "milestone": "Graduate research scholarships",
+    "theme": "Scholarships",
+    "source": "https://web.archive.org/web/20250201094800/https://www.monash.edu/students/admin/dates/principal-dates (2024: Fri 5 Apr 'Graduate research scholarships open: Round 3/2024 (international students)'; Sat 31 Aug 'close: Round 3/2024')",
+    "reason": "Round 3/2024 opens 5 Apr and closes 31 Aug 2024; the closing is missing from the Google calendar, so the period is added whole and its lone opening excluded.",
+    "added": "2026-10-30",
+    "end": "2024-08-31"
+   }
+  ]
  }
 }
