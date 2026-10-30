@@ -1,10 +1,10 @@
 {
  "window_end": "2027-10-31",
- "rules": "GitHub 2026-10-20",
- "events": 1074,
+ "rules": "GitHub 2026-10-30",
+ "events": 1072,
  "listings": 1659,
- "flagged": 75,
- "review_decisions_applied": 29,
- "review_decisions_total": 29,
+ "flagged": 57,
+ "review_decisions_applied": 41,
+ "review_decisions_total": 41,
  "unused_decisions": []
 }
