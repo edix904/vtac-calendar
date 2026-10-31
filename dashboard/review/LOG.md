@@ -4,6 +4,18 @@ Newest first. Each entry: date, the snapshot commit reviewed, what changed in
 `dashboard/important_dates_rules.json`, and anything that needs the user (suggested themes, a
 Days forward change, a normaliser pull request).
 
+## 2026-10-31: snapshot 80c5c94
+
+No rules changes (41 decisions, all applied, none unused). Events 1072 -> 1072 since the last review; no new events, theme or campus changes. `review_check.js` shows no PROBLEM lines; `test_important_dates.js` passes. Flags 57: closing-without-opening 13, opening-without-closing 14, possible-cross-campus-duplicate 22, theme-other 8 (daylight saving), closing-may-be-after-window 3.
+
+**Official pages: not reachable this run.** monash.edu and monash.edu.my return HTTP 403; web.archive.org resets the connection (curl error 35 / tunnel closed), although it worked on 2026-10-30. Nothing could be added from them.
+
+Worklist (27 items) is the same set as the 2026-10-30 entry; none has a partner provable from `backfill/*.csv`, the .ics feeds or the snapshot, so all stay under **Needs a source** (looked in: the snapshot candidate partners, backfill CSVs, feeds, official pages as above):
+- Closings with the opening missing (pre-dates sources or not published): items 1, 3, 4, 5, 6, 12, 13, 14, 18, 22, 27 (MY/AUS teaching ends 2023-01-20, 2023-01-27, 2024-01-24, 2025-02-14, 2025-05-30, 2026-05-29, 2026-10-30, 2026-11-27; AUS scholarships close 2023-03-31 and 2023-05-31; MY final assessments end 2025-02-14), item 2 (AUS Allocate+ preference entry closes S1 2023-01-27; MY opens 2023-01-06 is another campus), item 11 (MY re-enrolment late ends 2024-12-31; conflicts with the paired 2024-11-30 to 2024-12-13).
+- Openings with the closing missing: items 7, 15, 21 (AUS Allocate+ adjustment opens Summer B 2024-10-07 and 2026-10-05, NOV12 2025-09-15), 8, 9, 10, 16, 24, 26 (AUS NOV12/Summer A orientation, teaching starts and mid-semester break), 19 (AUS teaching starts S2 variants 2026-07-27), 17, 25 (graduation ceremonies start AUS December round 2025-12-08, ID November round 2026-11-21), 20, 23 (scholarships Round 1/2026 and Round 2/2026 open; closings in 2027, 23 is `closing-may-be-after-window`, Days forward about 450 would be needed).
+
+Left: daylight saving `theme-other` (8; suggest a theme such as "Other dates"); academic AUS/MY same-date duplicates with different intake labels. Normaliser: no pull request needed. User: please keep web.archive.org allowed; it is the only route to the missing openings and closings.
+
 ## 2026-10-30 (second run): snapshot 6c7b267
 
 12 new decisions (29 -> 41 applied, none unused): 2 `pair`, 1 `add` + 1 `exclude`, 8 `separate`. Events 1074 -> 1072; flags 75 -> 61 (cross-campus-duplicate 37 -> 22, opening-without-closing 17 -> 14, closing-without-opening 13). Worklist 30 -> 27. `review_check.js` has no PROBLEM lines; `test_important_dates.js` passes.
