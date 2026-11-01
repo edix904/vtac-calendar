@@ -4,6 +4,14 @@ Newest first. Each entry: date, the snapshot commit reviewed, what changed in
 `dashboard/important_dates_rules.json`, and anything that needs the user (suggested themes, a
 Days forward change, a normaliser pull request).
 
+## 2026-11-01: snapshot 2552bbb
+
+No rules changes (41 decisions, all applied, none unused). Events 1072 -> 1072; no new events, theme or campus changes. `review_check.js` shows no PROBLEM lines; `test_important_dates.js` passes. Flags 57 as before.
+
+**Official pages: not reachable this run.** monash.edu returns HTTP 403; web.archive.org gives no connection. Nothing could be added.
+
+Worklist (27 items) is identical to the 2026-10-31 entry; no partner is provable from the snapshot, `backfill/*.csv` or the .ics feeds, so all stay under **Needs a source** exactly as listed there (looked in: snapshot candidates, backfill, feeds, official pages as above). Item 23 and the scholarship openings (20) need Days forward about 450. Normaliser: no pull request needed. User: please keep web.archive.org and monash.edu allowed.
+
 ## 2026-10-31: snapshot 80c5c94
 
 No rules changes (41 decisions, all applied, none unused). Events 1072 -> 1072 since the last review; no new events, theme or campus changes. `review_check.js` shows no PROBLEM lines; `test_important_dates.js` passes. Flags 57: closing-without-opening 13, opening-without-closing 14, possible-cross-campus-duplicate 22, theme-other 8 (daylight saving), closing-may-be-after-window 3.
