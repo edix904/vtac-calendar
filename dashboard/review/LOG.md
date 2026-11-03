@@ -4,6 +4,19 @@ Newest first. Each entry: date, the snapshot commit reviewed, what changed in
 `dashboard/important_dates_rules.json`, and anything that needs the user (suggested themes, a
 Days forward change, a normaliser pull request).
 
+## 2026-11-03: snapshot 0cc85df
+
+No rules changes (41 decisions, all applied, none unused). Events unchanged since 4654bc5 (only status.json differs); no new events, theme or campus changes. `review_check.js` shows no PROBLEM lines; `test_important_dates.js` passes. Flags 57 as before.
+
+**Official pages: not reachable.** monash.edu and monash.edu.my return HTTP 403; web.archive.org gives no connection (curl 000). Nothing could be added. Please allow monash.edu, monash.edu.my and web.archive.org.
+
+Worklist (27) all remain under "Needs a source"; the repo's backfill/*.csv, .ics feeds and snapshot hold no proven partner, and the candidate partners listed are other intakes/rounds/campuses (not proven):
+- Closings with opening missing: MY 2023-01-20, AUS 2023-01-27, AUS 2024-01-24 teaching ends (Oct/Nov intake); AUS 2023-01-27 Allocate+ preference closes S1 (MY 2023-01-06 open is another campus, different date); AUS 2023-03-31 / 2023-05-31 scholarship closes (2023 openings absent); MY 2024-12-31 re-enrolment (late) ends (conflicts with 12-13 end); MY 2025-02-14 final assessments end; AUS 2025-02-14, 2025-05-30, 2026-05-29 teaching ends; AUS 2026-11-27 MO-TP6 ends.
+- Openings with closing missing: Allocate+ adjustment AUS 2024-10-07, 2025-09-15, 2026-10-05; AUS 2024-11-14 orientation NOV12; AUS 2024-11-18, 2025-11-03, 2026-11-02, 2026-11-23 teaching starts; AUS 2024-12-23 mid-semester break NOV12; AUS 2026-07-27 teaching starts; AUS 2025-12-08 and ID 2026-11-21 graduation ceremonies; AUS 2026-09-01 scholarship Round 1/2026 (close Mar 2027 beyond window); MY 2026-10-30 FY-32 ends (start absent).
+- `closing-may-be-after-window`: AUS 2026-11-01 scholarship Round 2/2026 and one other; Days forward of about 450 would be needed.
+
+Left: daylight saving `theme-other` (8; suggest a theme such as "Other dates"); academic AUS/MY same-date duplicates (different intake labels). Normaliser: no pull request needed.
+
 ## 2026-11-02: snapshot 4654bc5
 
 No rules changes (41 decisions, all applied, none unused). Events 1072 -> 1072; no new events, theme or campus changes. `review_check.js` shows no PROBLEM lines; `test_important_dates.js` passes. Flags 57 as before.
