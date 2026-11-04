@@ -4,6 +4,14 @@ Newest first. Each entry: date, the snapshot commit reviewed, what changed in
 `dashboard/important_dates_rules.json`, and anything that needs the user (suggested themes, a
 Days forward change, a normaliser pull request).
 
+## 2026-11-04: snapshot b603343
+
+No rules changes (41 decisions, all applied, none unused). One new event since 0cc85df (1072 -> 1073): AUS 2026-12-18 "Deferred and supplementary assessment timetable published: Semester 2 (S1-02)", it entered with the rolling window (window_end 2027-11-05); theme and title look right. `review_check.js` shows no PROBLEM lines; `test_important_dates.js` passes. Flags 57 as before.
+
+**Official pages: not reachable.** monash.edu returns HTTP 403; web.archive.org gives no connection (curl 000). Please allow monash.edu, monash.edu.my and web.archive.org.
+
+Worklist (27 items) is identical to the 2026-11-03 entry. No partner is provable from the snapshot candidates, `backfill/*.csv` or the .ics feeds, so every item stays under **Needs a source** exactly as listed in the 2026-10-31 entry. 2 `closing-may-be-after-window` rows (AUS 2026-11-01 scholarship Round 2/2026 and one other) would need Days forward of about 450. Normaliser: no pull request needed.
+
 ## 2026-11-03: snapshot 0cc85df
 
 No rules changes (41 decisions, all applied, none unused). Events unchanged since 4654bc5 (only status.json differs); no new events, theme or campus changes. `review_check.js` shows no PROBLEM lines; `test_important_dates.js` passes. Flags 57 as before.
