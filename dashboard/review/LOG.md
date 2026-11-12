@@ -4,6 +4,12 @@ Newest first. Each entry: date, the snapshot commit reviewed, what changed in
 `dashboard/important_dates_rules.json`, and anything that needs the user (suggested themes, a
 Days forward change, a normaliser pull request).
 
+## 2026-11-12: snapshot 5a07835 (dated 2026-11-13)
+
+No rules changes (41 decisions, all applied, none unused; events 1074, flags 57). Changes since 8a385de: AUS "Course transfer applications: Semester 1 (S1-01)" closing moved 2026-11-16 -> 2026-11-17 (source update, still one period, Course transfers); one new MY event 2027-01-18 "Deferred and supplementary assessment timetable published: Semester 2 (S2-01)" (Assessments, correct). `review_check.js` shows no PROBLEM lines; `test_important_dates.js` passes. The same 27 Worklist items remain; none has a partner provable from the snapshot, `backfill/*.csv` or the .ics feeds (listed candidates are other campuses/intakes/rounds, not proven), so all stay under **Needs a source** as in the 2026-10-20 (second run) entry (2 are `closing-may-be-after-window`; Days forward of about 450 needed). Normaliser: no pull request needed.
+
+**Official pages: not reachable.** monash.edu HTTP 403; web.archive.org tunnel closed (curl 000). Please allow monash.edu, monash.edu.my and web.archive.org.
+
 ## 2026-11-11: snapshot 8a385de (dated 2026-11-12)
 
 No rules changes (41 decisions, all applied, none unused; events 1073, flags 57). Only `window_end` moved (2027-11-12); events.json is identical to the previous snapshot. `review_check.js` shows no PROBLEM lines. The same 27 Worklist items remain; none has a partner provable from the snapshot, `backfill/*.csv` or the .ics feeds (the listed candidates are other campuses/intakes/rounds, not proven), so all stay under **Needs a source** as in the 2026-10-20 (second run) entry (2 are `closing-may-be-after-window`; Days forward of about 450 needed).
