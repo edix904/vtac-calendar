@@ -4,6 +4,12 @@ Newest first. Each entry: date, the snapshot commit reviewed, what changed in
 `dashboard/important_dates_rules.json`, and anything that needs the user (suggested themes, a
 Days forward change, a normaliser pull request).
 
+## 2026-11-15: snapshot a326662 (dated 2026-11-16)
+
+No rules changes (41 decisions, all applied, none unused; events 1074, flags 57). Only `window_end` moved (2027-11-16); events.json is unchanged. `review_check.js` shows no PROBLEM lines; `test_important_dates.js` passes. The same 27 Worklist items remain under **Needs a source** exactly as in the 2026-10-20 (second run) entry: no partner is provable from the snapshot, `backfill/*.csv` or the .ics feeds (candidates are other campuses, intakes or rounds). 2 are `closing-may-be-after-window` (Days forward of about 450 needed). Normaliser: no pull request needed.
+
+**Official pages: not reachable.** monash.edu HTTP 403; web.archive.org tunnel closed (curl 000). Please allow monash.edu, monash.edu.my and web.archive.org.
+
 ## 2026-11-14: snapshot b1c716a (dated 2026-11-15)
 
 No rules changes (41 decisions, all applied, none unused; events 1074, flags 57). Only `window_end` moved (2027-11-15); events.json is identical to 99b5e21. `review_check.js` shows no PROBLEM lines; `test_important_dates.js` passes. The same 27 Worklist items remain under **Needs a source** exactly as in the 2026-10-20 (second run) entry: no partner is provable from the snapshot, `backfill/*.csv` or the .ics feeds. 2 are `closing-may-be-after-window` (Days forward of about 450 needed). Normaliser: no pull request needed.
