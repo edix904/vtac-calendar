@@ -4,6 +4,15 @@ Newest first. Each entry: date, the snapshot commit reviewed, what changed in
 `dashboard/important_dates_rules.json`, and anything that needs the user (suggested themes, a
 Days forward change, a normaliser pull request).
 
+## 2026-11-16: snapshot f45cb6b (dated 2026-11-17)
+
+No rules changes (41 decisions, all applied, none unused; events 1074, flags 57). Only `window_end` moved (2027-11-17); events.json is identical to a326662. `review_check.js` shows no PROBLEM lines; `test_important_dates.js` passes. The same 27 Worklist items remain under **Needs a source** exactly as in the 2026-10-20 (second run) entry (2 are `closing-may-be-after-window`; Days forward of about 450 needed). Normaliser: no pull request needed.
+
+**Official pages: partly reachable now.** monash.edu is still HTTP 403, but web.archive.org now answers (HTTP 200). Please keep web.archive.org allowed; monash.edu and monash.edu.my would still help.
+- Wayback capture `web/2025/.../students/admin/dates/principal-dates` lists the 2025-26 year. It confirms the 2025-11-03 "Teaching starts: November intake (NOV12)" and the 2026-02-13 "Final assessment and teaching periods end: ... NOV12 2025 ...", but that closing is already the end of the Final assessments periods (same listing key), so it is not paired again here (item 16 left as is; a user decision whether Gantt should show NOV12 teaching as Nov 3 to Feb 13).
+- Same capture: Graduate research scholarships "open Round 1/2026 (international)" 1 Sep and "open Round 2/2026 (domestic)" 1 Nov have no closing on the page (it covers one year; the next closings fall in 2027). Items 20 and 23 stay unresolved.
+- Capture `web/2026/` (2026-10-27) has no date listings ("Content cannot be accessed"), so the 2026-27 closings for items 19, 21, 24-27 and the other open rows are not provable from it. Nothing was added.
+
 ## 2026-11-15: snapshot a326662 (dated 2026-11-16)
 
 No rules changes (41 decisions, all applied, none unused; events 1074, flags 57). Only `window_end` moved (2027-11-16); events.json is unchanged. `review_check.js` shows no PROBLEM lines; `test_important_dates.js` passes. The same 27 Worklist items remain under **Needs a source** exactly as in the 2026-10-20 (second run) entry: no partner is provable from the snapshot, `backfill/*.csv` or the .ics feeds (candidates are other campuses, intakes or rounds). 2 are `closing-may-be-after-window` (Days forward of about 450 needed). Normaliser: no pull request needed.
