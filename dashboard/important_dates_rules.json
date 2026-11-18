@@ -1,5 +1,5 @@
 {
- "version": "2026-10-30",
+ "version": "2026-11-18",
  "_doc": "Rules for the Calendar Dashboard's Important_Dates tab (dashboard/ImportantDates.js). The sync fetches this file from main on every run. standalone: milestones or titles (regex) that are deadlines on their own, so an opening or closing without a partner is not flagged. theme_rules: first pattern (case-insensitive regex) that matches the event's milestone, else its title, sets the theme. decisions: corrections from the daily Claude review (dashboard/review/REVIEW.md); listing keys are 'CAMPUS|YYYY-MM-DD|title' exactly as in dashboard/snapshot/listings.json.",
  "themes": [
   "Teaching periods",
@@ -91,6 +91,11 @@
     "key": "AUS|2024-04-05|Graduate research scholarships open: Round 3/2024 (international students)",
     "reason": "Replaced by the added 2024-04-05..2024-08-31 period (archived principal dates page).",
     "added": "2026-10-30"
+   },
+   {
+    "key": "AUS|2025-11-03|Teaching starts: November intake (NOV12)",
+    "reason": "Replaced by the added 2025-11-03..2026-02-13 NOV12 teaching period.",
+    "added": "2026-11-18"
    }
   ],
   "unpair": [
@@ -410,6 +415,17 @@
     "reason": "Round 3/2024 opens 5 Apr and closes 31 Aug 2024; the closing is missing from the Google calendar, so the period is added whole and its lone opening excluded.",
     "added": "2026-10-30",
     "end": "2024-08-31"
+   },
+   {
+    "campus": "AUS",
+    "start": "2025-11-03",
+    "end": "2026-02-13",
+    "title": "Teaching: November intake (NOV12)",
+    "milestone": "Teaching",
+    "theme": "Teaching periods",
+    "source": "https://web.archive.org/web/2025/https://www.monash.edu/students/admin/dates/principal-dates (2025: 3 Nov 'Teaching starts: November intake (NOV12)'; 13 Feb 2026 'Final assessment and teaching periods end: ... NOV12 ...')",
+    "reason": "User decision 2026-11-18: NOV12 teaching is one bar, 3 Nov 2025 to 13 Feb 2026. Added whole so the shared 13 Feb closing keeps closing the Final assessments period.",
+    "added": "2026-11-18"
    }
   ]
  }

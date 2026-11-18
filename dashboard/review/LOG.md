@@ -4,6 +4,10 @@ Newest first. Each entry: date, the snapshot commit reviewed, what changed in
 `dashboard/important_dates_rules.json`, and anything that needs the user (suggested themes, a
 Days forward change, a normaliser pull request).
 
+## 2026-11-18: user decision on NOV12 teaching
+
+1 add + 1 exclude (43 decisions, all applied). Per the user, NOV12 teaching is one bar: added AUS 2025-11-03..2026-02-13 "Teaching: November intake (NOV12)" (source: Wayback capture of the principal dates page, see the rule) and excluded the lone 2025-11-03 opening. It is added whole rather than paired because the 13 Feb 2026 closing is shared with the Final assessments period, which a pair would have broken. Worklist item 16 resolved (26 left); opening-without-closing 14 -> 13. `review_check.js` no PROBLEM lines; tests pass.
+
 ## 2026-11-17: snapshot f45cb6b (dated 2026-11-17, unchanged since the last review)
 
 No rules changes (41 decisions, all applied, none unused; events 1074, flags 57). Snapshot is the same commit as the 2026-11-16 entry. `review_check.js` shows no PROBLEM lines; `test_important_dates.js` passes. The same 27 Worklist items remain under **Needs a source** exactly as in the 2026-10-20 (second run) entry (2 are `closing-may-be-after-window`; Days forward of about 450 needed). Normaliser: no pull request needed.
