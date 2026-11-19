@@ -4,6 +4,12 @@ Newest first. Each entry: date, the snapshot commit reviewed, what changed in
 `dashboard/important_dates_rules.json`, and anything that needs the user (suggested themes, a
 Days forward change, a normaliser pull request).
 
+## 2026-11-19: snapshot cdcdaf3 (dated 2026-11-20)
+
+No rules changes (43 decisions, all applied, none unused; events 1074, flags 56). Since 09d0b02 only `window_end` (2027-11-20) and one trivial events.json line changed. `review_check.js` shows no PROBLEM lines; `test_important_dates.js` passes. The same 26 Worklist items remain under **Needs a source** exactly as in the 2026-11-18 entries (2 are `closing-may-be-after-window`, Days forward of about 450 needed). Normaliser: no pull request needed.
+
+**Official pages: not reachable.** monash.edu and monash.edu.my HTTP 403; web.archive.org tunnel closed (curl 000). Nothing was added.
+
 ## 2026-11-18 (second run): snapshot 09d0b02 (dated 2026-11-19)
 
 No rules changes (43 decisions, all applied, none unused; events 1074, flags 56). Since d545ec4 only `window_end` and one trivial events.json line changed. `review_check.js` shows no PROBLEM lines; `test_important_dates.js` passes. The 26 Worklist items remain under **Needs a source** exactly as in the 2026-11-16/17 entries (no partner provable from the snapshot, `backfill/*.csv` or the .ics feeds; 2 are `closing-may-be-after-window`, Days forward of about 450 needed). Normaliser: no pull request needed.
