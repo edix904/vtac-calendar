@@ -4,6 +4,12 @@ Newest first. Each entry: date, the snapshot commit reviewed, what changed in
 `dashboard/important_dates_rules.json`, and anything that needs the user (suggested themes, a
 Days forward change, a normaliser pull request).
 
+## 2026-11-28: snapshot 8f647eb (dated 2026-11-28)
+
+No rules changes (43 decisions, all applied, none unused; events 1076, flags 56). Since fc04d93 one source change: the Australian principal dates moved Re-enrolment (timely) ends from 2026-11-27 to 2026-12-07 and Re-enrolment (late) starts from 2026-11-28 to 2026-12-08, so AUS and MY re-enrolment are now separate periods (AUS 10-12 to 12-07, late 12-08 to 12-11; MY unchanged). Both are complete periods with no flags; nothing to decide (the MY dates are listed separately in the MY feed, so the AUS/MY difference is the source's, not a wrong pairing). `review_check.js` shows no PROBLEM lines; `test_important_dates.js` passes. The same 26 Worklist items remain under **Needs a source** exactly as in the 2026-11-18 entries (2 are `closing-may-be-after-window`, Days forward of about 450 needed). Normaliser: no pull request needed.
+
+**Official pages: not reachable.** monash.edu HTTP 403; web.archive.org curl 000. Nothing was added.
+
 ## 2026-11-25: snapshot fc04d93 (dated 2026-11-25)
 
 No rules changes (43 decisions, all applied, none unused; events 1074, flags 56). Only `status.json` changed since the 2026-11-24 review; no new, removed or changed events. `review_check.js` shows no PROBLEM lines; `test_important_dates.js` passes. The same 26 Worklist items remain under **Needs a source** exactly as in the 2026-11-18 entries (2 are `closing-may-be-after-window`, Days forward of about 450 needed). Normaliser: no pull request needed.
